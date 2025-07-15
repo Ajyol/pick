@@ -1,283 +1,549 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
-<title>The Pick</title>
-<style type="text/css">
-<!--
-body {
-	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	background-color: #42413C;
-	margin: 0;
-	padding: 0;
-	color: #000;
-	background-image: url(green-grunge-pattern.jpg);
-	background-attachment: fixed;
-	/* bk-img courtesy of www.psdgraphics.com */
-}
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="http://english.selu.edu/coursework/student19/pickicon.jpg"
+      type="image/vnd.microsoft.icon"
+    />
+    <title>The Pick</title>
+    <style type="text/css">
+      <!--
+      body {
+      	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+      	background-color: #42413C;
+      	margin: 0;
+      	padding: 0;
+      	color: #000;
+      	background-image: url(green-grunge-pattern.jpg);
+      	background-attachment: fixed;
+      	/* bk-img courtesy of www.psdgraphics.com */
+      }
 
-/* ~~ Element/tag selectors ~~ */
-ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
-	padding: 0;
-	margin: 0;
-}
-h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
-	margin-bottom:0;
-	padding-right: 15px;
-	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
-}
-.fifthindent {
-	padding-left: 60px;
-}
-a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
-	border: none;
-}
-/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
-a:link {
-	color: #42413C;
-	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
-}
-a:visited {
-	color: #6E6C64;
-	text-decoration: underline;
-}
-a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
-	text-decoration: none;
-}
+      /* ~~ Element/tag selectors ~~ */
+      ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+      	padding: 0;
+      	margin: 0;
+      }
+      h1, h2, h3, h4, h5, h6, p {
+      	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+      	margin-bottom:0;
+      	padding-right: 15px;
+      	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+      }
+      .fifthindent {
+      	padding-left: 60px;
+      }
+      a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+      	border: none;
+      }
+      /* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+      a:link {
+      	color: #42413C;
+      	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+      }
+      a:visited {
+      	color: #6E6C64;
+      	text-decoration: underline;
+      }
+      a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+      	text-decoration: none;
+      }
 
-/* ~~ this fixed width container surrounds all other elements ~~ */
-.container {
-	width: 960px;
-	background-color: #FFF;
-	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
-	background-image: url(parchment_paper_background_1800x1600.jpg);
-	background-attachment: fixed;
-}
+      /* ~~ this fixed width container surrounds all other elements ~~ */
+      .container {
+      	width: 960px;
+      	background-color: #FFF;
+      	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+      	background-image: url(parchment_paper_background_1800x1600.jpg);
+      	background-attachment: fixed;
+      }
 
-/* ~~ This is the layout information. ~~ 
+      /* ~~ This is the layout information. ~~
 
-1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+      1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
 
-*/
-.content {
-	width: 930px;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 17px;
-	padding-top: 10px;
-	padding-right: 40
-\;
-	padding-bottom: 10px;
-	padding-left: 25px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-}
-.fullindent {
-	padding-left: 40px;
-}
-.container .header {
-	width: 960px;
-	position: fixed;
-	
-	
-}
-
-/* ~~ miscellaneous float/clear classes ~~ */
-.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
-	float: right;
-	margin-left: 8px;
-}
-.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
-	float: left;
-	margin-right: 8px;
-}
-.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
-	clear:both;
-	height:0;
-	font-size: 1px;
-	line-height: 0px;
-}
-.hangingindent {
-	text-indent: -30px;
-	padding-left: 45px;
-}
-.footer {
-	font-family: Garamond;
-	font-size: 24px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
--->
-</style>
-<link href="picknavigation.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
-</head>
-
-<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
-
-<div class="container">
-
-<div id="navigation">
-<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
-
-<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
-
-<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
-
- <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
- </a>
- </div>
-  <div class="content">
-   <p><br>
-     <br>
-     <br><br><br><br><br><br>
-     
-   </p>
-   <table> 
-   <tr>
-   <td width="650" valign="top">
-   
-<center><h2>A Child's Choice</h2></center>
-<br>
-<p><strong>Amria Makke</strong></p>
-<br>
-<p><strong>Course:</strong> English 102<br></p>
-<p><strong>Instructor:</strong> Ms. Heather O‘Connell<br></p>
-<p><strong>Assignment:</strong> Problem and Solution Essay<br></p>
-<br>
+      */
+      .content {
+      	width: 930px;
+      	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      	font-size: 17px;
+      	padding-top: 10px;
+      	padding-right: 40px;
+      	padding-bottom: 10px;
+      	padding-left: 25px;
+      	padding-right: 0px;
+      	padding-bottom: 0px;
+      }
+      .fullindent {
+      	padding-left: 40px;
+      }
+      .container .header {
+      	width: 960px;
+      	position: fixed;
 
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Education is an important aspect of a person’s life. Everyone makes decisions towards or against furthering his or her education. At an early age, I chose to dedicate my life to my education hoping it would allow success to emerge. As I reflect on my past, I realize my parents silently impelled me to further my education.</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming from a multicultural home, learning was a daily experience. My mother was born and raised in Texas, emphasizing her southern drawl with every word spoken, and my father was born in Lebanon with Arabic being his main language. My mom enjoyed reading whatever she could get her hands on, and always encouraged me to read along with her. At age eight, she had me in the habit of reading the weekly newspaper. My dad lived by math, explaining fractions as he used measuring cups while he cooked.</p>
- <br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By age eight, I took pleasure in every form of learning, from reading a book of adventurous play to mixing vinegar and baking soda for scientific fun. I can still remember writing and learning multiplication tables and probably being the most excited third grader in my class. However, I was still unaware of my parents’ push for education.</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since my father’s family lived across the world, we only spent time with my mother’s family. I was the only child in my family who would come home from a long day at school excited to begin my homework. Procrastination was nowhere in my sight. Many evenings I
-would hear about my cousins playing in the swimming pool at my grandparent’s house until dark or riding four wheelers all weekend long, basically “livin’ it up.”
-</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When I was ten years old, I asked my parents, “Why can’t I have the freedom to play in the yard until dark every night or go to Pawpaw’s and swim in the pool with everyone else?”</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My mom simply replied, “You can if that is what you really want.” For days, I pondered if I wanted “freedom” to do as I pleased with my afternoons and weekends. Playing in the yard and having no responsibilities for myself seemed great. However, the instant gratification of seeing my parents proud of my ambition was also satisfying. I was undecided until that weekend when my family had planned to have a cookout at my house.</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saturday morning, my family began to arrive at my house, each with their own ideas of how the day should be spent. My mother was the most responsible of all her siblings, always cooking and cleaning for the weekend cookouts while the others lounged around the house continuously telling their children to go play outside and leave them alone. My cousins were solely worried about when dinner would be ready, and if they were allowed to pester the neighborhood’s animals. Their parents worried too about dinner being served, and how much gossip could be squeezed in before they left. Because of their parents’ absence of motivation towards raising children, my cousins prematurely lacked the support and dedication needed to pursue their education. While many anticipated this day for numerous reasons, I knew and
-looked forward to Saturday not because I wanted to play outside but for another reason. Saturday meant exciting reading because the local newspaper was due to arrive.
-</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As usual, the mailman passed relatively early in the morning delivering the local newspaper. When I came into the house with the newspaper, I immediately followed my routine and sat on the couch and began to read. However, this Saturday was very different because my family was there. As soon as my cousins found out I was reading the “forbidden paper,” they began to taunt me.</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Look how stupid she looks!” my older cousin said as all the others stood around and giggled.</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Leave me alone, y’all,” I replied.</p>
-<br>
+      }
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Ha Ha Ha. She’s a nerd, y’all,” he snorted.</p>
-<br>
+      /* ~~ miscellaneous float/clear classes ~~ */
+      .fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+      	float: right;
+      	margin-left: 8px;
+      }
+      .fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+      	float: left;
+      	margin-right: 8px;
+      }
+      .clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+      	clear:both;
+      	height:0;
+      	font-size: 1px;
+      	line-height: 0px;
+      }
+      .hangingindent {
+      	text-indent: -30px;
+      	padding-left: 45px;
+      }
+      .footer {
+      	font-family: Garamond;
+      	font-size: 24px;
+      	margin-top: 2px;
+      	margin-bottom: 2px;
+      	padding-top: 0px;
+      	padding-bottom: 0px;
+      }
+      -->
+    </style>
+    <link href="picknavigation.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+      function MM_swapImgRestore() {
+        //v3.0
+        var i,
+          x,
+          a = document.MM_sr;
+        for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+      }
+      function MM_preloadImages() {
+        //v3.0
+        var d = document;
+        if (d.images) {
+          if (!d.MM_p) d.MM_p = new Array();
+          var i,
+            j = d.MM_p.length,
+            a = MM_preloadImages.arguments;
+          for (i = 0; i < a.length; i++)
+            if (a[i].indexOf('#') != 0) {
+              d.MM_p[j] = new Image();
+              d.MM_p[j++].src = a[i];
+            }
+        }
+      }
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Reading’s for losers like you, Amira!” came out from the group.</p>
-<br>
+      function MM_findObj(n, d) {
+        //v4.01
+        var p, i, x;
+        if (!d) d = document;
+        if ((p = n.indexOf('?')) > 0 && parent.frames.length) {
+          d = parent.frames[n.substring(p + 1)].document;
+          n = n.substring(0, p);
+        }
+        if (!(x = d[n]) && d.all) x = d.all[n];
+        for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+        for (i = 0; !x && d.layers && i < d.layers.length; i++)
+          x = MM_findObj(n, d.layers[i].document);
+        if (!x && d.getElementById) x = d.getElementById(n);
+        return x;
+      }
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Y’all…are just jealous…that y’all can’t even…READ!” I squeaked as I hid the tears I needed so badly to release.</p>
-<br>
+      function MM_swapImage() {
+        //v3.0
+        var i,
+          j = 0,
+          x,
+          a = MM_swapImage.arguments;
+        document.MM_sr = new Array();
+        for (i = 0; i < a.length - 2; i += 3)
+          if ((x = MM_findObj(a[i])) != null) {
+            document.MM_sr[j++] = x;
+            if (!x.oSrc) x.oSrc = x.src;
+            x.src = a[i + 2];
+          }
+      }
+    </script>
+  </head>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I did not understand what I had done wrong or even what the reasons were to belittle me for reading the newspaper. Silenced about the disturbance, I went on about my day and spent most of my time conversing with the adults.</p><br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Later that night after everyone had left, I told my parents the situation with my cousins. At that moment, my dad gently touched my hand and said, “Sweetie, I think you have found the answer you were looking for.” Puzzled by what he had said, I stumbled off to my room. I sat on my bed for about an hour wondering what my dad had meant about finding the answer.</p><br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“What answer is he talking about? I didn’t want them to pick on me for reading or anything I do. Is dad saying I wanted them to pick on me?” I asked myself as I sat on my bed. Then, it hit me! I was different than the others in my family; not only by my eager personality, but also by the choices I had made towards my education.</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Still today, I have proven my dedication to having a better life and being an educated person. I know my parents’ involvement contributed to my education. According to the United States Education departmental federal report, “Three factors over which parents exercise authority – student absenteeism, variety of reading materials in the home, and excessive television watching – explain nearly 90% of the difference in eighth grade mathematics test scores across 37 states” (5). My mother’s habit of reading the newspaper allowed me to become comfortable with reading and comprehending information, while my dad encouraged me to challenge my mathematical skills. Overall, my parents would unintentionally raise my standardized tests scores.</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charles Clark the author of “Parents and School,” a report concerning parental involvement, states, “Unprecedented efforts are being made across the country to boost the role of parents in schools as the key to raising student achievement” (56). My parents silently pushed me to want an education, but as a child I felt I had the control to decide what my future education would be. When my parents replied to my concerns of playing like the rest of my cousins, “You can, if that is what you really want, Amira,” they made me feel that I was making my own decision towards my education. Their involvement in my education reflects the decisions I made.
-Like my mother’s siblings, many parents are not interested in their children’s education, or as Clark has pointed out they feel they have “nothing to contribute” (58). According to Clark, the National Parent Teacher Association concluded the biggest barrier to parental involvement is “a lack of time” (63), which is felt by many in my family.</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today, I am writing for my English 102 class while my cousin, who taunted me ten years ago, sits in prison. Many of my cousins’ educations did not exceed junior high. Because of their lack of education, they are faced with taking minimum wage jobs and lack the discipline needed to maintain a job.</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brian Hansen clearly states in his article “Kids in Prison” that there was a spike in violent juveniles between the years 1992 and 1999 (347); these are the years in which I succumbed to taunts by my cousins. Their behaviors have caused them to have major setbacks including spending their adolescent years in juvenile detentions. Prisons have been evaluating the impact education has on juveniles after their release. Education helps to redirect kids in prison, and according to Hansen, “Kansas has mandatory educational services in juvenile detention facilities (363). Had my cousins developed fundamental skills of education like self responsibility, then they may have avoided delinquent behaviors.</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When I graduated from high school, I was not only accomplishing my own goals but also setting a standard for my younger cousins. I was the first person to graduate with honors in my mother’s family and the first female to graduate from high school. I only hope that the work I have put into my education will always reflect my ambition and also lead my family towards a better future. Each time I open my books to read or take out a pen to write, I congratulate myself for prevailing and making positive choices towards my education.</p>
+  <body
+    onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')"
+  >
+    <div class="container">
+      <div id="navigation">
+        <a
+          href="index.html"
+          onmouseout="MM_swapImgRestore()"
+          onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"
+          ><img src="HOme.png" alt="Home" id="home"
+        /></a>
 
+        <a
+          href="features.html"
+          onmouseout="MM_swapImgRestore()"
+          onmouseover="MM_swapImage('features','','featureshover.png',1)"
+          ><img src="FEATURES.png" alt="Features" id="features" margin-left="0"
+        /></a>
 
-<center><h3>&nbsp;</h3>
-  <h3>Works Cited</h3>
-</center>
+        <a
+          href="archives.html"
+          onmouseout="MM_swapImgRestore()"
+          onmouseover="MM_swapImage('archives','','archiveshover.png',1)"
+          ><img src="archives.png" alt="Archives" id="archives"
+        /></a>
 
-<p class="hangingindent">Clark, Charles S. “Parents and Schools.”  <u>CQ Researcher</u> 5.3 (1995):49-72. <u>CQ Researcher Online</u>. CQ Press. Sims Memorial Library, Southeastern Louisiana University, Hammond, LA. 9 Mar. 2007.
-<http://library.cqpress.com/cqresearcher/cqresrrel1995012000 >.
-</p>
-<br>
-<p class="hangingindent">Hansen, Brian. “Kids in Prison.” <u>CQ Researcher</u>  11.6 (2001): 345-374. <u>CQ Researcher Online</u>. CQ Press. Sims Memorial Library, Southeastern Louisiana University, Hammond, LA. 9 Mar. 2007. <http://library.cqpress.com/cqresearcher/cqresrre2001042700 >.
-</p>
-<br>
-<p class="hangingindent">United States Education Department. “Strong Families, Strong School.” September 1994. <http://www.projectappleseed.org/strongfamiliesschools.pdf>.</p>
+        <a
+          href="submissions.html"
+          onmouseout="MM_swapImgRestore()"
+          onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"
+          ><img src="submissions.png" alt="Submissions" id="submissions" /></a
+        ><a
+          href="resources.html"
+          onmouseout="MM_swapImgRestore()"
+          onmouseover="MM_swapImage('resources','','writinghover.png',1)"
+          ><img src="WRITING.png" alt="Writing Resources" id="resources" />
+        </a>
+      </div>
+      <div class="content">
+        <p>
+          <br />
+          <br />
+          <br /><br /><br /><br /><br /><br />
+        </p>
+        <table>
+          <tr>
+            <td width="650" valign="top">
+              <center><h2>A Child's Choice</h2></center>
+              <br />
+              <p><strong>Amria Makke</strong></p>
+              <br />
+              <p><strong>Course:</strong> English 102<br /></p>
+              <p><strong>Instructor:</strong> Ms. Heather O‘Connell<br /></p>
+              <p><strong>Assignment:</strong> Problem and Solution Essay<br /></p>
+              <br />
 
- <br>
-<p><strong>Ms. O’Connell’s Comments:</strong> <em>In this essay, Amira Makke reminds us that education can be liberating. Her description of her family life makes her essay both interesting and her argument valuable.</em></p>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Education is an important aspect of a
+                person’s life. Everyone makes decisions towards or against furthering his or her
+                education. At an early age, I chose to dedicate my life to my education hoping it
+                would allow success to emerge. As I reflect on my past, I realize my parents
+                silently impelled me to further my education.
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming from a multicultural home, learning
+                was a daily experience. My mother was born and raised in Texas, emphasizing her
+                southern drawl with every word spoken, and my father was born in Lebanon with Arabic
+                being his main language. My mom enjoyed reading whatever she could get her hands on,
+                and always encouraged me to read along with her. At age eight, she had me in the
+                habit of reading the weekly newspaper. My dad lived by math, explaining fractions as
+                he used measuring cups while he cooked.
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By age eight, I took pleasure in every
+                form of learning, from reading a book of adventurous play to mixing vinegar and
+                baking soda for scientific fun. I can still remember writing and learning
+                multiplication tables and probably being the most excited third grader in my class.
+                However, I was still unaware of my parents’ push for education.
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since my father’s family lived across the
+                world, we only spent time with my mother’s family. I was the only child in my family
+                who would come home from a long day at school excited to begin my homework.
+                Procrastination was nowhere in my sight. Many evenings I would hear about my cousins
+                playing in the swimming pool at my grandparent’s house until dark or riding four
+                wheelers all weekend long, basically “livin’ it up.”
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When I was ten years old, I asked my
+                parents, “Why can’t I have the freedom to play in the yard until dark every night or
+                go to Pawpaw’s and swim in the pool with everyone else?”
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My mom simply replied, “You can if that is
+                what you really want.” For days, I pondered if I wanted “freedom” to do as I pleased
+                with my afternoons and weekends. Playing in the yard and having no responsibilities
+                for myself seemed great. However, the instant gratification of seeing my parents
+                proud of my ambition was also satisfying. I was undecided until that weekend when my
+                family had planned to have a cookout at my house.
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saturday morning, my family began to
+                arrive at my house, each with their own ideas of how the day should be spent. My
+                mother was the most responsible of all her siblings, always cooking and cleaning for
+                the weekend cookouts while the others lounged around the house continuously telling
+                their children to go play outside and leave them alone. My cousins were solely
+                worried about when dinner would be ready, and if they were allowed to pester the
+                neighborhood’s animals. Their parents worried too about dinner being served, and how
+                much gossip could be squeezed in before they left. Because of their parents’ absence
+                of motivation towards raising children, my cousins prematurely lacked the support
+                and dedication needed to pursue their education. While many anticipated this day for
+                numerous reasons, I knew and looked forward to Saturday not because I wanted to play
+                outside but for another reason. Saturday meant exciting reading because the local
+                newspaper was due to arrive.
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As usual, the mailman passed relatively
+                early in the morning delivering the local newspaper. When I came into the house with
+                the newspaper, I immediately followed my routine and sat on the couch and began to
+                read. However, this Saturday was very different because my family was there. As soon
+                as my cousins found out I was reading the “forbidden paper,” they began to taunt me.
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Look how stupid she looks!” my older
+                cousin said as all the others stood around and giggled.
+              </p>
+              <br />
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Leave me alone, y’all,” I replied.</p>
+              <br />
 
-   
-   </td>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Ha Ha Ha. She’s a nerd, y’all,” he
+                snorted.
+              </p>
+              <br />
 
-<td valign="top"> 
-<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
-</td>
-<td valign="top">
-<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
-<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
-<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
-<br>
-<br><br><br>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Reading’s for losers like you, Amira!”
+                came out from the group.
+              </p>
+              <br />
 
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Y’all…are just jealous…that y’all can’t
+                even…READ!” I squeaked as I hid the tears I needed so badly to release.
+              </p>
+              <br />
 
-<!-- end .content --></div>
-       
-       
- <div class="footer">      
-<center><img src="horizontaline.png" width="920" height="12"/></center>
-<br>
-<center> 
-<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
-<br>
-</center>
-</div>
-<!-- end .container --></div>
-<!-- Google Analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I did not understand what I had done wrong
+                or even what the reasons were to belittle me for reading the newspaper. Silenced
+                about the disturbance, I went on about my day and spent most of my time conversing
+                with the adults.
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Later that night after everyone had left,
+                I told my parents the situation with my cousins. At that moment, my dad gently
+                touched my hand and said, “Sweetie, I think you have found the answer you were
+                looking for.” Puzzled by what he had said, I stumbled off to my room. I sat on my
+                bed for about an hour wondering what my dad had meant about finding the answer.
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“What answer is he talking about? I didn’t
+                want them to pick on me for reading or anything I do. Is dad saying I wanted them to
+                pick on me?” I asked myself as I sat on my bed. Then, it hit me! I was different
+                than the others in my family; not only by my eager personality, but also by the
+                choices I had made towards my education.
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Still today, I have proven my dedication
+                to having a better life and being an educated person. I know my parents’ involvement
+                contributed to my education. According to the United States Education departmental
+                federal report, “Three factors over which parents exercise authority – student
+                absenteeism, variety of reading materials in the home, and excessive television
+                watching – explain nearly 90% of the difference in eighth grade mathematics test
+                scores across 37 states” (5). My mother’s habit of reading the newspaper allowed me
+                to become comfortable with reading and comprehending information, while my dad
+                encouraged me to challenge my mathematical skills. Overall, my parents would
+                unintentionally raise my standardized tests scores.
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charles Clark the author of “Parents and
+                School,” a report concerning parental involvement, states, “Unprecedented efforts
+                are being made across the country to boost the role of parents in schools as the key
+                to raising student achievement” (56). My parents silently pushed me to want an
+                education, but as a child I felt I had the control to decide what my future
+                education would be. When my parents replied to my concerns of playing like the rest
+                of my cousins, “You can, if that is what you really want, Amira,” they made me feel
+                that I was making my own decision towards my education. Their involvement in my
+                education reflects the decisions I made. Like my mother’s siblings, many parents are
+                not interested in their children’s education, or as Clark has pointed out they feel
+                they have “nothing to contribute” (58). According to Clark, the National Parent
+                Teacher Association concluded the biggest barrier to parental involvement is “a lack
+                of time” (63), which is felt by many in my family.
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today, I am writing for my English 102
+                class while my cousin, who taunted me ten years ago, sits in prison. Many of my
+                cousins’ educations did not exceed junior high. Because of their lack of education,
+                they are faced with taking minimum wage jobs and lack the discipline needed to
+                maintain a job.
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brian Hansen clearly states in his article
+                “Kids in Prison” that there was a spike in violent juveniles between the years 1992
+                and 1999 (347); these are the years in which I succumbed to taunts by my cousins.
+                Their behaviors have caused them to have major setbacks including spending their
+                adolescent years in juvenile detentions. Prisons have been evaluating the impact
+                education has on juveniles after their release. Education helps to redirect kids in
+                prison, and according to Hansen, “Kansas has mandatory educational services in
+                juvenile detention facilities (363). Had my cousins developed fundamental skills of
+                education like self responsibility, then they may have avoided delinquent behaviors.
+              </p>
+              <br />
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When I graduated from high school, I was
+                not only accomplishing my own goals but also setting a standard for my younger
+                cousins. I was the first person to graduate with honors in my mother’s family and
+                the first female to graduate from high school. I only hope that the work I have put
+                into my education will always reflect my ambition and also lead my family towards a
+                better future. Each time I open my books to read or take out a pen to write, I
+                congratulate myself for prevailing and making positive choices towards my education.
+              </p>
 
-  ga('create', 'UA-18452199-3', 'auto');
-  ga('send', 'pageview');
+              <center>
+                <h3>&nbsp;</h3>
+                <h3>Works Cited</h3>
+              </center>
 
-</script>
-</body>
+              <p class="hangingindent">
+                Clark, Charles S. “Parents and Schools.” <u>CQ Researcher</u> 5.3 (1995):49-72.
+                <u>CQ Researcher Online</u>. CQ Press. Sims Memorial Library, Southeastern Louisiana
+                University, Hammond, LA. 9 Mar. 2007.
+                <http://library.cqpress.com/cqresearcher/cqresrrel1995012000 >.
+              </p>
+              <br />
+              <p class="hangingindent">
+                Hansen, Brian. “Kids in Prison.” <u>CQ Researcher</u> 11.6 (2001): 345-374.
+                <u>CQ Researcher Online</u>. CQ Press. Sims Memorial Library, Southeastern Louisiana
+                University, Hammond, LA. 9 Mar. 2007.
+                <http://library.cqpress.com/cqresearcher/cqresrre2001042700 >.
+              </p>
+              <br />
+              <p class="hangingindent">
+                United States Education Department. “Strong Families, Strong School.” September
+                1994. <http://www.projectappleseed.org/strongfamiliesschools.pdf>.
+              </p>
+
+              <br />
+              <p>
+                <strong>Ms. O’Connell’s Comments:</strong>
+                <em
+                  >In this essay, Amira Makke reminds us that education can be liberating. Her
+                  description of her family life makes her essay both interesting and her argument
+                  valuable.</em
+                >
+              </p>
+            </td>
+
+            <td valign="top">
+              <img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+            </td>
+            <td valign="top">
+              <a
+                href="volume36.html"
+                onmouseout="MM_swapImgRestore()"
+                onmouseover="MM_swapImage('volume36','','volume36line.png',1)"
+                ><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a
+              ><br /><br />
+              <a
+                href="volume37.html"
+                onmouseout="MM_swapImgRestore()"
+                onmouseover="MM_swapImage('volume37','','volume37line.png',1)"
+                ><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a
+              ><br /><br />
+              <a
+                href="volume38.html"
+                onmouseout="MM_swapImgRestore()"
+                onmouseover="MM_swapImage('volume38','','volume38line.png',1)"
+                ><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38"
+              /></a>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <br /><br /><br />
+
+        <!-- end .content -->
+      </div>
+
+      <div class="footer">
+        <center><img src="horizontaline.png" width="920" height="12" /></center>
+        <br />
+        <center>
+          <a
+            href="http://www.southeastern.edu/"
+            title="Southeastern's Home"
+            target="_blank"
+            style="text-decoration: none"
+            ><img src="slogo2.png" width="27" height="30" alt="Southeastern"
+          /></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a
+            href="http://english.selu.edu/commonread/index.html"
+            title="Common Read"
+            target="_blank"
+            style="text-decoration: none"
+            ><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a
+            href="http://english.selu.edu/manchacreview/"
+            title="The Manchac Review"
+            target="_blank"
+            style="text-decoration: none"
+            ><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review"
+          /></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a
+            href=" https://www.facebook.com/ThePickSLU?ref=profile"
+            title="Facebook"
+            target="_blank"
+            ><img
+              src="pickFACEBOOKLINK.png"
+              width="21"
+              height="30"
+              id="facebook"
+              alt="Facebook" /></a
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a
+            href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html"
+            title="The Writing Center"
+            target="_blank"
+            ><img src="swritingcenter.png" width="143" height="30" /></a
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+          <br />
+        </center>
+      </div>
+      <!-- end .container -->
+    </div>
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-18452199-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>
