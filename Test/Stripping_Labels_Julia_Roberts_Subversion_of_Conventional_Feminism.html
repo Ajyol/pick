@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>Stripping Labels: Julia Roberts’ Subversion<br> of Conventional Feminism<br> from the Postwar Era to Today
+</strong></h2>
+</center>
+<br>
+<p><strong>Heidi Toloudis</strong></p>
+<br>
+<p><strong>Course:</strong> English 537<br></p>
+<p><strong>Instructor:</strong> Dr. Jason Landrum<br></p>
+<p><strong>Assignment:</strong> Analysis<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Man, woman, black, white, Christian, atheist—labels we associate with identity. Can one of these labels sufficiently and wholly describe each one of us? Should we be limited to one label? Obviously, from the list I‘ve provided above, one can encompass several of these identities, such as woman, white, and Christian or man, black, and atheist. What if I added to the list twenty-three-year-old, graduate student, mother, daughter, sister, niece, friend, and
+employee? While twenty-three-year- old, graduate student, friend, and employee can go with any of the labels first mentioned, mother, daughter, sister, and niece can only be attached to woman. We could sit here for hours combining labels to identify people, but what is the point, or rather,
+is there a point? What happens to the identity of the twenty-three-year-old graduate student within two years when he or she has become twenty-five and has graduated? What about the female employee who goes home after a long day of work to be a mother to her three kids? The obvious answer is time. Time changes identifying labels within years, months, days, and even hours and minutes. Thus, going back to my original question, can any one label sufficiently and wholly describe a person? I would argue no given the combination of examples listed above as each one of us plays a certain identifying role at different times of the year, month, and/or day.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While it may not seem a big deal today for a woman to hold a job and be a mother to three kids, this combination was not always practiced as it was not always acceptable. We have come a long way from stay–at–home wives, mothers, and "maids" to today‘s career women, climbing the corporate ladder and managing a successful household of a husband, three kids, and a dog. We are no longer stuck in the male/female struggle of active/passive roles in society. From early feminist movements to today‘s third-wave and post-feminist beliefs, the "female‘s" role has drastically changed. Concentrating on and fighting for equal rights for women, i.e. women should be equal to men, early feminist movements succeeded in acquiring women‘s equality by rebelling against patriarchic society. However, I believe this change could have occurred much sooner with the removal of strictly defined labels of man and woman and the roles associated with each. In my analysis of the progression of feminism, I will exemplify key concepts and differences between waves with particular emphasis on labeling and time by examining Julia Roberts‘ subversive roles in <em>Mona Lisa Smile</em> and <em>Erin Brockovich</em>.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I chose to further explore Julia Roberts because of the success of her career that spans twenty–five years. On October 28, 1967, Julia Fiona Roberts was born into the second-wave feminist era, a way of thinking that would greatly affect her early roles in film. One of Julia‘s most famous roles is Vivian Ward in <em>Pretty Woman</em>, a film exemplifying the backlash ideas of late second-wave feminism in which the roles of women began to regress. <em>Pretty Woman</em> achieved this notion by portraying a Cinderella story between a hooker and a business tycoon with the ending result of Vivian‘s conformity. Throughout her career, Julia has won many awards, including an Academy Award for Best Actress for her role as <em>Erin Brockovich</em> in <em>Erin Brockovich</em>, and she is one of the highest-paid actresses in Hollywood. Noteworthy of her many accomplishments, in regards to this essay, is the fact that she "was the first actress to appear on the cover of Vogue and the first woman to land the cover of GQ" (―Julia Roberts"). These two accomplishments alone reinforce her status as a powerful and influential woman in Hollywood. Her tall, slender body, striking red hair, and huge smile are some of the characteristics mostly attached to her referral, which exemplifies the use of labels in conjunction with identity still present today.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spanning decades of the nineteenth and early twentieth centuries, first-wave feminism commonly refers to the fight for women‘s suffrage with a full-fledged starting point in the 1848 women‘s rights convention in Seneca Falls, New York and a victorious ending in 1920 with the passage of the 19th Amendment, giving women the right to vote (Kinser 127-28). Women‘s fight for equal rights continued to grow in the years after 1920, but it is not until the 1960s that a new wave is coined.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Women in the 1960s and 1970s fought to end discrimination against women by continuing the first-wave‘s fight for political equal rights with the addition of a new fight for equal cultural rights—a truly radical idea in the '60s and '70s. However radical it may have been, most notable about this era is the naming, or labeling, of the separate waves of feminism by Marsha Lear, which occurred as a result of the connection made by 1960s women between their idea for equal cultural rights and the women‘s suffrage movement of the late nineteenth and early twentieth centuries. According to Amber E. Kinser‘s article "Negotiating Spaces For/Through Third-Wave Feminism,"</p>
+<br>
+<p class="fullindent">The <em>labels</em> "first wave" and "second wave," then, were created at the same time as a way of negotiating feminist space, [giving] women of the late '60s the double-rhetorical advantage of cultivating new ideas while simultaneously rooting them
+in older, more established ground. (129)</p>
+ <br>
+<p>By marketing their new ideas with the past victory of women‘s struggle for the right to vote, second-wave feminists, with their new label, sparked a new enthusiasm in 1960s women because their "attention to <em>women’s</em> rights, and more importantly, to women‘s<em> liberation</em>, emerged seemingly out  of nowhere and  needed  to  re-establish  itself  as  neither particularly new nor fleeting"  (Kinser 129). Here, Kinser is referring to the gap in between first-wave and second- wave feminism—a gap created by Marsha Lear‘s definitions and labels of the first two waves, which distinguished 1920 as the end of the first wave and 1960 as the beginning of the second.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The time separating the first and second waves is commonly referred to as the "postwar era." Coming off of a victory in 1920, there was little activity in the women‘s movement during these years; women were silent in retaining their hopes for equality. As men returned from the war,  women  were  forced  to  retire  their  rallying  attire  and  return  home  to  their  roles  as housewives. Betty Friedan, author of <em>The Feminine Mystique</em>, explains, "In the postwar era, […] journalists, educators, advertisers, and social scientists had pulled women into the home with an ideological stranglehold, the 'feminine mystique‘" (qtd. in Meyerowitz 1455). This regression of women back into their traditional roles contributes to the postwar era‘s second label—a backlash. However, while most women complied with the "feminine mystique" idea that they would reach their full potential and experience great joy through the wife and mother duties only, not all women were so obedient, as many held on to their jobs or their pursuit of a rewarding career. It is here, in the middle of a backlash of ideas and disorienting searches for identity, that Julia Roberts is placed in the film <em>Mona Lisa Smile</em>.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In <em>Mona Lisa Smile</em>, Julia Roberts‘ character, Katherine Watson, attempts to subvert conventionally held beliefs of women‘s role in society, and while we can see <em>some</em> progression throughout the film, her overuse of labels and over–emphasis on the idea that women can maintain a job and a household at the same time cause her and her subversive intentions to fail in the end. Katherine‘s progressive nature leads her to the top-ranked school for girls, Wellesley College, a liberal arts college founded in 1870 with the goal to better "prepare women for … 'great conflicts [and] for vast reforms in social life'" ("A Brief History of Wellesley College"). The first deceiving label is seen in the college‘s founding goal, a reality we later realize when we are introduced to a class of Stepford–like girls and the conservative leaders of the college. The college and the girls attending, specifically the five featured girls in Katherine‘s class, can be viewed as metaphors for the great idea and movement for women‘s rights and the inconsistencies that arise in and between as a result of not being able to keep up with the waves of feminism. Katherine is placed in the middle of these two forces, acting as an intermediary between her preconceptions of Wellesley‘s school of thought and the soon-realized false identity (label) of the college and the girls‘ disorienting pursuit for identity.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtext dominates the entire film in regard to feminism and a median placement, which is fitting to the 1950s as this was a time of non-activity on the part of feminists following first- wave accomplishments and preceding the rise of a new second-wave. The subtext of a heated discussion between Wellesley leaders and Katherine over "Picasso" and "Michelangelo," is soon realized with respect to the "art" labels given to the women‘s liberation and stride for progress and the traditional and conservative beliefs synonymous with 1950s backlash. In the midst of this argument over whether or not the work of Picasso is better than the work of Michelangelo, Katherine responds, "I‘m not comparing them." This short statement sums up her beliefs and intentions in teaching at Wellesley, which can also be seen as her downfall; her classroom becomes a neutral zone, placed in the middle of the backlash conservative teachings of the leaders and the bright youthful minds of the future, in which she challenges the girls (with subtext) to look beyond the "textbook" to answer such questions as: "What is art? What makes it good or bad? Who says so?"</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Katherine‘s intermediary role continues outside of the classroom in order to showcase the attitudes and beliefs of other women in the 1950s. At her home, we are introduced to her roommates who occupy different sides of the feminist spectrum. Amanda Armstrong, if it is not obvious already after hearing her name, represents the total opposite of conventional femininity and domesticity. And as the subversive gender emphasis continues, we learn she sleeps in the middle room, has recently lost her life partner, Josephine, is often referred to as "subversive" by the  other  professors,  and  after  distributing  birth  control  to  a  student,  she  is  immediately dismissed from Wellesley in an obvious effort to punish subversive thinking. Conservatives of the time, like the Wellesley leaders, believed "women and men differed fundamentally, and attempts to diminish sexual difference would lead only to unhappiness" (Meyerowitz 1470). Amanda‘s role in the film fully exemplifies this statement as she is left without her life partner, Josephine, and without a job. On the other hand, representing the epitome of femininity and domesticity is Katherine‘s other roommate, fittingly named Nancy Abbey; in case we ever doubt her femininity, she reminds us with her double-girl name. Nancy teaches poise and etiquette classes at Wellesley with an emphasis on "how to be the perfect wife," and since she lost her boyfriend in the war, the only enjoyment she gets out of life is from watching <em>I Love Lucy</em>.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In keeping with the name analysis, Katherine is the only character in the film with three names: Katherine Ann Watson, which further emphasizes her intermediary role between the girls and professors and her push for equal rights to men, as her name can be seen as "Katherine and Watson" appearing together on the same line.
+</p>
+   <br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Similar to Katherine and her roommates, the girls represent different perspectives of a woman‘s role. Giselle Levy, the most progressive thinker in the group, believes in the women‘s movement for equal rights and freely expresses these beliefs by being the first in the group to take birth control and also by sleeping with her professor; however, she does not over-emphasize the significance of any of her actions. At the other end is Betty Warren, stuck under the conservative  and  antifeminist  shadow  of  her  mother  who  constantly  preaches  the  idea  of "domesticity as a woman‘s only road to fulfillment" (Meyerowitz 1470), which leads Betty into a loveless marriage and an eventual divorce. Joan Brandwyn and Connie Baker fit in the middle of the previously mentioned characters. Connie is naïve, insecure, and desperately wants to be in love; going by her name alone, it is safe to assume she will end up a baking housewife. Joan most resembles Katherine because she is smart, level-headed, and knows what she wants. Katherine conflicts with each one of the girls‘ characteristics; from Betty‘s ignorant conservative beliefs in becoming the model housewife and Giselle‘s previous affair with the professor to Joan‘s decision to get married and raise a family instead going to Yale Law School, Katherine continuously emphasizes the ability for a woman to have it all, especially in her last pitch to Joan in which she repeats, "You can do both! You can do both!" after learning of Joan‘s elopement. In this last desperate plea for change, Katherine begins to realize her failure in trying to subvert convention. However, Joan should be seen as more of a progressive thinker than Katherine as she freely chooses to marry and raise a family instead of pursuing a law degree because of the simple fact that she wants this lifestyle more than the other. Together, these girls represent the woman Katherine strives to be and the woman she constantly encourages them to become—a woman characteristic of third-wave feminism.
+</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While Katherine Ann Watson fails to change conventional rolse of women in the 1950s greatly because of her tendencies to apply labels, which is the very concept she was trying to subvert, Julia Roberts succeeds in inspiring women of today by showcasing the inconsistencies found in women‘s roles during the postwar era. She does so fifty years later in a time of post-feminism thinking—the first time following the second-wave of the 1960s and '70s. Just as the first wave was followed by a backlash of ideas and regression, second wave feminist movements were also followed by a brief backlash—a trend that can be found in the media of each era. Susan Faludi explains these backlashes and the media‘s role in them. "Women were finally silenced in the '50s cinema by their absence from most of era‘s biggest movies [and instead were] relegated to mindless how-to-catch-a-husband movies," (Faludi 115) a trend we see exemplified in Nancy‘s obsession with television and especially with the I Love Lucy show. Faludi continues with a description of post-second wave backlash: "In late-'80s Hollywood, this pattern would repeat, as filmmakers once again became preoccupied with toning down independent women and drowning out their voices—sometimes quite literally" (115). Men once again looked at their wives as belonging to a second-class and believed they belonged in the home, as director Adrian Lynn describes his opinion of femininity with regard to his wife:</p>
+<br>
+<p class="fullindent">My wife has never worked. She‘s the least ambitious person I‘ve ever met. She‘s a terrific wife. She hasn‘t the slightest interest in doing a career. She kind of lives this with me, and it‘s a terrific feeling. I come home and she‘s there. (qtd. in Faludi 121)</p>
+<br>
+<p>Wow. It is amazing how much a society can regress in only forty years. Because of this, the voices of repressed women in the 1950s had to wait for third-wave thinking, over fifty years later, to be heard. Kinser explains the third-wave trend of exposing issues of the past:</p>
+ <br>
+<p class="fullindent">Some of the goals of third-wave feminism have been to look back at the most recent movement because it is still influencing our lives and distinguish its triumphs  from  its  challenges,  identify  where  that  wave  might  have  done something different to bring about other consequences, and consider how the choices that were made influence our lives phenomenologically. (133)</p>
+<br>
+<p>Films like <em>Mona Lisa Smile</em> bring about a feeling of pride in young women and inspire many to challenge conventions of today with lingering thoughts of postwar "I-want-to-be-a-Mrs.-hood'" (Stasia 182) attitude.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Third-wave  feminism,  referring  to  the  late  1980s  through  today,  extends  beliefs  of second-wave feminism without the emphasis of women‘s victimization present in second-wave thinking.  According  to  Stasia,  "Like  the  first  and  second  waves  of  feminism,  third  wave feminism is not a coherent movement: it is fractured into multiple feminisms from diverse subject positions"  (181). With increasing diversity and subversion in gender roles (especially with the increase of transsexual operations performed every day), our current era leaves little room for surprise, a fact I believe contributes to the decrease in the overuse of labels, roles, and movements in regard to identification. Therefore, <em>Mona Lisa Smile</em> gives third-wavers a perspective on the progression of the women‘s movement by highlighting the strictly defined gender roles common to previous eras.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From <em>Mona Lisa Smile</em> to <em>Erin Brockovich</em>, Julia Roberts‘ role changes just as drastically as the woman‘s role changed from 1950 to 2000. In <em>Erin Brockovich</em>, Julia Roberts‘ character, Erin, picks up where Katherine failed and proves that women "can do both," as she manages a household  of  three  kids  after  two  divorces  and  a  car  accident,  takes  down  a  powerhouse company, and reverses gender roles, all of which I would argue is a result of her sense of individualism and lack of emplasis on labels and subtext. She exemplifies Stasia's description ofthe "new female action hero"  as she "manifests the girl power mantra 'girls can do anything!' without acknowledging how this action is mitigated by race, class, sexuality and, yes, gender" (181). Instead of attributing her female characteristics to a victimization and lower-class status, she values her feminine features and uses her femininity to get what she wants, a technique exemplified in her quote: "They‘re called boobs, Ed." She is strong-willed and does not hesitate to say what is on her mind; all of these characteristics embody the third-wave thinker.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the beginning of the film, we see Erin applying for a job in a doctor‘s office, in which she explains her long-ago dream to become a doctor and her eventual failure in succeeding at this dream because she married and had kids first—a lifestyle synonymous with many women raised in the second-wave era. At the end of the first scene, we are left with another failure of Katherine‘s proposal that "women can do both." However, the worst day of her life (complete with patriarchal interferences of a failed interview, parking ticket, and car accident) soon turns into the best job opportunity and helps her individual fight for respect. Erin‘s hard work in cracking the case linking contaminated water and serious health issues in a small town can be seen as a second layer, or subtext, to her own motivation for success in her fight against the past obstacles thrown at her from the patriarchal society. Her hard work achieves a switch in gender roles as her boyfriend assumes the role of the "stay-at-home-mom," watching her kids while she is at work, cleaning, and cooking. When Erin comes home late one day after work, a neglected and depressed George expresses his feelings on the reversal: "There may be a ton of guys that don‘t mind being a maid with nothing in return. But, I‘m not one of them." George‘s statement clearly exposes the reversal of their gender roles. Femininity, in turn, is seen as an underlying debate throughout the film. When Erin is confronted with the question of whether a woman is still considered a woman if she loses her uterus and breasts, Erin confirms with the reassurance that she is still a woman, and probably a more liberated woman, because of the lack of maxi pads and underwire. The underlying theme of women‘s liberation is made prevalent in this scene. Erin closes a gap between femininity and masculinity as she proves one can truly encompass both roles at the same time, and in doing so, she reinforces the third-wave feminism idea "that 'we need a consciousness of women‘s place in society and of how the battles already won were achieved'" (Baumgardner and Richards qtd. in Stasia 182).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While I believe in the importance of history and knowing where one comes from, I do not believe in applying such history to one‘s identity. The labels mentioned in the introduction have consistently proved to be controversial topics in history as race, gender, and religion have been central  to  many  movements,  wars,  and  revolutions.  Therefore,  I  believe  in  the  third-wave feminist thought of letting go of preconceived or pre-established labels. With the removal of labels, identity crises would lessen, discrimination would subside, and people would be able to live the lifestyle of their choice without the insecure feelings of whether or not their lifestyle choice  is  acceptable.  Until  that  day  comes,  we  will  continue  to  strive  for  equality  by remembering the victories of the past and by watching and researching influential actors and actresses dealing with controversial labeling, just as I have with Julia Roberts and two of her roles that confront, expose, and challenge gender and subversion.</p>
+<br>
+<br>
+<br>
+<center>Works Cited</center>
+<br><br>
+<p class="hangingindent">"A Brief History of Wellesley College." Public Affairs. Dept. home page. Wellesley College. <em>n.d.</em>Web. 26 Apr. 2009.</p>
+ <br>
+<p class="hangingindent"><em>Erin Brockovich</em>. Dir. Steven Soderbergh. Perf. Julia Roberts, Albert Finney, and Aaron Eckhart. DVD. Universal Studios and Columbia Pictures Industries, Inc., 2000. Film.</p>
+<br>
+<p class="hangingindent">Faludi, Susan. "Fatal and Fetal Visions: The Backlash in the Movies." <em>Backlash</em>. New York: Double Day, 1991. 112-139. Print.</p>
+<br>
+<p class="hangingindent">"Julia Roberts." <em>Wikipedia.org</em>. Web. 22 Apr. 2009.</p>
+<br>
+<p class="hangingindent">Kinser, Amber E. "Negotiating Spaces For/Through Third-Wave Feminism." <em>NWSA Journal</em>. 16.3 (2004): 124-153. <em>ProQuest</em>. Web. 26 Apr. 2009.</p>
+<br>
+<p class="hangingindent">Meyerowitz, Joanne. "Beyond the Feminine Mystique: A Reassessment of Postwar Mass Culture, 1946-1958." <em>The Journal of American History</em>. 79.4 (1993): 1455-28. EBSCOhost. Web. 26 Apr. 2009.</p>
+<br>
+<p class="hangingindent"><em>Mona Lisa Smile</em>. Dir. Mike Newell. Perf. Julia Roberts, Kirsten Dunst, Julia Stiles, and Maggie Gyllenhaal. DVD. Revolution Studios, 2003. Film. Stasia, Cristina Lucia. "‘Wham! Bam! Thank You Ma‘am‘: The New Public/Private Female Action Hero." <em>Third Wave Feminism</em>. Ed. Stacey Gillis. New York: Palgrave, 2004. 174-84. Print.</p>
+<br>
+<br>
+<br>
+<p><strong>Dr. Landrum’s Comments:</strong> In her essay, Heidi Toloudis effectively explains feminism‘s evolution from second-wave to third-wave through a detailed analysis of the actress Julia Roberts and her roles in <em>Mona Lisa Smile</em> and <em>Erin Brockovich</em>. The success of the essay rests on Heidi‘s careful explanation of feminism, her lucid argument, and her well chosen examples. This essay is a very good example of a theoretical reading of a star‘s cultural impact.
+</p>
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<center><img src="horizontaline.png" width="920" height="12"/></center>
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

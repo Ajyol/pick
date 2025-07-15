@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 40px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.fifthindent {
+	padding-left: 70px;
+}
+.hangingindent {
+	text-indent: -10px;
+	padding-left: 80px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','mlaline.png','chicagoline.png','apaline.png','purdueline.png','thewebteamline.png')">
+
+<div class="container">
+
+
+<div id="navigation">
+
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" /></a></div>
+  <div class="content">
+    <p>&nbsp;</p>
+   <p><br>
+     <br>
+     <br><br><br>
+     <br>
+   </p>
+   <table> <tr><td width="650" valign="top">
+
+<h2>Purdue Owl</h2>
+
+
+
+<p class="fullindent"><a href="https://owl.english.purdue.edu/owl/resource/747/01/" target="_blank">MLA Formatting and Style Guide</a></p>
+
+
+<p class="fullindent">Modern Language Association (MLA) style is most commonly used to write papers and cite sources within the liberal arts and humanities. This resource, updated to reflect the MLA Handbook for Writers of Research Papers (7th ed.) and the MLA Style Manual and Guide to Scholarly Publishing (3rd ed.), offers examples for the general format of MLA research papers, in-text citations, endnotes/footnotes, and the Works Cited page.</p>
+
+<p class="fullindent">Contributors:Tony Russell, Allen Brizee, Elizabeth Angeli, Russell Keck, Joshua M. Paiz, Purdue OWL Staff</p>
+
+<p class="fullindent">Last Edited: 2014-10-10 09:09:47</p>
+
+<p class="fullindent">Please use the example at the bottom of this page to cite the Purdue OWL in MLA.</p>
+
+<p class="fullindent">To see a side-by-side comparison of the three most widely used citation styles, including a chart of all MLA citation guidelines, see the Citation Style Chart.</p>
+
+<p class="fullindent">You can also watch our MLA vidcast series on the Purdue OWL YouTube Channel.</p>
+
+
+<p class="fullindent"><strong>General Format</strong></p>
+
+<p class="fullindent">MLA style specifies guidelines for formatting manuscripts and using the English language in writing. MLA style also provides writers with a system for referencing their sources through parenthetical citation in their essays and Works Cited pages.</p>
+
+<p class="fullindent">Writers who properly use MLA also build their credibility by demonstrating accountability to their source material. Most importantly, the use of MLA style can protect writers from accusations of plagiarism, which is the purposeful or accidental uncredited use of source material by other writers.</p>
+
+<p class="fullindent">If you are asked to use MLA format, be sure to consult the MLA Handbook for Writers of Research Papers (7th edition). Publishing scholars and graduate students should also consult the MLA Style Manual and Guide to Scholarly Publishing (3rd edition). The MLA Handbook is available in most writing centers and reference libraries; it is also widely available in bookstores, libraries, and at the MLA web site. See the Additional Resources section of this handout for a list of helpful books and sites about using MLA style.</p>
+
+
+<p class="fullindent"><strong>Paper Format</strong></p>
+
+<p class="fullindent">The preparation of papers and manuscripts in MLA style is covered in chapter four of the MLA Handbook, and chapter four of the MLA Style Manual. Below are some basic guidelines for formatting a paper in MLA style.</p>
+
+
+<p class="fullindent"><strong>General Guidelines</strong></p>
+
+<p class="hangingindent">•	Type your paper on a computer and print it out on standard, white 8.5 x 11-inch paper.</p>
+<p class="hangingindent">•	Double-space the text of your paper, and use a legible font (e.g. Times New Roman). Whatever font you choose, MLA recommends that the regular and italics type styles contrast enough that they are recognizable one from another. The font size should be 12 pt.</p>
+<p class="hangingindent">•	Leave only one space after periods or other punctuation marks (unless otherwise instructed by your instructor).</p>
+<p class="hangingindent">•	Set the margins of your document to 1 inch on all sides. </p>
+<p class="hangingindent">•	Indent the first line of paragraphs one half-inch from the left margin. MLA recommends that you use the Tab key as opposed to pushing the Space Bar five times.</p>
+<p class="hangingindent">•	Create a header that numbers all pages consecutively in the upper right-hand corner, one-half inch from the top and flush with the right margin. (Note: Your instructor may ask that you omit the number on your first page. Always follow your instructor's guidelines.)</p>
+<p class="hangingindent">•	Use italics throughout your essay for the titles of longer works and, only when absolutely necessary, providing emphasis.</p>
+<p class="hangingindent">•	If you have any endnotes, include them on a separate page before your Works Cited page. Entitle the section Notes (centered, unformatted).</p>
+
+
+<p class="fullindent">Formatting the First Page of Your Paper</p>
+
+<p class="hangingindent">•	Do not make a title page for your paper unless specifically requested.</p>
+<p class="hangingindent">•	In the upper left-hand corner of the first page, list your name, your instructor's name, the course, and the date. Again, be sure to use double-spaced text.</p>
+<p class="hangingindent">•	Double space again and center the title. Do not underline, italicize, or place your title in quotation marks; write the title in Title Case (standard capitalization), not in all capital letters.</p>
+<p class="hangingindent">•	Double space between the title and the first line of the text.</p>
+<p class="hangingindent">•	Create a header in the upper right-hand corner that includes your last name, followed by a space with a page number; number all pages consecutively with Arabic numerals (1, 2, 3, 4, etc.), one-half inch from the top and flush with the right margin. (Note: Your instructor or other readers may ask that you omit last name/page number header on your first page. Always follow instructor guidelines.)</p>
+
+
+<p class="fullindent"><strong>How to Cite the Purdue OWL in MLA</strong></p>
+
+<p class="fullindent"><strong>Entire Website</strong></p>
+
+<p class="hangingindent">The Purdue OWL. Purdue U Writing Lab, 2010. Web. Date of access.</p>
+
+<p class="fullindent"><strong>Individual Resources</strong></p>
+
+<p class="fullindent">Contributors' names and the last edited date can be found in the orange boxes at the top of every page on the OWL.</p>
+
+<p class="hangingindent">Contributors' names. "Title of Resource." The Purdue OWL. Purdue U Writing Lab, Last edited date. Web. Date of access.</p>
+ 
+<p class="hangingindent">Russell, Tony, Allen Brizee, and Elizabeth Angeli. "MLA Formatting and Style Guide." The Purdue OWL. Purdue U Writing Lab, 4 Apr. 2010. Web. 20 July 2010.</p>
+</p></td>
+<td valign="top"> <img src="verticalline.png" align="left" width="10" height="250" alt="line" /></td><td valign="top">
+<a href="mla.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('mla','','mlaline.png',1)"><img src="mla.png" alt="MLA" width="165" height="30" id="mla" /></a><br><br>
+<a href="chicago.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('chicago','','chicagoline.png',1)"><img src="chicago.png" alt="Chicago Style" width="165" height="30" id="chicago" /></a><br><br>
+<a href="apa.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('apa','','apaline.png',1)"><img src="apa.png" alt="APA" width="165" height="30" id="apa" /></a><br><br>
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('purdue','','purdueline.png',1)"><img src="purdue.png" alt="The Writing Center" width="203" height="30" id="purdue" /></a><br>
+</td></tr></table><br><br><br><br><br>
+<!-- end .content --></div>
+       
+       
+<center><img src="horizontaline.png" width="920" height="15"/></center>
+<br>
+
+<center> <a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="40" height="50" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="65" height="50" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="213" height="50" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="38" height="50" id="facebook" alt="Facebook" /></a><br><br>
+©2014
+<br></center>
+<!-- end .container --></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>The Ship, the Steel, and the White Dress</strong></h2>
+</center>
+<br>
+<p><strong>Estera Pirosca</strong></p>
+<br>
+<p><strong>Course:</strong> English 232<br></p>
+<p><strong>Instructor:</strong> Dr. James Walter<br></p>
+<p><strong>Assignment:</strong> Literary Analysis<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The second decade of the twentieth century was a tumultuous and exciting period in American history when the development of industrialization and the mass of immigrants changed the flow of things in the New World. In this context, Eugene O‘Neill wrote a play that depicts the dehumanizing effects of industrialization on the working class. The play is an expressionistic representation of human beings in different contexts and class limitations, who are searching for their place in the world. Yank, the main character, is an outcast of society. Virginia Floyd, in her book <em>The Plays of Eugene O’Neill</em>, quotes O‘Neill‘s description of Yank as a "man bewildered by the disharmony of his primitive pride and individualism at war with the mechanistic development of society" (237). Yank‘s condition is reinforced through the heavy symbolism that O‘Neill chooses to use in the text. Symbols of the ship, the steel, and the white dress are expressionistic means to communicate and indicate the playwright‘s ideas and intentions behind the play.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The setting of the first part is a transatlantic liner. The liner is not only a voyage ship, but is also a symbol of a wide gulf between the world of the worker and the world of the passenger. The audience experiences the two social spheres, the lower and upper social classes, through Yank and Mildred Douglas, who embody the worker and the aristocratic, over-privileged child. Yank and the firemen work within the cramped and hot stokehole where "one hanging electric bulb sheds just enough light through the murky air laden with coal dust to pile up masses of shadows everywhere" (O‘Neill 1188). In contrast, on the promenade deck, Mildred and her Aunt are able to see "the beautiful, vivid life of the sea all about – sunshine on the deck in a great flood, the fresh sea wind blowing across it" (1184). Furthermore, the firemen‘s forecastle— workplace where coal is held—of the ocean liner is depicted as a cage: "The lines of the bunks, the uprights supporting them, cross each other like the steel framework of a cage" (1177). The men exist in a symbolically cramped world, void of opportunity and the harsh division of classes in the machine age.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Steel is a key factor in the development of the story. It stands for great power, industrialization, and the repression of the working class. Although Yank exclaims in the first scene that he is steel, "the muscles and the punch behind it," (O‘Neill 1183) he is at the same time closed into a virtual cage of steel created by the ship around him. In his conversation with Yank, Paddy concludes that the men shoveling coal aboard the steam ship are caged in by steel, without sight of land or sea like ―apes in the zoo" (1182). The steel also represents the technology that forces Yank and the firemen into slave-like jobs. They are reduced to work animals, who are caged and abused. O‘Neill presents this idea in the sixth scene. When in jail, Yank realizes he is trapped and imprisoned in a social identity by companies similar to the one run by Mildred‘s father. Peter Clark and James Roberts explain Yank‘s thoughts very well in this
+scene, by stating:</p>
+<br>
+<p class="fullindent">At this point Yank has come to understand the nature of his own delusion, that far from being the force behind the steel, he is the victim of steel. Having been robbed of his humanity, his pride in his work, and reduced, literally, to the status of a domesticated ape, Yank reacts bitterly against the very steel with which he had previously declared his kinship: ‗her old man made ‗dis cage! Cages, locks, bolts, bars – dat‘s what it means! – holdin‘ me down wit him at the top!‘ (54)</p>
+<br> 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equally important as the first two symbols in <em>The Hairy Ape</em> is Mildred‘s white dress. Besides the black and white contrast that it provides between the coal-dusted men and herself, Mildred‘s white dress has a very strong impact on Yank. Through her ghost-like appearance, O‘Neill depicts not objective reality, but the subjective emotions and responses that Mildred‘s dress arouses in Yank. Mildred seems to represent "something," to bring "something" out of Yank that he did not give any attention to before. He repeatedly confesses that "she was all white. I thought she was a ghost," "she didn‘t belong," "she‘s new to me" (1192–1193). Floyd depicts Yank‘s experience by stating: "The encounter with Mildred rouses him from his lethargy and has a twofold effect on him: it makes him aware of his social inferiority and conscious of his inadequacies as a human being" (241). Mildred is different from raw, physical nature. To Yank‘s consciousness, she transcends nature; she belongs to the spiritual realm. She makes him feel subhuman, at the very core of his being. In the presence of this "white apparition" (O‘Neill 1189) he is indeed crushed, debased. He feels inhuman, alienated from society. Due to the environment in which he works and spends his entire time, Yank becomes beast-like as his humanity is covered by dust and coal. Floyd expresses that Yank "has adapted to his environment mechanically. He has worshiped the machine, becoming one with it. Proud of his animal strength and his ability to satisfy the insatiable appetite of the machine, he has never developed a social presence" (241).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The alienation that Yank experiences throughout the play, in his pursuit of belonging, is skillfully emphasized by O‘Neill through symbols like the transatlantic liner, the steel, and Mildred‘s white dress. The ship serves as a launching place for Yank‘s quest and also as a line of separation between his world and that of the aristocratic class. The firemen are deprived of human qualities. This irreversible process of degradation takes place in the bottom of the ship, where the men are covered in dust, without any connection with the world outside. On the deck, the image is quite the opposite. The passengers enjoy the sea breeze, ignoring the situation of the people below. The idea of separation is reinforced by the steel. Whether it is the coal shovels that the men use, the bars of the prison, or the bars of the gorilla‘s cage in the zoo, the steel represents division, and enslavement of the working class. Yank is a direct target of the powerful influence of the steel.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, his deep pursuit of identity and acceptance commences when he sees Mildred. According to playwright Etta Worthington,</p>
+<br>
+<p class="fullindent">In the course of the play Yank goes from the cocky leader of the mighty firemen to a heap of a human being, crushed physically and morally. The fateful encounter with Mildred puts his world on edge. He is a man beside himself when her look of horror and revulsion emblazons itself on his psyche. His worldview is shattered as he realizes he is not the king of anything. And he sets out roaring like a wounded beast.</p>
+<br>
+<p>Thus, the heights of meaning symbolized by the white dress sink into the depths of the ship, disrupting the equilibrium that had existed in Yank‘s reality.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>The Hairy Ape</em> is one of O‘Neill‘s greatest early works, a moving theatrical experience. In depicting Yank‘s struggle to find his place in the technology-driven world, the author successfully integrates expressionistic ideas and symbols in the play. As long as modern technology continues to take hold of whomever it encounters, society will find more dehumanized, Yank-like individuals who seek to belong. Regrettably, technology created to bring progress and beneficial changes, will inevitably devastate mankind (Floyd 247–248).
+</p>
+<br>
+<br>
+<center><strong>Works Cited</strong></center>
+
+<p class="hangingindent">Clark, Peter, Roberts L. James. <em>The Emperor Jones, The Hairy Ape & Mourning Becomes Electra</em>. 1966. NetLibrary. Sims Memorial Library, Southeastern Louisiana University, Hammond, LA. 15 Nov. 2008 < http://www.netlibrary.com.ezproxy.selu.edu>.</p>
+<br>
+<p class="hangingindent">Floyd, Virginia. <em>The Plays of Eugene O’Neill</em>. New York: Frederick Ungar Publishing Co., 1985.</p>
+<br>
+<p class="hangingindent">O‘Neill, Eugene. The Hairy Ape. The Heath Anthology of American Literature Volume II. Eds. Paul Lauter, et al. Boston: Houghton Mifflin, 2006. 1177-1208.</p>
+<br>
+<p class="hangingindent">Worthington, Etta. <em>"The Hairy Ape</em> (Criticism)." <em>Answers.com</em>. 2006. 17 Nov. 2008.< http://www.answers.com/topic/the-hairy-ape- play-7>.</p>
+<br><br>
+
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+<center><img src="horizontaline.png" width="920" height="15"/></center>
+<br>
+
+<center> <a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="40" height="50" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="65" height="50" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="213" height="50" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="38" height="50" id="facebook" alt="Facebook" /></a><br><br>
+©2014
+<br></center>
+<!-- end .container --></div>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

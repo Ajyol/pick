@@ -1,0 +1,41 @@
+@charset "UTF-8";
+#navigation {
+	top: 0;
+	position: fixed;
+	width: 960px;
+	height: 151px;
+	background-image: url(headerr2.png);
+	z-index: 999;
+	position: fixed;
+}
+
+
+#navigation #home { 
+margin-top: 119px;
+margin-left: 0px;
+position: absolute;
+}
+#navigation #features {
+	margin-top: 119px;
+	margin-left: 150px;
+	position: absolute;
+}
+#navigation #archives {
+	margin-top: 119px;
+	margin-left: 350px;
+	position: absolute;
+	
+}
+#navigation #submissions {
+	margin-top: 119px;
+	margin-left: 487px;
+	position: absolute;
+}
+
+#navigation #resources {
+	margin-top: 119px;
+	margin-left: 730px;
+	position: absolute;
+	
+}
+

@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>René Descartes: Father of Modern Philosophy and Scholasticism</strong></h2>
+</center>
+<br>
+<p><strong>Sarah Venable</strong></p>
+<br>
+<p><strong>Course:</strong> Philosophy 301<br></p>
+<p><strong>Instructor:</strong> Dr. Barbara Forrest<br></p>
+<p><strong>Assignment:</strong> Research Paper<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For centuries, the Roman Catholic Church completely dominated European thought. It had become the most powerful ruling force, leaving monarchs susceptible to its control through the threat of excommunication. For the everyday European, contradicting or questioning any aspect of Church doctrine could result in imprisonment, or even death. Scholars were bound by fear to avoid appearing too radical. However, the modern academic need not fear such retribution today. Learning has moved from the control of the Church and has become secularized due in
+part to the work of such thinkers as Descartes.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;René Descartes, who was interested in both science and philosophy, introduced his readers to the idea of separating academic knowledge from religious doctrine. He claimed science filled with uncertainty and myth could never promote learning or the advancement ofsociety. Descartes responded to the growing conflict between these two forces with an attempt to bring clarity. He was willing to challenge the accepted ideas of his day and introduce change. Religion had not been separate from science in the past. By philosophy and science using reason as its cornerstone, science effected a substantial increase in knowledge.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After a period of widespread illiteracy, Europe began to move forward in education by rediscovering Greek and Roman texts filled with science, mathematics, and philosophy. As time progressed and learning increased, the Church began to loosen its iron grip over the people. Church officials recognized a need to educate people as long as subject material was well controlled. Religious leaders wanted to give the people enough knowledge to benefit them without putting the Church in the inconvenient position of losing power.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“The Dark Ages culminated in an attempt of the Scholastics–Abelard, Albert the Great, Thomas Aquinas–to introduce more natural light into religious doctrine. They led the pagan child Reason into the Temple of Faith and gave it orders to play there as it pleased–without ever leaving the temple.”1 In the 13th century, Thomas Aquinas had been given the task of using Aristotelian thought, along with other classical influences, to form these ideas into something that could be used by the Church. His work was later accepted and employed by Jesuit educators, beginning in the 16th century. Earlier, however, during the 14th century Renaissance, men had already begun to look back to classical influences for art and to consider science and philosophy from a more secular view. The Church saw this as an imminent threat and, rather than omitting
+or doing away with science, decided to blend religion with that threat. Learning could then be checked, and any potentially dangerous ideas could be done away with before their influences became widespread. However, men like Galileo made their ideas known. These pre- Enlightenment thinkers saw a need for a separation between faith and science. They were not questioning religious doctrine; rather, they attempted to demonstrate the fact that science and similar disciplines cannot coexist when they are combined with the ideas of religion.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Academic scholarship improved in Western Europe after 1453 when the Turks took control of Constantinople; additional Greek and Roman texts made their way into Europe through Byzantine scholars who migrated westward. Europe now had access to the knowledge that the Arabic scholars had preserved after the fall of the Roman Empire. The world, as a result, became a vast field for discovery. “In the course of little more than a century there followed, namely, the development of printing, the great voyages of Columbus, the explorations and conquests of the Americas, the Protestant Reformation, the achievement of the Copernican theory of the universe, and finally, in a very large measure through Descartes himself, the emancipation of philosophic and scientific thought from the confining bonds of the medieval scholasticism.”2  Society was greatly altered by the accessibility of this knowledge; feudalism had ended in the majority of Western Europe, and education became more widespread. As a result, technology and discovery advanced to a higher level and pushed society forward. Descartes and other scholars then took advantage of religious and scientific separation to add the final element needed to begin modern thought.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Jesuit schools, one of which housed the young Descartes, brought a revolutionary style to learning. One could study among different social and economic classes despite one‟s poverty, which offered some boys the opportunity to emerge from the shadow of medieval thinking. Students had to master one subject at a time before progressing to the next, beginning with grammar before moving on to the humanities, rhetoric, philosophy, mathematics, and science. Physical and spiritual exercise followed mental exercise, with the goal of producing ideal members of European society. As a Catholic order, Jesuit educators taught in Latin, only employing the vernacular when absolutely necessary. The humanities received the greatest attention because they were the subjects one would study at a lower level of education, with the remainder being pursued in a university. Science and philosophy were also less developed and were not as compatable with the Church as classical languages and rhetoric.3 Therefore, the Church easily influenced European thought.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descartes' left for the Jesuit school of La Flèche when he was eight years old.4 Because of his poor health, he was excused from participating in many student responsibilities. Descartes remained in bed while his peers performed their morning chores and activities, which led to his custom of morning contemplation and meditation before beginning the day.5 He had little interest in language, history, or similar subjects, but was greatly fascinated by mathematics, science, and philosophy. However, science and philosophy had been reduced to distorted translations of Aristotle and other earlier thinkers to satisfy the Church. This censorship was merely a device employed to keep inquiring minds at bay and to uphold the Church‟s control and order. Counteracting this censorship, mathematics was the only subject that could be presented factually, thus giving Descartes the certainty he desired in all things.6</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After he had completed his education, Descartes had an urge to see the world. He joined the military in order to travel. The Thirty Years War, which was still very much alive despite the end of feudalism, gave Descartes the opportunity to see much of Europe. The war, along with the rest of his military involvement, catapulted the young Descartes into the company of intellectuals serving in the military who were free to come and go as they wished. This setting was ideal. Not the most daring soldier, he found an environment where his thirst for learning was satisfied with little danger to his well-being. It is highly unlikely that Descartes fought in any battle or conflict, giving him the opportunity to indulge his love of idle thinking. It was during his time with the Catholic army that he finally reached the overwhelming conclusions that were the product of his years of previous thought and contemplation. He found the answer to all of the doubts of his youth that had been a subject of unending meditation until adulthood.7</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After his military service had come to a close, Descartes traveled throughout Europe. At twenty-nine years old, he felt that the time had come to “develop the thoughts which for years had been seething within him.”8 He began pursuing his passion during a time when the scholasticism of the Church was under attack and was ever so slightly losing its footing. Over time, the Church‟s use of the Inquisition as retaliation against scholars left Holland as the only safe haven for academic inquiry. The country had just won its independence and was extremely tolerant of religion. One could practice any doctrine to which he was inclined; therefore, academic scholars flocked to Holland to be free of the Inquisition. Descartes also found refuge for his pursuit of knowledge. However, he did not feel that Holland was completely secure.9
+He had nearly completed his first major work of philosophy, The World, when he learned
+of Galileo‟s fate, before the Inquisition, for his works in science. Although Descartes had been working secretly in Holland, with his whereabouts known only to his friend Father Marin Mersenne, he completely destroyed his book and notes. He was safe in Holland but thought it best to take every precaution necessary to preserve his well-being. The power of the Church reduced four years of his time and effort to a pile of ashes. He feared publishing any of his works before his death lest they fall into the hands of the Inquisition. Yet, there was pride rooted in Descartes that overcame his fear. He believed that his ideas were so solid and unquestionable that he felt they must be made known, and so he was eventually persuaded to publish. The language of the Church was Latin and because of the Church‟s control over academics, any significant piece of literature followed custom and was also distributed in Latin. Descartes chose to break tradition and publish his Discourse on the Method in the vernacular French. This made his philosophy more easily accessible to the common man of his day and left very little room for
+distortion from the Catholic Church.10</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descartes was a man who believed deeply in his ideas, to the point of conceit. Despite its many errors, he felt there was no need for correction in his Discourse on the Method. Disregarding the study of works of past thinkers, he believed that his findings were of such value that they did not need the support of previously accepted ideas. According to Virgil C. Aldrich, “this naïve contempt for book-recorded knowledge of the past was reflected in his disciple Malebranche, who said simply: our revered parents Adam and Eve knew no history; why should we know any?”11 Although he was brilliant, Descartes made mistakes in his work that could have been corrected if he had merely accepted the need for admitting error.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descartes' use of doubt to demonstrate his thesis in <em>Meditations</em> was completely unorthodox. As R. E. Langer observes, It is not easy for us to recognize now the profundity of these conclusions, which then exalted Descartes almost to the point of ecstasy. They were, however, revolutionary enough, and in their development in later years was to be consummated the transition from the medieval to the modern philosophy. It was in every sense a feat of magnificent intellectual heroism, to conclude that the spell of the past could and must be broken, that the oracular authority of antiquity had to be disregarded, and that a true reliance could be placed, and could only be placed, upon one‟s self and upon one‟s power to think.12</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;He continues by demonstrating Descartes‟ methods of widening the gap between faith and academics. Descartes began his composition of the <em>Meditations</em> by expressing a need to disregard all of his beliefs from childhood until his present state, including any Thomism from La Flèche. However, he did not fully reject every aspect of religion or attack the belief in God‟s existence. Instead, he doubted his senses and anything they revealed. For instance, he moved to his famous “Dream Argument:” since his senses had fooled him into believing that he was awake while dreaming, he questioned whether he was awake as he sat before his fireplace writing. Although
+he never used the term, he performed what has been labeled a “thought experiment.” He relied completely upon what his mind revealed to him to prove the reality of any component of the physical world before accepting its existence. Sensory observation and religious doctrines were until that time the only elements used to confirm reality, yet Descartes felt it necessary to challenge these methods.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descartes wanted to use doubt to show what was true. He was challenging all of the ideas accepted on the basis of prejudice and tradition, as well as those notions circulated by the Church without any factual basis. By forcing the reader to examine his beliefs, he hoped to bring clarity and truth.13 His method of proving his point was completely new for his time; for example, he examined philosophy from the first-person standpoint. In fact, his first realization was that he, Descartes, existed because he was able to think. This further separates his reasoning from the influence of the Church. He did not first say that he existed because he has been created by an all-powerful God; completely independent of God, he knew that he existed because he was thinking. Descartes took a very secular approach to philosophy by removing himself from religious influences as much as possible and, as previously stated, by writing in the vernacular.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Although still wishing to separate scholarship from faith, Descartes was careful not to seem too radical. He knew the strength of the Church and the ways of the Inquisition. He states in his writing that “there may indeed be those who would prefer to deny the existence of a God so powerful, rather than believe that all other things are uncertain.”14 He excluded himself from this group to avoid seeming sacrilegious. Descartes knew that to insult the Church could mean jeopardizing both his work and his life, which was far from his goal. He sought to bring absolute certainty rather than conflict.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descartes also had personal reasons other than those mentioned above for maintaining an air of respect for the Church. He had a great deal of esteem for the Jesuit fathers and sought their approval even in adulthood. He was also Catholic and did not wish to be excommunicated. That would have been an unbearable disgrace for Descartes. Even though he was not very spiritual, he attempted to uphold all aspects of Catholicism.15</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The <em>Meditations'</em> format also reveals Descartes‟ mathematical background. His argument is structured as a logical proof, beginning with that which is being proven and arriving, through a detailed explanation, at the desired conclusion. Descartes' discussion of universal qualities also reflects mathematics: “extension, the figure of extended things, their quantity or magnitude and number, as also the place in which they are, the time which measures their duration, and so
+on.”16 Descartes sought to provide certainty to the world by employing mathematics in the <em>Meditations</em> since he believed in its correctness. He had been trained by some of the most brilliant mathematical minds of his day and was confident in their methods.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descartes work greatly contributed to the secularization of academics. Science and philosophy broke away from tradition to bring a new form of scholarship that continues to benefit and influence society. Medical advances, an increase in technology, and many other changes resulted. He used methods that were completely unconventional for his time to express his points. His works followed a logical, mathematical pattern that incorporated his knowledge of that field. In a revolutionary step, Descartes removed as much of the Church‟s influence as possible from his research. He focused on man‟s own knowledge and reasoning to initiate a change in philosophical approaches. Recognizing the danger of allowing faith to completely dictate the works of scholars, he helped open the gate to the Enlightenment, in which science was able to more clearly explain how the world functions. As R. E. Langer writes, “He awakened mankind out of the sleep of dogma, and, again quoting from Carlyle, he continues „ruling from
+his grave whole nations and generations.‟”17 Descartes paved the way for the academics of today and continues to have an impact upon modern society.</p>
+<br>
+<br>
+ 
+
+
+<p>Notes</p><br>
+
+<p class="hangingindent">1. Virgil C. Aldrich, “DesCartes‟ Method of Doubt,” <u> Philosophy</u> 4, no. 4 (October 1937): 396.</p>
+<br>
+<p class="hangingindent">2. R. E. Langer, “Rene Descartes,” <u> American Mathematical Monthly</u> 4, no. 8 (October 1937): 496.</p>
+<br>
+<p class="hangingindent">3. John E. Wise, “Jesuit School Beginnings,” <u>History of Education</u>  1, no. 1 (March 1961): 30.</p>
+<br>
+<p>4. Langer, 498.</p>
+<br>
+<p class="hangingindent">5. B. F. Finkel, “Biography: Rene Descartes,”  <u>American Mathematical Monthly</u> 5, no. 8/9 (August- September 1898): 192.</p>
+<br>
+<p>6. Langer, 497.</p>
+<br>
+<p>7. Langer, 500.</p>
+<br>
+<p>8. Langer, 502.</p>
+<br>
+<p>9. Langer, 502-504.</p>
+<br>
+<p>10. Langer, 503-504.</p>
+<br>
+<p>11. Aldrich, 400.</p>
+<br>
+<p>12. Langer, 501-502.</p>
+<br>
+<p>13. Aldrich, 402.</p>
+<br>
+<p class="hangingindent">14. René Descartes, <em>Discourse on the Method</em>, in <em>Descartes & Spinoza</em>, ed. Robert M. Hutchins, vol. 31 of <em>Great Books of the Western World</em> (Chicago: University of Chicago Press, 1952), 76.</p>
+<br>
+<p>15. Langer, 497, 504.</p>
+<br>
+<p>16. Hutchins, 76.</p>
+<br>
+<p>17. Langer, 512.</p>
+ <br><br>
+ 
+<center>Bibliography</center>
+
+<p class="hangingindent">Aldrich, Virgil C. “DesCartes‟ Method of Doubt.”  <u>Philosophy</u> 4, no. 4 (October 1937): 395-411.</p>
+<br>
+
+<p class="hangingindent">Finkel, B. F. “Biography: Rene Descartes.”  <u>American Mathematical Monthly</u> 5, no. 8/9 (August- September 1898): 191-195.</p>
+<br>
+<p class="hangingindent">Descartes, René. <u>Discourse on the Method</u>. Vol. 31 of <u>Great Books of the Western World</u>,  edited by Robert M. Hutchins. Chicago: University of Chicago Press, 1952.</p>
+<br>
+<p class="hangingindent">Langer, R. E. “Rene Descartes.”  <u>American Mathematical Monthly</u> 44, no. 8 (October 1937): 495-512.</p>
+<br>
+<p class="hangingindent">Sebba, Gregor. “Some Open Problems in Descartes Research.” <u> Modern Language Notes</u>  75, no. 3 (March 1960): 222-229.</p>
+<br>
+<p class="hangingindent">Sutherland, N. M. “The Origins of the Thirty Years War and the Structure of European Politics.” <u>English Historical Review</u>  107, no. 424 (July 1992): 587-625.</p>
+<br>
+<p class="hangingindent">Wise, John E. “Jesuit School Beginnings.”  <u>History of Education</u>  1, no. 1 (March 1961): 28-31.</p>
+<br>
+<br>
+
+
+
+<p><strong>Dr. Forrest’s Comments:</strong> <em>Sarah’s paper on Descartes demonstrates three things that can benefit students in their writing. First, she actually read the work of Descartes himself in addition to her secondary sources. Students tend to limit their research only to the secondary sources about their chosen thinkers. Second, the paper shows the value of a good research. Sarah’s research was well-focused, producing excellent sources that were relevant to her topic. Third, her paper demonstrates how a few good sources, used thoroughly, can be better than a greater number used superficially. Sarah used five sources extremely well. She was thus able to actually spend the time necessary to read and understand what she used. Her comprehension of her sources enabled her to write a paper that truly demonstrates what she learned from this assignment.</em>
+
+</p>
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<center><img src="horizontaline.png" width="920" height="12"/></center>
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

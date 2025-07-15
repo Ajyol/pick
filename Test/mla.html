@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 40px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.fifthindent {
+	padding-left: 70px;
+}
+.hangingindent {
+	text-indent: -10px;
+	padding-left: 80px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','mlaline.png','chicagoline.png','apaline.png','purdueline.png','thewebteamline.png')">
+
+<div class="container">
+
+
+<div id="navigation">
+
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" /></a></div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br>
+     <br><br><br>
+   </p>
+   <table> <tr><td width="650" valign="top">
+   
+   <h2>Modern Language Association (MLA)</h2>
+
+
+
+<p class="fullindent"><strong>What Is <a href="http://www.mla.org/style" target="_blank">MLA Style</a>?</strong>
+<br><br>
+All fields of research agree on the need to document scholarly borrowings, but documentation conventions vary because of the different needs of scholarly disciplines. MLA style for documentation is widely used in the humanities, especially in writing on language and literature. Generally simpler and more concise than other styles, MLA style features brief parenthetical citations in the text keyed to an alphabetical list of works cited that appears at the end of the work.<br><br>
+
+MLA style has been widely adopted by schools, academic departments, and instructors for over half a century. The association's guidelines are also used by over 1,100 scholarly and literary journals, newsletters, and magazines and by many university and commercial presses. The MLA's guidelines are followed throughout North America and in Brazil, China, India, Japan, Taiwan, and other countries around the world. 
+<br><br>
+The MLA publishes two authoritative explanations of MLA style: the MLA Handbook for Writers of Research Papers and the MLA Style Manual and Guide to Scholarly Publishing.</p>
+
+
+
+<p class="fullindent"><strong>What is new in the seventh edition of the <a href="http://www.mla.org/style/handbook_faq/whatsnew_7edhandbook" target="_blank">MLA Handbook</a>?</strong>
+<br><br>
+The seventh edition introduces student writers to a significant revision of MLA documentation style. In the past, listing the medium of publication in the works-cited list was required only for works in media other than print (e.g., publications on CD-ROM, articles in online databases); print was considered the default medium and was therefore not listed. The MLA no longer recognizes a default medium and instead calls for listing the medium of publication in every entry in the list of works cited.<br><br>
+
+The seventh edition also introduces simplified guidelines for citing works on the Web. For example, the MLA no longer recommends the inclusion of URLs in the works-cited-list entries for Web publications. MLA guidelines now call for the inclusion of both volume and issue numbers in listings for journal articles in the list of works cited. We provide new guidelines for citing forms that are gaining more scholarly attention, such as graphic narratives and digital files.<br><br>
+
+This edition also introduces revised guidelines for preparing a printed paper. For instance, our examples assume that students will use italics, not underlining, for text that would be italicized in publication. The preface of the MLA Handbook gives additional details on what is new in the seventh edition.</p>
+
+
+
+<p class="fullindent">How do I <a href="http://www.mla.org/style/handbook_faq/cite_an_ebook" target="_blank">cite an e-book</a>?<br><br>
+
+In general, a work formatted for reading on an electronic device like Kindle, Nook, and iPad is covered by 5.7.18. Begin the entry in the works-cited list like the entry for a comparable printed work and end it with a designation of the medium of publication. The medium is the type of electronic file, such as Kindle file, Nook file, EPUB file, or PDF file. If you cannot identify the file type, use Digital file. For example:</p>
+
+<p class="hangingindent">Rowley, Hazel. Franklin and Eleanor: An Extraordinary Marriage. New York: Farrar, 
+2010. Kindle file.</p>
+
+<p class="fullindent">If the work presents electronic and print publication information, the electronic information should usually be cited.<br><br>
+
+Most electronic readers include a numbering system that tells users their location in the work. Do not cite this numbering, because it may not appear consistently to other users. If the work is divided into stable numbered sections like chapters, the numbers of those sections may be cited, with a label identifying the nature of the number (6.4.2):</p>
+
+<p class="fifthindent">According to Hazel Rowley, Franklin and Eleanor Roosevelt began their honeymoon with a week’s stay at Hyde Park (ch. 2).</p>
+
+<p class="fullindent">or</p>
+
+<p class="fifthindent">Franklin and Eleanor Roosevelt began their honeymoon with a week’s stay at Hyde Park 
+(Rowley, ch. 2).</p>
+
+<p class="fullindent">(The abbreviation ch. is shown in 7.4. There is a comma in a parenthetical citation after the author’s name if the following reference begins with a word.)</p>
+
+<p class="fullindent">If the work is a PDF file with fixed pages, cite the page numbers. If the work lacks any kind of stable section numbering, the work has to be cited as a whole (6.4.1).</p>
+
+
+
+<p class="fullindent"><strong>How do I <a href="http://www.mla.org/style/handbook_faq/cite_a_tweet" target="_blank">cite a tweet</a>?</strong></p>
+
+<p class="fullindent">Begin the entry in the works-cited list with the author’s real name and, in parentheses, user name, if both are known and they differ. If only the user name is known, give it alone.<br>
+Next provide the entire text of the tweet in quotation marks, without changing the capitalization. Conclude the entry with the date and time of the message and the medium of publication (Tweet). For example:</p>
+
+<p class="hangingindent">Athar, Sohaib (ReallyVirtual). “Helicopter hovering above Abbottabad at 1AM (is a rare event).” 1 May 2011, 3:58 p.m. Tweet.</p>
+
+<p class="fullindent">The date and time of a message on Twitter reflect the reader’s time zone. Readers in different time zones see different times and, possibly, dates on the same tweet. The date and time that were in effect for the writer of the tweet when it was transmitted are normally not known. Thus, the date and time displayed on Twitter are only approximate guides to the timing of a tweet. However, they allow a researcher to precisely compare the timing of tweets as long as the tweets are all read in a single time zone.</p>
+
+<p class="fullindent">In the main text of the paper, a tweet is cited in its entirety (6.4.1):</p>
+
+<p class="fifthindent">Sohaib Athar noted that the presence of a helicopter at that hour was “a rare event.”</p>
+
+<p class="fullindent">or</p>
+
+<p class="fifthindent">The presence of a helicopter at that hour was “a rare event” (Athar).</p>
+
+
+
+
+<p class="fullindent"><strong>Should I use <a href="http://www.mla.org/style/handbook_faq/style_faq2" target="_blank">underlining or italics in my research paper</a>?</strong></p>
+<p class="fullindent">
+Writers commonly use italics for text that would be italicized in a publication. The examples in the MLA Handbook follow this practice. Most word-processing programs and computer printers permit the reproduction of italic type. Choose a type font in which the italic style contrasts clearly with the regular style.</p>
+
+
+<p class="fullindent"><strong>How many <a href="http://www.mla.org/style/handbook_faq/style_faq3" target="_blank">spaces should I leave after a period or other concluding mark of punctuation</a>?</strong></p>
+
+<p class="fullindent">Publications in the United States today usually have the same spacing after a punctuation mark as between words on the same line. Since word processors make available the same fonts used by typesetters for printed works, many writers, influenced by the look of typeset publications, now leave only one space after a concluding punctuation mark. In addition, most publishers' guidelines for preparing electronic manuscripts ask authors to type only the spaces that are to appear in print.</p>
+
+<p class="fullindent">Because it is increasingly common for papers and manuscripts to be prepared with a single space after all punctuation marks, this spacing is shown in the examples in the MLA Handbook and the MLA Style Manual. As a practical matter, however, there is nothing wrong with using two spaces after concluding punctuation marks unless an instructor or editor requests that you do otherwise.</p>
+
+
+<p class="fullindent"><strong>How do I create the <a href="http://www.mla.org/style/handbook_faq/how_do_i_create_the" target="_blank">indention that the MLA shows for a works-cited list</a>?</strong> </p>
+
+<p class="fullindent">We recommend the use of hanging indention for the entries in the works-cited list: the first line of each entry is flush left, and subsequent lines in the entry are indented. Hanging indention makes alphabetical lists easier to use.</p>
+
+<p class="fullindent">In a word processor, the best way to create this indention is to highlight the paragraphs that are (or will be) entries and then choose hanging indention in the options for formatting paragraphs.</p>
+
+
+</td>
+<td valign="top"> <img src="verticalline.png" align="left" width="10" height="250" alt="line" /></td><td valign="top">
+<a href="mla.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('mla','','mlaline.png',1)"><img src="mla.png" alt="MLA" width="165" height="30" id="mla" /></a><br><br>
+<a href="chicago.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('chicago','','chicagoline.png',1)"><img src="chicago.png" alt="Chicago Style" width="165" height="30" id="chicago" /></a><br><br>
+<a href="apa.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('apa','','apaline.png',1)"><img src="apa.png" alt="APA" width="165" height="30" id="apa" /></a><br><br>
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('purdue','','purdueline.png',1)" target="_blank"><img src="purdue.png" alt="The Writing Center" width="203" height="30" id="purdue" /></a><br>
+</td></tr></table>
+   <br><br><br>
+<!-- Place Slideshow Here-->
+<br><br><br><br><br>
+<br><!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<p><center><img src="horizontaline.png" width="920" height="12"/></center></p>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+
+<!-- end .container --></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

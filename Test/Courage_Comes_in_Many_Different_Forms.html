@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>Courage Comes in Many Different Forms</strong></h2>
+</center>
+<br>
+<p><strong>Heidi Rebecca Roundtree</strong></p>
+<br>
+<p><strong>Course:</strong> EDUC 415<br></p>
+<p><strong>Instructor:</strong> Dr. Cheryl Edwards<br></p>
+<p><strong>Assignment:</strong> Oral History<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;George Alexander Roundtree, my grandfather, agreed to do an interview about his early life. We had never really talked about how life was different in the days when he was growing up. I realized that this was something that I would really like to know, while still having him here to ask. My grandfather experienced firsthand two major occurrences in the history of the United States, the Great Depression and World War II. He was enthusiastic and excited to share some of his memories, and I actually felt guilty that I had not done this sooner. All it took was a few questions from me for my grandfather to eagerly tell me about his life. It was as if he had been waiting, wanting to tell his stories, and all he needed was to be asked. I will be forever grateful that he had time to share his experiences.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;George Roundtree was born on Valentine’s Day of 1930, at the beginning of The Great Depression. He had an older sister named Lee. When George was three-years-old, his mother became ill and died suddenly. Their father did not think himself capable of caring for two young children and working at the same time, so he took George and Lee to an orphanage. The orphanage did not take children under the age of four, so his father pretended that George was four to get him in. The orphanage had two homes, one for girls and one for boys. Unfortunately, these homes were 50 miles apart. George and Lee were devastated to lose each other and were torn, crying and screaming, from each other’s arms. George lost his mother, his father, and his sister all in a week, and he was just three-years-old. My Aunt Lee told me this story a few times while I was growing up, and it amazed me every time. It almost sounds like a movie, and it is difficult to believe now that my grandfather had such a terrible beginning. Of course, my grandfather does not remember many details of this time, as he was so young.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;George lived in the orphanage for five years. He has many good memories of the orphanage and the men who took care of him were very kind. He never went to bed hungry, and he always had clean clothes to wear. In 1938, George’s father remarried. He and his new wife went to the orphanages and brought George and Lee home. His father’s new wife had four children of her own, and they all lived together. George calls this woman his mother and says that without her, he probably would have stayed in that orphanage until he was eighteen. When his step-mother became older and moved into a nursing home, he repaid her by visiting her every day. He did not miss one day in the four years she lived there.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;George was eleven-years-old on December 7, 1941, when Pearl Harbor was bombed. Although World War II started in other parts of the world in September of 1939, the United States had maintained neutrality until this point. George said that even though the United States was neutral in 1940, a one year draft plan was instituted in case war broke out. One Sunday afternoon, after coming home from church, he and his family were sitting around the dining room table eating lunch. Suddenly, he heard his brother scream, and the whole family ran into the living room where he was listening to the radio. They then heard the report of the bombing of Pearl Harbor. His father and his older brothers were distraught. They sat around for hours discussing what they thought the President should do. George will never forget President Franklin D. Roosevelt’s words describing the day’s terrible events “as a day that will live in infamy.” His brothers begged his father to let them enlist in the military the next day. His father said they would talk about it tomorrow. No one in his family could sleep that night. His mother cried all night because she knew that her two oldest sons would be going to war. Following the attack on Pearl Harbor before a joint session of Congress, President Roosevelt officially asked for a declaration of war on Japan.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;George’s two older brothers immediately enlisted, one in the Army, the other in the Navy. His oldest brother, who was an electrician, was in England within six weeks to prepare a tent city for the incoming American soldiers. His other brother was one of the first Navy frogmen, who was trained to dive and swim to carry out combat missions. Frogmen were also known by the more formal names of combat diver or combat swimmer. Combat swimming refers to surface swimming without a breathing apparatus for the purposes of coastal or ship infiltration, which is a traditional form of frogman activity and is thus an important feature of naval special operations. Over 3,000 men tried out to be a frogman in World War II, but only
+300 were chosen. The frogmen were involved in 12 invasions in the Pacific Ocean. They were the first military personnel to reach most territories. They often left messages in the sand of the beaches they swam up to for the soldiers who would be following soon. George’s brother told him that on one island, they were able to get a complete Japanese soldier’s uniform. George was not sure if this uniform was obtained after the Japanese soldier was killed or if they just found it.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While his brothers were away at war, George helped his family in any way he could. Everyone, including women and children, had chores to do and work they might not have done before the war started. So many young men were away at war in every community that there were many job openings. Before the war, there was a huge unemployment problem in the United States, but after the war began millions of new jobs were created. Women joined the workforce to replace the men who were drafted. President Roosevelt tried to create pride in the American workforce by telling them they were just as important to the war efforts as the soldiers on the front lines. George pointed out that the war could not have been won if not for the efforts of the women of the United States who worked to create the supplies the soldiers needed. Even children helped keep America running while the men were away at war. Schools were closed in the fall and sometimes in the late spring, so the children could help local farmers with their harvest. George went to live with his uncle in Mississippi one fall to help him tend his garden and harvest his crops. He missed a semester of school, but he caught up when he went back.
+One of the things that affected George’s family, and probably most families in the United States during World War II, was rationing. So many items that had been commonplace in stores and homes were now restricted by the government because they were trying to send as many supplies as possible to the soldiers overseas. Some of the rationed items were shoes, sugar, gas, medicine, and tires. Citizens were limited to one pair of shoes a year, and those shoes were made of cardboard. There was even a national speed limit of 35 miles per hour imposed to save gas and tires. There was an extreme shortage of gasoline and, therefore, it was severely rationed. Each driver had to prove to a rationing board that they had a need for gasoline, and the board decided how much they were allowed. There was a substance similar to paint thinner that was added to the gas tanks of cars to make gas last longer.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The war dominated everything around George, and he felt like his life revolved around, and depended on, what happened with the war. His family tried to stay informed about what was going on overseas. His mother wrote letters every week to her two older sons, and most weeks she received letters back. George said that his sister-in-law, who was married to his oldest brother, did not get a letter for three months; it got lost in the mail. She was terrified that something had happened to her husband.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;George’s family talked about the war every day. They also prayed every day. Newspaper and radio reports were dominated by war related issues. He and his family read and listened to everything they could about the war. They hoped for any mention of the areas the two oldest boys were at the time. Sometimes, George resented the war. He wished it would end so life could go back to normal. Of course, since he was the only male child left at home, he had more chores to do. He felt pressure to help his family during this time, and he tried to be careful not to eat too much food or tear up his clothes. He did not want to add to the worries of his mother and father.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;George loved to go to school because he felt it was an escape for him. Although there were mentions of the war here and there throughout the day, there were times when he and his classmates talked and learned about things that had absolutely nothing to do with the war. However, there was no real escape from the war. One student was selected to report to the class every day about what was happening, and George was the reporter for his class. He was very proud of this position, and he took his job seriously.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On June 6, 1944, a major announcement on the radio said American troops would stage a massive invasion on the beaches of Normandy in France. This invasion was to begin the Western Allies’ effort to liberate mainland Europe from Nazi occupation. With an invasion of such size, 20,000 allied troops were expected to be lost, but 10,000 soldiers lost their lives that day. Still, the invasion was considered a success, and George and his family knew the war would end soon and their loved ones would be coming home.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The war lasted another nine months after the D-Day invasions, but eventually, the Allied troops were successful, and it was over. On May 7 and 8, 1945, Victory in Europe was celebrated in London, England. On this day, the World War II Allies accepted the unconditional surrender of the armed forces of Nazi Germany. George said they might not have been in London, but there were also celebrations in his neighborhood during those two days. Although grocery shelves were empty and people had been very careful with their food until this point, neighbors up and down the streets cooked what they could and had a block party. Incredibly, although some young men from George’s neighborhood had been wounded in the war, none had been killed. It seemed maybe life might soon be back to normal. When President Franklin D. Roosevelt announced over the radio that the war was officially over, the whole family cheered, hugged, and cried.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;George’s brothers came home within six months of the President’s announcement, and life did go back to normal—somewhat. Life for George and his family, and actually life for a vast majority of the world, would never be completely the same as it had been. People feared something bad would happen that may drag their loved ones away again. They were careful with their money and with supplies in ways they had not been in the past. Basically, people were no longer as innocent and naïve as they may have been before. They had gone through a terrible ordeal; however, the war brought America, and each neighborhood within it, closer together.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;George went on to graduate from high school in 1948, and that year he joined the U.S. Army. He was first stationed in Germany, trying to help the American troops already stationed there, relieving some of their duties so the soldiers could take some time off. Eventually, George served in the Korean War. I tried to talk to him about this, but I found his focus always drifted back to World War II. I think he really saw that as a changing point for him, his family, and the world in general.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am and will be eternally grateful I interviewed my grandfather. I now know him in a way I am afraid I never could if I had not done this interview. I will never forget this time I was spent with him or the stories he had to tell. Most of all, I will never forget the emotion and vulnerability he revealed as he recalled such a difficult time of his life. It is a side of him I have never seen before. I admire my grandfather for being able to look back at what most people would consider to be, a difficult life with no complaints and how he was thankful for what he did have. I am proud of the man he has become, and have a newfound respect for him since hearing more details of his life. I also have a new respect for those who not only fight for our country during war, but also those who are left at home to wait, to worry, and to struggle to carry on during times of war. I hope one day to be able to share these memories with the rest of my family, so they will all know what a great man my grandfather is.
+</p>
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<center><img src="horizontaline.png" width="920" height="12"/></center>
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

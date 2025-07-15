@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>The Causes and Legacy <br>
+  of the Marshall Plan</strong></h2>
+</center>
+<br>
+<p><strong>Rachel Carazo</strong></p>
+<br>
+<p><strong>Course:</strong> Political Science 425<br></p>
+<p><strong>Instructor:</strong> Dr. Margaret Gonzalez-Perez<br></p>
+<p><strong>Assignment:</strong> Research<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;War—the basic struggle between humans, nations, and political ideology has many instigations and consequences. Sometimes, the legacy of these events remains current and worthy of continued consideration. One essential example of a military decision occurred at the end of the WWII when the political ideologies of the era allowed the men of Europe and the United States to enact the policy of the Marshall Plan. By reflecting upon the causes of the Marshall Plan, the stipulations of the plan itself along with its importance at the time and the continuing legacy of the Marshall Plan, a better understanding of the efforts which go into preventing and ameliorating the causes of warfare can be better recognized. The reasons for the current status in Europe can thus be validated since many “believed the Marshall Plan was the crucial first step in promoting cooperation among Europeans and laying the foundation for a European Common Market and unified Europe” (Clese xi).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since struggle and tragedy remain part of the human condition, modern politicians and ideologists‟ attempts to inhibit war must be considered before any attempts to relieve the effects of war. The modern example of the attempt to eradicate the use of war itself as a political tool is the 1925 Kellogg Pact. Scholar William Starr Myers reflects: “It is a great thing to have the nations of the world express their horror of war and their desire and intention to renounce it as an instrument of national policy,” especially since the Kellogg Pact’s moral value and lack of actual sanctions made it so popular (59). Nevertheless, once this all-encompassing solution failed, acknowledging the horrors of an imminent second World War, more practical attempts to ameliorate warfare began to emerge. One, the 1941 Lend-Lease Act, became vital to the progression toward the Marshall Plan since “[t]hrough its involvement in the Lend-Lease and UNRRA [United Nations Relief and Rehabilitation Administration], the United States gained experience in cooperation, shipping and handling, and also established a great many personal contacts in various countries” (Thorp 16). This means that the United States would become central to finding a solution.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This phase of intellectual action and supposition then instigates the emergence of what scholar Quentin L. Quade calls positive policy. These instances include efforts like the eventual Marshall Plan since it is a “policy that requires financial support, or new administrative authorizations, or the assignment of new personnel” (58). The creation of new committees and members came as a direct result of deliberations which led to the passage of the Marshall Plan. This process of positive policy visibly began as early as 1941 when Franklin D. Roosevelt and Winston Churchill met to create the Atlantic Charter. The eight main points of the agreement contained precepts essential to the future, especially Point Three of which “none was more idealistic, more liberally democratic, and more likely to trigger future conflict” since it envisioned the ability of European nations to self-determine their governments (Pisani 1). Not surprisingly, because of the democratic nature of the process of creating states, expectations for democracy at the end of this determination remained high. These measures were also sure to alienate the Soviets later on. Despite these hopes, the real hope for all of the nations centered on peace since no self-determination could occur otherwise. Once the conflict ended, the road to recovery lay open and the ideological “legacy of the [Second] World War […] to persuade the victors, though not the vanquished, that the costs of war exceeded the rewards” awaited a new solution (Keegen 594). Herein lay the importance of the American involvement in the creation of The Marshall Plan, the present-day results of which, although debated positively and negatively, could never be repeated (Clese x).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The main reason for the Marshall Plan’s conception as a $17 billion recovery program came from the real economic problem in Europe in the aftermath of the war. This problem centered on the plight of farmers and their food supplies, which led directly to food shortages in the rest of the nations (Marshall xvi). These issues were at the forefront of a devastated environment, and included the notion that</p>
+<br>
+<p class="fullindent">The economic and political rebirth of Western Europe was of critical importance to peace and stability. At the same time, that rebirth created the basis for a new solidarity among Europeans, a new “partnership” with the United States to guarantee Europeans security, and a balanced course of international economic development that would be profitable for all European nations. (Poos 7)</p>
+<br>
+<p>The inspiration for General Marshall’s speech at the Harvard University Commencement in June
+
+1947 stood as the beginning invitation for the process of and acceptance of the Marshall Plan. Because nothing better represents the original thoughts of the recovery program than the words of its originator, an analysis of the main parts of Marshall’s speech factor greatly into the program’s creation (Clese ix).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marshall began by targeting where the real center of devastation in Europe remained. He did not discredit the loss of life, social harmony, or material objects. However, for Marshall, “this visible destruction was probably less serious than the dislocation of the entire fabric of the European economy” (Marshall xvi). Everything had changed, from the war machine of the Germans, to wartime business and ethical standards. As Marshall reiterates through his examples, these facts mean that “the rehabilitation of the economic structure of Europe quite evidently will require much longer time and greater effort than had been foreseen" (Marshall xvi). Recognizing the immensity of the task, Marshall encouraged and even assured his audience that the task could not be forsaken and that the nation—the United States—must be prepared to participate in the long term.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The victory of the Allies placed even more of the obligation upon the United States. Marshall, a veteran of military service, recognized the needs for recovery even more than most people and the implications which such a program would contain. From his leadership role, he asserted that</p>
+<br>
+<p class="fullindent">it is logical that the United States should do whatever it is able to do to assist in the return of normal economic health in the world, without which there can be no political stability and no assured peace. Our policy is directed not against any country or doctrine but against hunger, poverty, desperation, and chaos. (Marshall xvii)</p>
+<br>
+<p>Therefore, Marshall’s, and consequently, America’s policy, stand evident. Economy rules over doctrine; however, any doctrine which opposes American efforts was not to be tolerated. Marshall then stipulated that “[t]he program should be a joint one, agreed to by a number of, if not all, European nations” since he believed in the alliance system which won the war and which they could also use to prevent war in the future. This set up the real success of the Marshall Plan, as aforementioned, with the ability for the aid to encourage international partnership (Marshall xviii). Yet even with these hopes admitted before the nation, the actual creation and implementation of the strategy began slowly, leaving much for politicians to consider after past failures in order to create a working system. The ability to recognize the faults already present in the system came from several assessments of the political and economic situation leading into the Marshall Plan. The first idea contingent with the self-determination clause in the Atlantic Charter became the Truman Doctrine which adamantly “proclaim[ed] that it must be the policy of the Unites States to support free peoples who are resisting attempted subjugation by armed minorities or by outside pressures,” namely communists, in an effort to contain their spread (Osgood 5). Nevertheless, this statement, according to Jacques Saunter “lacked a solid base” which could readily change the social balance in Europe (Saunter 1). The real victory had to be economic.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A solid understanding of the economic ranking of European countries at the time supported the need for the Marshall Plan. Barry Eichengreen’s descriptions of the first two phases which predated the Marshall Plan are worth quoting at length. For Eichengreen,</p>
+<br>
+<p class="fullindent">The first 18 months of the pre-Marshall Plan period, from mid-1945 through the end of 1946, were marked by rapid output increases. Industrial production had fallen to 30-40% of pre-war levels in Belgium, France and the Netherlands, and to less than 20% in Italy and Germany. The slump in industrial output reflected not the wholesale destruction of capacity, however, but disruption to the channels for obtaining inputs and distributing outputs. (Eichengreen 16)</p>
+<br>
+<p>Thus Eichengreen states what the real problem was with European economics and that the production input/output in most sectors plummeted from the war. More importantly, not only did the input/output decline, but the methods by which these processes functioned felt increased pressure, stopping the whole process and inhibiting any chance for easy improvement. Eichengreen then remarks upon how “[t]he second phase of the pre-Marshall Plan period, from the beginning of 1947 to the release of Marshall aid, [which] was marked by mounting difficulties” added to the already stagnant position of Europe (Eichengreen 18). The world recognized the need for immediate economic aid and the Marshall Plan filled this gap. Even though some scholars debate the real effect of the Plan, the importance which it sustained could not be underestimated even if all it did was allow “the avoidance of so abrupt, so painful, and so potentially dangerous an adjustment” which would have eventually occurred without it (Cleveland 87).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once the world established the need for Marshall Plan aid, the United States began to establish the details of the actual program, a four-year and three-month $13 billion ($80—100 billion today) enterprise for recovery products such as fuel, fertilizer, and farm equipment (Saunter 2). With additional industrial products like iron, steel, aluminum, cooper, and zinc taking up over half of the rest of the aid products, the overriding goal of the Marshall Plan intended to “[treat] Western Europe as a unit” in order to better allocate funds and goods, giving the Plan a second name, the European Recovery Program (Schelling 61). Scholar Wasily
+Leontief also stresses another factor often overlooked in regard to the Marshall Plan: science and education.</p>
+<br>
+<p class="fullindent">Science and technology had also been adversely affected by the war. The Marshall Plan required participating countries to accumulate counterfunds in their own currency to support students, intellectuals, professors, and science. This investment in human resources enabled participating countries to reconstruct themselves intellectually, scientifically, and professionally as well as physically. (Leontief 54)</p>
+<br>
+<p>Compounding these ideals, President Truman played a vital role in passing the bill through Congress. Jacques Saunter recounts: “In December 1947, President Truman presented the European Recovery Program to Congress. Congress adopted the Economic Cooperation Act in the spring of 1948. The act planned on $5 billion for the first 18 months of a four-year program” (2).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In addition to these efforts, President Truman next oversaw the creation of three cabinet committees to oversee the Marshall Plan. The first took charge of understanding the needs of the European nations. The second covered the availability of raw materials in order to ship overseas. The third examined the effects of the Marshall Plan on the United States economy, projecting short-term and long-term effects. Truman also initiated another important adjustment with the creation of a Citizens Committee for public relations regarding the information available on the Marshall Plan and its reception at home (Thorp 21).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On the European side, a similar committee began in order to satisfy the United States‟ desire that Europe be just as involved in Marshall Plan efforts. An Organization for European Economic Cooperation (OEEC) started in Paris under the leadership of Paul Henri-Spaak and Robert Marjolin (Saunter 3). This organization later evolved into the Organization for Economic Cooperation and Development (OECD), an advisory body which</p>
+<p class="fullindent">Promotes collaboration between international economic experts and government officials […and] provides expertise and supervision on matters concerning the domestic economies of member nations and their interactions within the global economy. (Loriaux 1)</p>
+<br>
+<p>Meanwhile in America, on April 3, 1948 the Foreign Assistance Act and Foreign Appropriation Act (1948) found support from the government, the requirements of which expected each nation to provide yearly agendas in order to help the United States allocate funds and equipment (Thorp 22). Surprisingly, there remained more to the process than just European concerns since “[t]he Economic Cooperation Act was passed in April 1948 as part of the Foreign Assistance Act, which also included aid to China, assistance to Greece and Turkey, and funds for UNICEF” (Eichengreen 21). Without these additional stipulations, changes in world economy in these nations could also have altered the balance of production, especially since Europe was not the only section of the globe affected by the WWII.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;During the application of the Marshall Plan, the statistics according to Eichengreen remained low, since “Marshall aid averaged only 2.5% of the combined national incomes of the recipient countries over the period it was in effect. Even at its height it could have financed no more than 20% of their capital formation” (15). This means that even though the Marshall Plan aid remained critical, it did not overwhelm the European economy, leaving much to the self- determination of Europeans themselves. Nevertheless, despite this small numerical input, the real change from the program occurred with output since “Between 1947 and 1951 industrial output
+in the participating countries rose by 55%” (Eichengreen 19). Skeptical or not about the value of the Marshall Plan, Eichengreen cannot deny the visible impact on outputs that the Marshall Plan provided for Europe, and as the Plan fulfills its initial intention, the results can never be realistically deemed a failure.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The importance of this aid arose from the fact that the German economy became centrally integrated with the rest of Europe, countering Soviet advances and moving the devastation of Germany (Saunter 3). The American attitude toward Germany directly countered other intentions prior to aid the Marshall Plan provided since “[h]olding down German industrial production limited German imports from the rest of Europe and hindered the continent’s recovery. Reversing the policy of limiting German production was necessary to stimulate European growth” (Eichengreen 21). Another attempted alliance occurred between France and Britain with the Soviets when George Bidault and Ernest Bevin met with V.I. Molotov (Thorp 20). The failed results of this conference introduced the reasons for the main dissident to the Marshall Plan, the Soviets, becoming the main “enemy” and instigators for realization of the precepts of the Truman Doctrine. According to Eichengreen:</p>
+<br>
+<p class="fullindent">The overarching reason for the refusal of the U.S.S.R. to accept Marshall Plan aid centered on the fact of their political ideology and isolationism from the capitalist world. Part of the problem lay also within the American expectations in the Marshall Plan since American aid also entailed a commitment on the part of the recipients to economic integration and a willingness to accept American input into the formulation of domestic policy. Once these conditions were spelled out, the Soviets rejected them, to no one’s surprise. (21)</p>
+<br>
+<p>The Soviets did not want any joint European cooperation looking into their affairs, therefore the breach between them could not be healed (Thorp 21). Only years later did the Soviets realize that some economic improvement would change the mindset of the people that derives from bare subsistence, but under Mikhail Gorbachev and his policy of glasnost, the changes came in the form of profits not a change in the economic system itself (Leontief 55-6).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;American fears of Soviet influence remained high especially “when the Soviet Union tried to influence the „self-determination‟ process in its own favor, [leaving] U.S. policymakers […] sure the outcome would be tainted” (Pisani 2). In order to combat this perceived threat— which the Truman Doctrine warned strictly against—Cold War scholar Sallie Pisani discusses the emergence of the Office of Policy and Coordination with covert operations. She states that “[t]he agency’s first major assignment was covert political assistance to the Marshall Plan” to make sure that the economic revival of Europe would not be undermined by Soviet interests, through both paramilitary but more importantly, non-violent subterfuge (6). Through these efforts over the ensuing years, the Marshall Plan ably lived out its existence and helped to bring Europe back into the economic, ideological, and material world markets with the United States determining the “[c]losure of the Marshall Plan […] by finding that most of the governments were capable of managing their own foreign trade without having a balance of payments deficit” (Schelling 64). From these successes of the implementation of the Marshall Plan, the legacy of the efforts in the present emerged to several of the men living at the time of its inception as well as new scholars and economists.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The legacy of the Marshall Plan is all-encompassing. Overall, the major success of the program involved the fact that as “[a] fundamental act of solidarity, it gave a new quality to relations between the U.S. and Europe and prepared the ground for a lasting commitment by Americans toward Europe” which evolved into several coalitions that function to this day (Saunter 3). The desired stabilization of the European Union of Payments, consisting of the effects of the Schuman Plan for integrated coal and steel between France and Germany—leading to the creation of the Economic Coal and Steel Community—all came together to factor into the creation of the European Union (Urwin 6). The 1952 Temporary Council Committee (TCC), formed in Paris, also led to the creation of NATO. Thus, the ability of the Marshall Plan to invite international collaboration “had also created a team that knew how to play the game” (Schelling
+69).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, not everyone finds that the Marshall Plan had as great an impact as is often asserted. Eichengreen believes the Marshall Plan to be critical yet overrated. His first reason for this assessment comes from the fact that:</p>
+<br>
+<p class="fullindent">The recipients of large amounts of Marshall aid recovered significantly faster than other industrial countries. Strikingly, however, the obvious channels through which the Marshall Plan could have affected European recovery—stimulating investment in plant and equipment, augmenting capacity to import, and financing public investment on infrastructure repair—were relatively unimportant. (15)</p>
+<br>
+<p>Therefore, Eichengreen questions the importance of the Marshall Plan because it did not affect key areas of the economy which he considered just as important as the ones the Plan did affect. He reminds scholars that “Europe was suffering a „market crisis‟, in which producers refused to bring goods to market, and workers and managers limited the effort they devoted to market activity. Political instability, shortages of consumer goods[,] and fears of financial chaos led them to hoard commodities and withhold effort” (Eichengreen 15). This hoarding, which General Marshall also saw as the main problem in Europe needed to be solved with his program. Nevertheless, numerical evidence appears under Eichengreen’s argument that suggests the significance of the Marshall Plan may be somewhat exaggerated. Eichengreen states:</p>
+<br>
+<p class="fullindent">The question is how much of this performance is attributable to the Marshall Plan. […] Europe’s industrial output rose by 15% between 1946 and 1947, by 16% between 1947 and 1948 and by 14% between 1948 and 1949. In the aggregate, then, there is essentially no variation in the period spanning the inauguration of
+the Marshall Plan. (Eichengreen 19)</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Despite this data, perhaps the real importance of the Plan, whether numerically strategic or not, remains the psychological affect that the Marshall Plan had upon millions of people in America, Europe, and war-torn areas in Asia. The Plan “relied on qualities such as self- determinism, solidarity, [and] partnership” all of which could help in halting warfare in the future and encouraging cooperation, ideas necessarily more important than numeric data (Saunter 4). Change remains inevitable no matter the political situation; hence, no matter the proven significance of the Marshall Plan in history, scholars recognize that change and new calamities will arise which may require new evaluations. Arthur Hartmann concisely states:</p>
+<br>
+<p class="fullindent">As we look toward the future, the major problems that we will face in the West are those caused by the success of our efforts: overproduction in agriculture and the pollution that comes from industrialization. We will be challenged as to how to run industries that operate in a worldwide framework while still dependent on national legislation or, as in the case of the community, on legislation binding upon a small group of nations. What is more, we face the ethical issues that arise from the disparity between the rich and the poor nations. (Hartmann 12)</p>
+<br>
+<p>Others agree with Hartmann on the prospect of change and that perhaps “the relationship between the United States and Europe needs a fundamental readjustment” (Calleo 44). Such an idea does not necessarily discredit the viability of the Marshall Plan in the minds of future generations, but perhaps it encourages new men like General Marshall to step forward and propose solutions. Scholars like Wasily Leontief believe that “[a] second Marshall Plan is needed. It must be different from the first because the problem is not one of reconstruction but a more difficult one of developing anew” (59).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Consequently, by understanding the causes and effects of warfare which led to the creation of the Marshall Plan and by understanding the stipulations which the system enacted, the ability of people worldwide who support further cooperation and peace can apprehend their dreams. They can economically and ideologically take the struggle against warfare one step closer to realization. General Marshall and the countless others who served in war understoodthis concept. They acted with the hope that in the future new versions of the Marshall Plan would arise from the minds of new collaborators, all of whom would still suffer from the problematic, human condition and still seek to relieve it.
+</p> 
+<br><br>
+<center><strong>Works Cited</strong></center><br>
+<br>
+<p class="hangingindent">Calleo, David. “The Implications of the Marshall Plan.” In Present at the Creation: The Fortieth Anniversary of the Marshall Plan. Ed. Armand Clese and Archie C. Epps, 44-53. New York: Harper and Row, 1990.</p>
+<br>
+<p class="hangingindent">Clese, Armand and Archie C. Epps, ed. Present at the Creation: The Fortieth Anniversary of the Marshall Plan. New York: Harper and Row, 1990.</p>
+<br>
+<p class="hangingindent">Cleveland, Harold van B. “The Contribution of the Marshall Plan to Western Economic Development.” In Present at the Creation: The Fortieth Anniversary of the Marshall Plan. Ed. Armand Clese and Archie C. Epps, 85-90. New York: Harper and Row, 1990.</p>
+<br>
+<p class="hangingindent">Eichengreen, Barry and Marc Uzan. “The Marshall Plan: Economic Effects and Implications for Eastern Europe and the Former USSR.” Economic Policy. 7 (Apr., 1992): 14-75. JSTOR. Sims Memorial Library, Hammond, LA. 3 Nov. 2008 <http://www. jstor.org/stable/1344512> .</p>
+<br>
+<p class="hangingindent">Hartmann, Arthur. “The Challenge of the Marshall Plan.” In Present at the Creation: The Fortieth Anniversary of the Marshall Plan. Ed. Armand Clese and Archie C. Epps, 10-12. New York: Harper and Row, 1990.</p>
+<br>
+<p class="hangingindent">Keegan, John. The Second World War. New York: Viking Penguin Press, 1990.</p>
+<br>
+<p class="hangingindent">Leontief, Wasily. “A Second Marshall Plan.” In Present at the Creation: The Fortieth Anniversary of the Marshall Plan. Ed. Armand Clese and Archie C. Epps, 54-59. New York: Harper and Row, 1990.</p>
+<br> 
+<p class="hangingindent">Loriaux, Michael M. “Organization for Economic Cooperation and Development.” Microsoft Encarta Online Encyclopedia 2008. 11 Nov. 2008 < http://encarta.msn.com/text_761571470_0/Organization_for_Economic_Cooperation_and_Development.html >.</p>
+<br>
+<p class="hangingindent">Marshall, George C. “Secretary of State George C. Marshall’s Address at Harvard Commencement, 5 June 1947.” In Present at the Creation: The Fortieth Anniversary of the Marshall Plan. Ed. Armand Clese and Archie C. Epps, xv-xix. New York: Harper and Row, 1990.</p>
+<br>
+<p class="hangingindent">Myers, William Starr. “The Kellogg Pact—The Question of Sanction.” Annals of the American Academy of Political and Social Science. 144 (Jul., 1929): 59-62. JSTOR. Sims Memorial Library, Hammond, LA. 9 Nov. 2008 < http://www.jstor.org/stable /1017335> .</p>
+<br>
+<p class="hangingindent">Osgood, Robert E. America and the World—From the Truman Doctrine to Vietnam. Baltimore: The Johns Hopkins Press, 1970.</p>
+<br>
+<p class="hangingindent">Pisani, Sallie. The CIA and the Marshall Plan. Lawrence: University Press of Kansas, 1991.
+</p>
+<br>
+<p class="hangingindent">Poos, Jacques. “From Marshall Plan to a World of Economic Independence.” In Present at the Creation: The Fortieth Anniversary of the Marshall Plan. Ed. Armand Clese and Archie C. Epps, 6-9. New York: Harper and Row, 1990.</p>
+<br>
+<p class="hangingindent">Quade, Quentin L. “The Truman Administration and the Separation of Powers: The Case of the Marshall Plan.” The Review of Politics. 27 (Jan., 1965): 58-77. JSTOR. Sims Memorial Library, Hammond, LA. 3 Nov. 2008 < http://www.jstor.org/stable/ 1405427>.</p>
+<br>
+<p class="hangingindent">Saunter, Jacques. “The Marshall Plan: A Vision and Its Implementation.” In Present at the Creation: The Fortieth Anniversary of the Marshall Plan. Ed. Armand Clese and Archie C. Epps, 1-5. New York: Harper and Row, 1990.</p>
+<br> 
+<p class="hangingindent">Schelling, Thomas. “The Marshall Plan: A Rehearsal for the Atlantic Alliance.” In Present at the Creation: The Fortieth Anniversary of the Marshall Plan. Ed. Armand Clese and Archie C. Epps, 60-69. New York: Harper and Row, 1990.</p>
+<br>
+<p class="hangingindent">Thorp, Willard. “The Origins of the Marshall Plan.” In Present at the Creation: The Fortieth Anniversary of the Marshall Plan. Ed. Armand Clese and Archie C. Epps, 13-22. New York: Harper and Row, 1990.</p>
+<br>
+<p class="hangingindent">Urwin, Derek W. “European Union.” Microsoft Encarta Online Encyclopedia 2008. 11 Nov. 2008. < http://encarta.msn.com/encyclopedia_761579567_8/ European_Union. html> .
+</p>
+<br><br>
+<p><strong>Dr. Gonzalez-Perez’s Comments:</strong> <em>Ms. Carazo’s examination of the Marshall Plan provides us with a very well-organized explanation of the post-World War II European recovery program. She outlines the structure of the program, as well as the impetus behind its implementation. In addition, her writing style and perspective injects a note of hope and humanity into what could have been a dry bureaucratic topic. The History and Political Science Department is very proud of Ms. Carazo’s work and her publication in The Pick.</em></p>
+
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<p><center><img src="horizontaline.png" width="920" height="12"/></center></p>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

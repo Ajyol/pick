@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>Feminism Through Religion in Hurston’s “Sweat”</strong></h2>
+</center>
+<br>
+<p><strong>Rachel Carazo</strong></p>
+<br>
+<p><strong>Course:</strong> English 300<br></p>
+<p><strong>Instructor:</strong> Dr. Sarah Spence<br></p>
+<p><strong>Assignment:</strong> Short Story Analysis<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Words and characters that represent symbols contribute to the depth of literacy works, and these symbols vary according to cultural standards. Stemming from the Harlem Renaissance, Zora Neale Hurston's work presents issues that focus on the upheaval of African -Americans. From American literature in the nineteenth century forward, Peter Kerry Powers notices the importance of race and gender combined with religion into a “preeminence of American Protestantism […and] [n]owhere was this upheaval felt more acutely—as both an opportunity and a cause for anxiety—than among African Americans” (229). Not only did African Americans write about their experiences coming out of slavery, but they also faced spiritual and gender changes, which altered the entire world view of their people. An important writer, Zora Neale Hurston, had “ideas concerning a folktale genre [which] are characterized chiefly by their reliance upon personified images” thus, Hurston‟s work, “Sweat,” converges on three diverse issues of symbolism which surprisingly convey the triumph of feminism, through Delia Jones's plight with religious and masculine images concerning slave/master relations, the concept of labor, and the examination of the soul (Thompson 738).
+</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delia's husband, Sykes, remains the first object of symbolism, and through his presence and his representation with the symbol of the snake, Sykes ensures Delia's position as subject to society and male culture. As literary scholar Gordon E. Thompson specifies:</p>
+<br>
+<p class="fullindent">the snake—especially in Sykes‟ absence—serves as a substitute for and reflection of Sykes, further defining the nature of his character. Delia's attitude toward themsnake resembles her attitude toward Sykes; Sykes‟ manipulation of the snake and his bravado suggest—in the context of the story—that handling snakes is a male privilege. (745)
+</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This means that Sykes and the snake are the same symbol, just as Delia's actions and attitudes toward them will be alike. In the story, the strength of these slave/master images comes to the fore in several vivid descriptions used by Hurston. The first image occurs when Sykes initially enters the tale:</p>
+<br>
+<p class="fullindent">Just then something long, round, limp, and black fell upon her shoulders and slithered to the floor beside her. A great terror took hold of her. It softened her knees and dried her mouth so that it was a full minute before she could cry out or move. Then she saw that it was the big bull whip her husband liked to carry when he drove. (Hurston 238)</p>
+<br> 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This paragraph is essential to understanding Delia's subordinate position in her life. The initial sentence evokes thoughts of male sterility and impotence with words such as <em>limp</em>. When Delia feels her husband‟s presence—in this subverted sexual sense—she becomes <em>weak</em> and has a dry mouth. Nevertheless, Delia cannot overcome Sykes's perverted male influence despite their deteriorating relationship, because the mastership Sykes attempts to convey finds strength from the object he holds, <em>the big bull whip</em>. Just as Sykes commands his horse, so he commands his wife, with force (238).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The whip also evokes two effective images: one of Sykes's impotence as a man and the other, the snake, as symbolic of Sykes's perverted power, which will eventually destroy him. Literary scholar Gordon E. Thompson clarifies this assessment when he ascertains: humans in literature “project their designs, fears, or desires upon inanimate objects or even other characters to transform the world into a mew manipulable and manageable environment” (742). The whip, therefore, becomes Sykes' attempt at manipulation of his world and Delia. The whip also represents the lifeless version of the snake, an animal intensely religious by itself and one which embodies Delia's religious and physical fears. Hurston conveys these emotions for her character when Delia cries at the touch of the whip: “you knows how skeered Ah is of snakes” (Hurston 238). Not only does Sykes taunt Delia with the whip/snake, but he effectively controls Delia's dependence on the presence of sin, the religious allusion also associated with the reptile. Sykes even expresses his understanding of his power over her when he replies, “Course Ah knowed it! That‟s how come Ah done it” (Hurston 238). Not only does Sykes abuse Delia physically, but he abuses her mentally as well.
+</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another important image related to the master/slave relationship conveys Delia's struggle with Sykes over the ownership of their home, especially when Sykes attempts to bring over his lover, Bertha. This issue thus presents to the reader another symbolic biblical allusion to the attempted overthrow of Heaven by Satan. Delia works hard for her home, and when Sykes tries one last effort to supplant Delia by capturing a rattlesnake and leaving it in the house in his absence, the real nature of Sykes's oppression and evil emerges. At first the snake lazes in the soap box until “[t]wo or three days later it had digested its meal of frogs and literally came to
+life” (Hurston 244). The coming to life of this threat personifies the final struggle Delia will have with the male domination of her life. Powers believes that the overturning of Sykes's power, which culminates in his death by his own snake, “asserts [Delia's] status as an individual by her ability to sustain herself in a masculine culture on its own terms” (232). Delia consequently gains independence, but only by assuming a male-oriented stance in her actions toward Sykes and in society, altering the perceived role of a woman in the world.
+</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The second role of feminism in Delia's life emerges from her job, which consists of washing other people‟s clothes. Alluding to biblical consequences, Delia must labor like all men and women for their entire lives. Related to this, Hurston writes how “Sunday night after church, [Delia] sorted and put the white things to soak” (238). Her clothes-washing also represents the idea of her sins just as she washes the stains out of other‟s clothes. Delia's special way of sorting clothes by using a hamper to make things “so much neater than a number of bundles lying around” also accounts for this cleansing (Hurston 238). Therefore, Delia sorts her sins and actions in life as she does her clothes. This method, a purging approach to life, mirrors Delia's spiritual aspect as well as her relationship with Sykes. Without the ability to purge each day‟s disunity from her mind, she could not have sustained the wreck of her marriage for so long.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The symbolic disorder which Sykes incites in Delia's life also occurs in the story when Delia comes home and “saw that Sykes had kicked all of the clothes together again, and now stood in her way truculently, his whole manner hoping, <em>praying</em>, for an argument” (Hurston 239). This scene remains important since Sykes throws sins/stains at her constantly and then to pervert Delia's spirituality, Sykes actually <em>prays</em> for a fight with her so he can mentally and physically abuse her. But Delia begins to fight back when she speaks, “Sykes, you quit grindin' dirt into these clothes” (Hurston 239). Delia can only plead in vain, though, since Sykes' main thrill in life is bringing stains and sins into Delia's life.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overcome with the human condition of toil and pain, Delia laments that her life is nothing but “Work and sweat, cry and sweat, pray and sweat” (Hurston 239). Despite her ideals and efforts, Delia remains a being cast out from the spiritual Garden of Eden. She works endlessly to return to this Garden, but with Sykes around, she can never reach it; thus, her feminine sense of power smothers itself. However, the one object which represents an earthy Garden is her own home and plot of land which “[s]he had built it for her old days, and planted one by one the trees and flowers there” (Hurston 230). Her home, or more importantly, the idea of her home, gives her the spiritual and physical bulwark to maintain her reserve against Sykes's abuse. Hurston amplifies this religious image when she writes, “Delia's work-worn knees crawled over the earth in Gethsemane and up the rocks of Cavalry many, many, times” (243). Delia's labor, although an inevitable condition of mankind, gives her the strength to endure. Her work sprouts the roots of a feminist uprising against Sykes. Only the last aspect of feminism through religious imagery can provide for this triumph—the testing of her own soul and female stamina in the domination of a male society.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For Delia, her soul and emotional identity are the main forces which she employs to remain under Sykes's control, or to defeat him. Hurston exposes the definitive image of the evil of Sykes‟ own soul when she has Sykes strike a match against his breeches. Fire alludes to Satan and evil, an antithesis to Delia's wish for a peaceful home and garden which she holds against him. The only social chance for redemption, which could completely free any sense of guilt from Delia's soul, comes from the other men of the town—the men on Joe Clarke‟s porch, including Jim Merchant, Joe Lindsay, Walter Thomas, Elijah Moseley, and Old Man Anderson. These men state specifically that “[t]here oughter be a law about [Sykes]” (Hurston 242). Hence, these men can see the ultimate evil of Sykes and the damage he has inflicted upon Delia, “the stoutest woman of the town” (Hurston 242). A suggestion arises that something should be done. Consequently, “[a] grunt of approval went around the porch [b]ut the heat was melting their civic virtue” (Hurston 242). Although capable of acting, these ruling men do not. Because of this, they give only passing credit to Delia's situation. Any help from the law will not arrive, so when man‟s judicial practices fail, Delia must act on her own tuition. To do this, she must internalize some degree of masculine influence since power, until this point, refers only to men. According to Powers, “Hurston determines the validity of God or the gods not through the refinements of theological insight or the consolations of meditative reflection but through the exercise of material power as represented in a particular form of masculinity” (Powers 235). To this God or these gods, Delia must finally answer.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thus, Delia makes her ultimate stand against Sykes. She announces: “Ah hates you tuh de same degree dat Ah usester love yuh” (Hurston 245). There can be no dissolution back into the religious spirit of universal loving. She hates Sykes; therefore, Delia must act. According to literary critic Cheryl A. Wall, this concept of “„Talking smart‟ was emphatically not a feminine value,” (8) but in Delia's case absolutely necessary for her to recognize her feminine power. The climax rises on her way back from Church as she sings of the River Jordan, a metaphor for death. Sykes will die, and so too will the complete purity of Delia's soul since she must help to destroy one whom her religious beliefs tell her to love no matter what happens. As she thinks upon Sykes's fatal bite from the rattlesnake, Delia feels “a period of introspection, a space of retrospection, then a mixture of both. Out of this an awful calm” (Hurston 247). The term <em>awful</em> is important since it denotes this regression of Delia's soul in order to free herself from male bonds. Assessed differently, Cheryl A. Wall explains that “Delia is a devoutly religious woman whose faith helps her weather the storms of her marriage, while at the same time it imbues her with a meekness that makes her more vulnerable to her husband‟s cruelty. Conversely, when Delia gains the strength to stand up to Sykes, she jeopardizes her spiritual peace” ( 8). The lasting decision she makes occurs when Sykes calls for her aid. Hurston writes: “She never moved, he called, and the sun kept rising” (248). Delia may sacrifice some of her morality to free herself, but the sun rises and there is a new day for her. Delia attains independence.</p>
+<br> 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the arguments of slave/master relations, the presence of labor, and the examination of the soul, other literary criticisms become a complementary collaboration with, and an expansion of, these ideas. The first concerns the points which Susan Edwards Meisenhelder makes when she describes the audience that Hurston wrote for was more subject to race than feminism. To compensate for this loss of female interest, Hurston “actually developed a much more subversive approach to the problem of audience, one based on a shrewd assessment of complex power relationships” (Meisenhelder 4). These power relationships become clear between Delia and Sykes as each attempts to supplant the other's influences. From these efforts, Meisenhelder proves Hurston a great compliment since she states that Hurston “actually grounded her literary craft in traditions of black expressivity, using the trickster figure as a flexible discursive strategy to confront <em>both</em> the racial and gendered aspects of black women's oppression” (Meisenhelder 5). Delia therefore acts as this trickster as she successfully questions issues of gender and especially feminism.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A second important criticism arises from the studies of Maxine Baca Zinn and Bonnie Thornton Dill, whose argument centers around the perceived notion of <em>multiracial feminism</em> which is a “perspective [that] is an attempt to go beyond a mere recognition of diversity and difference among women to examine structures of domination, specifically the importance of race in understanding the social construction of gender” (321). Here again, the issue of master/slave relationships appears as applied to the female struggle. This struggle does not just center on one group or one race. The importance of multiracial feminism emerges from “examining gender in the context of other social divisions and perspectives, difference has gradually become important—even problematizing the universal categories of 'women' and 'men'" (Zinn and Dill 322). In Hurston‟s “Sweat,” Delia's plight not only gets measured against the white people for whom she washes clothes, but also her husband, the social community, and the church/religious spirit to which she belongs. Without these subdivisions, the entire significance of Delia's eventual independence cannot be better understood. Even the experiences of men, according to these scholars, find concern from the effects of multiracial feminism since men not only get measured against its ideals, but also must live with them. Hence, Zinn and Dill assess that “women and men throughout the social order experience different forms of privilege and subordination, depending on their race, class, gender, and sexuality […] Therefore, multiracial feminism applies not only to racial ethnic women but also to women and men of all races, classes, and genders” (Zinn 327). From these issues, the real nature of Delia's struggle not only against male power, but against society and spirit, begins to find more focus.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The end triumph of feminism in Zora Neale Hurston‟s short story, “Sweat,” arises both from the careful reading of feminist values through master/slave relationships, the importance of occupation, and the strength of the soul and these issues' relationship to religious imagery. Because of these important forces, “Hurston's work announces the end of 'masculinity' as an exclusively male preserve, indeed, imagines an end to the masculine/feminine divide” (Powers 243). Delia must therefore assume a male expression of power to assert her newfound independence. Even the process of attaining this power must forsake normal gendered roles. The consequence for Delia is that “an independent woman is thus partially responsible for her husband‟s death, thus signaling Hurston‟s move towards depicting women who change their lives by seeing their world anew” (Thompson 745-46). The spiritual aspects not only guide Hurston's characters to revelation, but the impact of these images permits the reader a glimpse into the female, African American soul.</p>
+
+<br>
+<center><h3>&nbsp;</h3>
+  <h3>Works Cited</h3>
+</center>
+
+<p class="hangingindent">Hurston, Zora Neale. “Sweat.”  <u>Backpack Literature: An Introduction to Fiction, Poetry, and Drama</u>. Ed. X. J. Kennedy and Dana Gioia. New York: Pearson, 2006.</p>
+<br>
+<p class="hangingindent">Meisenhelder, Susan Edwards. <u>Hitting a Straight Lick with a Crooked Stick: Race and Gender in the Work of Zora Neale Hurston</u>.  Tuscaloosa: U of Alabama P, 1999.</p>
+<br>
+<p class="hangingindent">Powers, Peter Kerry. “Gods of Physical Violence, Stopping at Nothing: Masculinity, Religion, and Art in the Work of Zora Neale Hurston.” <u>Religion and American Culture</u> 12 (Summer 2002): 229-47.</p>
+<br>
+<p class="hangingindent">Thompson, Gordon E. “Projecting Gender: Personification in the Works of Zora Neale Hurston.” <u>American Literature</u> 66 (Dec. 1994): 737-63.</p>
+<br>
+<p class="hangingindent">Wall, Cheryl A. <u>“Sweat”: Zora Neale Hurston</u>. New Brunswick, NJ: Rutgers UP, 1997.</p>
+<br>
+<p class="hangingindent">Zinn, Maxine Baca and Bonnie Thornton Dill. “Theorizing Difference from Multiracial Feminism.” <u>Feminist Studies</u>  22 (Summer 1996): 321-31.
+
+</p>
+<br>
+<p><strong>Dr. Spence's Comments:</strong> <em>Rachel Carazo's “Feminism Through Religion in Hurston‟s 'Sweat'” exemplifies her excellent, creative work. Her use of symbolism to convey “the triumph of feminism” in “Sweat” ultimately refocuses on the African upheaval of the Harlem
+Renaissance, spiritualism, and feminism.
+</em></p>
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<center><img src="horizontaline.png" width="920" height="12"/></center>
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

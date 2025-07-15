@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>Southeastern’s Student Publications: Establishing a Writer’s Voice</strong></h2>
+</center>
+<br>
+<p><strong>Alysia Catanzaro</strong></p>
+<br>
+<p><strong>Course:</strong> English 518<br></p>
+<p><strong>Instructor:</strong> Dr. Mary Ply<br></p>
+<p><strong>Assignment:</strong> Research<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hammond Junior College, as Southeastern Louisiana University was known in its formative years, welcomed its first cohort of students in 1925. Miss D Vickers, who taught nine English courses to ninety-five students, was the only English professor (<em>Pick O’ The Patch</em> 1), and an important influence in the creation of student publications on campus. <em>The Pick O’ The Patch</em> commemorative edition (1984) states, "Miss Vickers[‗] influence on Southeastern is powerful because she played a crucial role in [the] founding and shaping of many traditions and activities that affect every student who has attended SLU" (1). Today, student publications in the English Department, especially <em>The Pick</em> and <em>Gambit</em>, continue to play a crucial role in providing a forum through which students can be published, express their ideas, and join a community of writers.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The history of student publications on the Southeastern campus can be traced to 1925 when D Vickers created the Leatherstocking Club which organized various student publications (<em>Pick O’ The Patch</em> 1). In the 1925-26 academic school year, the Leatherstocking Club created a bi-weekly newspaper called the <em>Campus Reflector</em>, also called the <em>Campus Spectrum</em> (<em>Pick O’ The Patch</em> 1). This short-lived publication featured articles written by students to communicate information about activities around campus.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 1932-33, D Vickers‘ speech class created a second publication—<em>The Bugler</em>. The purpose of <em>The Bugler</em>, a short newsletter published monthly, was to serve "students interested in journalism by printing information on [the] Southeastern journalism curriculum, promoting the activities of the Southeastern Press Club, critiquing other campus student publications and keep[ing] student[s] informed of events in the field of journalism" (Costa, back cover). <em>The Bugler</em> only lasted one year, but it was the school‘s first attempt at a campus newspaper. In 1986, the Press Club would start a newsletter by the same name for journalism students who were liberal arts majors. The newsletter lasted until 2001 and changed its name to Southeastern Journalism Review.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By Spring 1937, D Vickers sponsored a third publication: <em>The Lion’s Roar</em> (<em>Pick O’ The Patch</em> 1). <em>The Lion’s Roar</em> began as a newsletter, but it converted quickly into a newspaper. D Vickers combined ideas from the <em>Campus Reflector</em>, <em>The Bugler</em>, and the <em>The Lion’s Roar</em> and consolidated them into the current version of The Lion’s Roar (1). In fall 1937, <em>The Lion’s Roar</em> "began regular weekly and bi-weekly publication on standard newspaper size pages" (1). Over the past 70-years, "staff members won more than 100 national and regional awards during the time <em>The Lion’s Roar</em> was affiliated with the English department" (Mirando). In 1997, the College of Arts and Sciences separated the English and Communications departments, and The Lion’s Roar became a campus-wide publication. Today, The Lion’s Roar is the oldest surviving student publication at Southeastern Louisiana University.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On February 14, 1939, <em>The Lion’s</em> Roar announced information about a new student publication:</p>
+<br>
+<p class="fullindent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An English journal, which as yet has not been named, is to be put out by the Leatherstocking Club of Southeastern, it is said. The journal will contain several types of literary work such as short stories, poems, essays and articles written by students of S.L.C [(Southeastern Louisiana College)].</p>
+
+<p class="fullindent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It has become evident that there is much talent of a literary nature among the students of Southeastern and for this reason, the Leatherstocking Club is making plans whereby it may collect writings of different students and publish them in a journal which will be available to the student body as a whole.</p>
+
+<p class="fullindent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However amateurish the articles that go into the journal may be, they will represent thoughts and work of Southeasterners, and may someday come to be treasured very highly by the school.</p>
+
+<p class="fullindent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The English department is cooperating with the club by submitting material from its classes.</p>
+
+<p class="fullindent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The journal will not contain any material but that written by students of Southeastern. Contributions will be welcomed from any member of the student body. Membership in the Leatherstocking Club is not a requirement for contributors. Suggestions of a name for the journal will be appreciated. (<em>Pick O’ The Patch </em>1)</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This article gave birth to <em>The Pick O’ The Patch</em> <sup>1</sup>, establishing grounds for publishable material. D Vickers hoped this new journal would flourish and be appreciated by the growing student body.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Although D Vickers had an idea of what the new publication would include, it lacked a name that reflected the nature of the submissions and the school‘s surrounding area. <em>The Pick O’ The Patch</em> commemorative edition states, "The name [<em>The</em>] <em>Pick O’ The Patch</em> was chosen in recognition of the booming strawberry industry in the area surrounding Southeastern" (1). Just as a farmer picks the best strawberries, <em>The Pick O’ The Patch</em> chose the best submissions and featured them in the issues (Pick O’ The Patch 1).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upon publication, students could purchase <em>The Pick O’ The Patch</em> for five cents an issue (Pick O’ The Patch 1). <em>The Pick O’ The Patch</em> grew to become a strong publication during D Vickers‘ years at Southeastern. Between 1939 and 1956, <em>The Pick O’ The Patch</em> issued fourteen volumes of various student writings, but the publication faced many obstacles during this twenty- seven year span.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Southeastern Louisiana University printed <em>The Pick O’ The Patch</em> annually between 1939 and 1946. During World War II, student enrollment dropped, as did the funds to support the journal. The Leatherstocking Club disbanded, and publication of <em>The Pick O’ The Patch</em> came to a standstill. Between 1947 and 1949, the English Department temporarily withheld all publications. In 1950, Southeastern celebrated its 25th anniversary, and <em>The Pick O’ The Patch</em> was revived in its honor (<em>Pick O’ The Patch</em> 1). <em>The Pick O’ The Patch</em> states, "Interested English students and faculty members joined forces to produce the final six volumes of<em> The Pick O’ the Patch</em>. Miss Emily Beatty, an English instructor, served as sponsor" (1). However, once D Vickers retired in 1956, the publication of <em>The Pick O’ the Patch</em> was temporarily suspended.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When Dr. Gus Orr took over as head of the English Department, he started a new magazine in 1960 called <em>Gambit</em>. Unlike <em>The Pick O’ The Patch</em> that accepted all forms of writing, <em>Gambit</em> became a creative writing magazine, focusing on fiction and poetry. The English after a few years, <em>Gambit</em> also encountered publication problems when "funding was discontinued after Orr left the department to become dean of the College of Liberal Arts." When Tim Gautreaux joined the English Department in the 1970s, he "resurrected <em>Gambit</em> by building it around submissions from his creative writing classes." Since <em>Gambit</em> no longer had a budget, it was typed by the department‘s secretary and paid for through the department‘s Xerox copy budget (Mirando).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Between 1974 and 1987, <em>Innisfree</em>, another English Department publication, emerged on the scene. <em>Innisfree</em> proved to be distinct from The Pick and <em>Gambit</em> because it allowed both faculty and graduate students to be published together. According to "The Story of <em>Innisfree</em>,""Dr. Lowell Landry, editor of the first four volumes (1974-77), selected the name <em>Innisfree</em> from those titles suggested by the faculty" (Crisp 5). It was published yearly from 1974 to 1979, but due to problems in funding, <em>Innisfree</em>‘s seventh volume was withheld from publication in 1980. In 1987, <em>Innisfree</em> published its seventh and final volume dedicated to Haldeen Braddy, a famous Chaucerian scholar (5). Other than Sims Memorial Library, only a few faculty and staff members hold copies of this short-lived publication.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When D Vickers died in 1981, <em>The Pick of the Patch</em> was still suspended from publication. To honor D Vickers achievements, the university renamed the Humanities Building in 1984. Due to the dedication of D Vickers Hall, <em>The Lion’s Roar</em> published a special commemorative issue to help celebrate the building‘s dedication. This issue told the history of <em>The Pick O’ The Patch</em>, featured a short biography of D Vickers, and reprinted "selected pieces from the 1930s, 40s, and 50s" (Mirando).</p>
+ <br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By the mid-1980s, Joe Mirando Became involveed with reviving both <em>The Pick O' The Patch</em> and <em>Gambit</em>. In an email to Dr. Jayetta Slawson, Director of Southeastern‘s Writing Center, Joe Mirando states:</p>
+<br>
+<p class="fullindent">In 1986[,] I was appointed chair of a committee to create a student publications arm of the department. The idea was to get <em>Gambit</em> a regular source of funding, to resurrect <em>The Pick</em> [<em>O’ The Patch</em>] in D Vickers‘ memory[,] and to give magazine experience to journalism students, who at the time had their own limited major under my supervision within the English department. In 1985[,] I worked with an SGA Senator who sponsored a bill to raise students‘ fees 25 cents to fund the
+three magazines. The student body approved the fee in a campus-wide referendum in 1986, and production began. (Mirando)</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dr. Mirando‘s work clearly paid off. He split the twenty-five cents three ways to reestablish <em>Gambit</em> in 1986, to resurrect <em>The Pick O’ The Patch</em> in 1987, and to start <em>Spectrum</em> in 1988.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When <em>The Pick O’ The Patch</em> resumed publication in 1987, it shortened its name to <em>The Pick</em>. According to Joe Mirando, <em>The Pick</em>‘s format "was modeled on the Reader’s Digest, and the intent was to publish every spring." Instead of limiting publication to English papers, <em>The Pick</em> branched out to all student papers, essays, and reports across Southeastern. Before publication, the English Club reviewed all submissions, chose the best ones, and edited them (Mirando).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Gambit</em> also achieved success under the guidance of the distinguished creative writing professor, Dr. Tim Gautreaux. During his years as faculty advisor, <em>Gambit</em> took an original turn, receiving national recognition. <em>Spectrum</em> states, <em>Gambit</em>‘s "short stories and poetry earned a second place from the Southern Literary Festival and an honorable mention in the nation society of Collegiate Journalists competition in 1987" (Gerber, back cover).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 1988, <em>Spectrum</em> joined the publications as a news magazine. Unlike The Pick and <em>Gambit</em>, <em>Spectrum</em> had "its own advertising to fund color and extensive photography" (Mirando). According to <em>Spectrum</em>‘s Vol. 3, No. 2, "the creed of <em>Spectrum</em> magazine is to take the white light and put it back together, to make sense of it" (Alford). It was published once every semester, was a free magazine, and allowed local businesses to advertise in it. The name <em>Spectrum</em> was chosen in honor of D Vickers Campus <em>Spectrum</em> "which was established in 1925-26" (Gerber 1). Unlike <em>The Pick</em> and <em>Gambit</em>, <em>Spectrum</em> permitted Southeastern students to submit articles, photographs, and illustrations for publication. <em>Spectrum</em>‘s goal was "to allow students the freedom to publish a wide variety of views and artistic work best stated to magazine journalism" (Gerber 1). After its first three volumes, "staff writers have won awards in the annual Southeast Journalism Conference and three national contests—the Associated Collegiate Press, the Columbia Scholastic Press Association and the Society of Collegiate Journalists" (Alford, back cover). However in 1999, <em>Spectrum</em> ceased publication, and as with <em>Innisfree</em>, students and faculty know little of its existence.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the 1990s, the university consolidated colleges resulting in Journalism being moved to join the Department of Communication. As a result, <em>The Pick</em> slowed its publication in the mid-1990s, <em>Gambit</em> dropped from an annual publication to being published every two years, and <em>Spectrum</em> discontinued publication in 1999. The English Department still published <em>The Pick</em> and <em>Gambit</em>.</p>
+ <br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dr. Jeff Wiemelt, former director of the Southeastern Writing Center and a <em>Pick</em> faculty advisor, states interest in "<em>The Pick</em> pretty much just died out for a time during the early through late-90s" (Wiemelt). After going on hiatus in 2000, it was transferred to the Southeastern Writing Center for reviving (Mirando). Under the Southeastern Writing Center, interest in <em>The Pick</em> picked up between 2001 and 2006.</p>
+ <br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the Fall 2006 semester, Dr. Jayetta Slawson took over as director of the Southeastern Writing Center. She encouraged The Pick‘s publication twice annually, and its size was doubled compared to issues published in the 1990s. For its spring 2007 issue, the Writing Center collaborated with the Visual Arts Department to create a new template for the publication (Slawson). Students submitted designs in a contest, and The Pick editorial board and faculty advisors chose the new template (Slawson). Then, in spring 2008, <em>The Pick</em> began a collaboration with "Dr. Cynthia Elliot, Professor of the Department of Teaching and Learning and Chair of the University-wide service-learning committee, to create a separate service-learning section in <em>The Pick</em>" (Slawson).</p>
+ <br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;During the 1990s, Dr. Jack Bedell became faculty advisor for <em>Gambit</em>‘s publication. Dr. Jack Bedell, "changed the format to a professionally printed journal" (Bedell). He continued to keep <em>Gambit</em> alive by using poetry, fiction, and drama from the various creative writing courses, but the publication only came out once every two years.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the Fall 2007 semester, Dr. David Hanson, English Department Head, moved <em>Gambit</em> under the auspices of the Writing Center where it is currently published annually. Additionally, Dr. Jayetta Slawson plans to launch "<em>Gambit Online</em>, an electronic, interdisciplinary creative arts journal, in Fall 2009." Drama, poetry, and fiction submissions will be published annually in a printed journal, while "<em>Gambit Online</em> will display art, film, and musical compositions in addition to fiction, poetry, and drama" (Slawson). <em>Gambit</em> also has established a community for writers at Southeastern. In the Fall 2008 semester, <em>Gambit</em> held its first "Spoken Word Night," allowing students to read their works in front of their peers. This semester, <em>Gambit Live</em> provided a similar opportunity. In addition, <em>Gambit</em> 2008–2009 editors have created a group on Facebook where students can connect with other writers and find more information about publication deadlines and events.</p>
+ <br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout Southeastern Louisiana University‘s history, student publications have played an important role in the English Department and beyond. From the beginning efforts of Miss D Vickers until today, students have been able to express their voices by submitting their best work for publication, and to model the practice of writing for their peers across campus. The English Department is currently expanding opportunities for students with academic and career interests in the fields of writing and publication. It will be interesting to follow the story of student publications as it continues to unfold.</p>
+<br>
+<br>
+<center><strong>Endnotes</strong></center>
+1. Since its publication, various sources refer to this journal as <em>The Pick O’ The Patch</em>, <em>The Pick of the Patch</em>, and The Pick. In this essay, I will refer to the journal as <em>The Pick O’ The Patch</em> until the name change to The Pick.</p>
+<br>
+<br>
+<br>
+<center>Works Cited</center>
+<p class="hangingindent">Alford, Bruce. Introduction. <em>Spectrum</em> 3.2 (1990): 1-2.</p> 
+<br>
+<p class="hangingindent">Bedell, Dr. Jack. Email interview. 18 April 2008.</p> 
+<br>
+<p class="hangingindent">Costa, Keith, ed. <em>Spectrum</em>. 5.1 (1991):1.</p>
+<br>
+<p class="hangingindent">Crisp, Jr., Delmas S. <em>"The Story of Innisfree."</em> <em>Innisfree</em>. 7 (1987):5. </p>
+<br>
+<p class="hangingindent"><em>Gambit</em>. Vol. 18. Hammond: Southeastern Louisiana U, 1988.</p> 
+<br>
+<p class="hangingindent">Gerber, Cheryl, ed. <em>Spectrum</em>. 2.1 (1988)</p>
+<br>
+<p class="hangingindent">Gilbert, Petra, ed. <em>Spectrum</em>. 8.1 Hammond: Southeastern Louisiana U, 1994.</p> 
+<br>
+<p class="hangingindent">Mirando, Dr. Joe. Email interview with Dr. Jayetta Slawson. 14 Nov. 2007.</p> 
+<br>
+<p class="hangingindent">The Pick O’ the Patch. Hammond: Southeastern Louisiana U, 1984.</p>
+<br>
+<p class="hangingindent">Slawson, Dr. Jayetta. Personal interview. 7 May 2008.</p>
+ <br>
+<p class="hangingindent">Wiemelt, Dr. Jeff. Email interview. 18 Apr. 2008.</p>
+<br>
+<br>
+<br>
+<p><strong>Dr. Ply’s Comments</strong>: <strong>Alysia did a great deal of research for this project, which documents a significant portion of the history of Southeastern’s Department of English. I appreciate her willingness to take on this project.</strong></p>
+
+
+
+
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<center><img src="horizontaline.png" width="920" height="12"/></center>
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;	
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 40px;
+}
+.fifthindent {
+	padding-left: 100px;
+	font-size: 16px;
+}
+.hangingindent {
+	text-indent: -15px;
+	padding-left: 40px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.font1 {
+	font-size: 12px;
+	padding-left: 20px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','kramerline.png','burkartline.png','tranline.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+
+
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" /></a></div>
+ 
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+  <table> <tr><td width="650" valign="top">
+<center> <h2> Fall 2013 Common Read Essay Contest Winner</h2>
+<h3>Eyes of the Beholder</h3>
+<h4>by SARAH BURKART</h4>
+<h4>INSTRUCTOR: HEATHER O’CONNELL</h4></center>
+<br>
+ <p class="fullindent"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How does one define beauty? There are numerous answers to this historical question. In Yusef Komunyakaa’s poem “Poetics,” the speaker discusses a stripper and environments that look beautiful but in truth are not. In John Keats’ “Ode on a Grecian Urn,” the speaker describes an urn used to store ashes of the dead as a beautiful work of art reflecting truth and beauty. Both poems have concrete views on beauty, but their views are completely opposite. Both Komunyakaa and Keats use imagery to express their views on the relationship between beauty and truth, but Komunyakaa’s “Poetics” asserts that truth is not always beautiful while Keats’ “Ode on a Grecian Urn” highlights the beauty in truth.<br>
+ 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The relationship between truth and beauty are illustrated in “Poetics” and “Ode"
+"on a Grecian Urn,” but both poems present two different views on the relation- ship. The speaker in “Poetics” views a stripper’s performance, her beauty being the purpose of his viewing. As the poem proceeds, however, the speaker discovers that underneath the beautiful looks, there is ugliness. He states, “Before you can see her long, pretty legs, look into her unlit eyes” (18-20). The truth is that beneath her beauty, there is something “unlit” or dead within her. In “Ode on a Grecian Urn,” the speaker considers the artwork on a Grecian urn beautiful. The artwork is an engraving of a scene in a forest depicting a god-like male chasing a young female. The speaker goes into depth describing the artwork, seeing the beauty of the chase in a romantic relationship. Because the artwork on the urn will never change, the speaker concludes the subjects of the artwork are trapped forever in youth, lust, in- nocence, and truth (16-20). The opposite views in each poem are obvious. “Poetics” states that underneath the outer beauty of the stripper, the truth in who she is dis- courages the idea of the stripper being beautiful (Komunyakaa). In this poem, the truth proves to be ugly and disheartening. Keats’ “Ode on a Grecian Urn” ends with the statement, “Beauty is truth, truth beauty” (50). The permanently incomplete goal of the god chasing the maiden on the urn provokes the speaker to see beauty in the truth of the eternal chase and youth of the artwork. The underlying theme of “Ode on a Grecian Urn” is the appreciation of the beauty in truth. The themes of each poem create different definitions of beauty and, with such different views of beauty, there are noticeably different personas present in each poem.<br>
+ 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Both personas of “Poetics” and “Ode on a Grecian Urn” emphasize the differences in beliefs about beauty and truth. Komunyakaa’s speaker in “Poetics” depicts a harsh and disheartening tone: “Everything isn’t ha-ha in this valley. The striptease on stage…is your sweet little Sara Lee” (8-11). Not only does the speaker bluntly point out that this environment is not one of happiness and laughter, but he also uses sarcasm to describe the stripper as “sweet,” implying she is pure and innocent (citation). Calling the stripper “your sweet little Sara Lee” implies she is a tasty treat to be enjoyed by her audience (11). The harshness of the speaker’s words alludes to the idea of reality being unpleasant and ugly. In contrast, the speaker in Keats’ “Ode on a Grecian Urn” uses words that illustrate a beautiful and joyful take on truth, “More happy, happy love! For ever warm and still to be enjoy’d” (25). The speaker expresses his jubilant feelings toward the eternal aspect of the youthful chase.  The god-like male is forever caught in the truth that he will never accomplish his pursuit in catching the maiden, which is beautiful in the way the chase makes lovers feel. The speaker describes the chase as “wild ecstacy” (10). The words of Keats’ poem are effervescent. “Ode on a Grecian Urn” brings about and celebrates the beauty in truth. Although the personas of the poems are quite different, both poets use imag- ery to enhance their views. <br>
+   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The imagery used in Komunyakaa’s and Keats’ poems help elaborate and create their perspectives on truth and beauty. In “Poetics,” the speaker begins the poem by saying, “Beauty, I’ve seen you, pressed hard against the windowpane” (1-2). The picture of something or someone “pressed hard against a windowpane” is unappealing rather than beautiful. In “Poetics,” the speaker refers to a sack of bones
+and a beggar without legs (16, 25). Neither image can be associated with beauty. The sack of bones imagery makes one think of death and decay while the “legless beggar” reminds the reader of a homeless, dirty, and unfortunate being willing to do anything in order to survive. Komunyakaa’s imagery takes the beauty out of an environment supposedly centered around and thought of as beautiful. Keats’ “Ode on a Grecian Urn” uses imagery to reveal the true beauty of the artwork. The speaker states the man and woman are forever young and filled with passion (37-38). Youth will always have a strong association with beauty and the idea of youth being beautiful presents itself in today’s society as well as throughout the societies of history. Women through the ages always have the goal of maintaining a youthful appearance. Passion is also closely related to beauty in the sense that passion is a strong and uncontrollable emotion. When one thinks of passion, a romantic, fiery love scene is pictured. Keats’ mention of passion incites the reader to make the connection between the beauty and strength of this uncontrollable emotion. ;Passion is uncontrollable because how strong its truth is. Beauty and truth are concepts written about throughout the ages, but, as times passes, perceptions change.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Komunyakaa and Keats are two extraordinary poets from two completely different time periods; hence, two different perspectives are exemplified in each poem. Yusef Komunyakaa is a Pulitzer Prize winning poet of today; his experiences
+with racial tension and the Vietnam War reflect in a considerable amount of his work (“Yusef Komunyakaa Essay”). “Poetics” illustrates the harshness and ugliness of truth, and Komunyakaa’s life experiences prove to be harsh and unpleasant. John Keats is a Romantic poet; his Romantic views are expressed in “Ode to a Grecian Urn.” According to the article titled “Romanticism” in <em>Merriam Webster’s Encyclopedia of Literature</em>, during the Romantic period, people had “a new view of the artist as a supremely individual creator, whose creative spirit is more important than strict adherence to formal rules and traditional procedures; an emphasis upon imagination as a gateway to transcendent experience and spiritual truth...” Keats’ poem stands on the argument of spiritual truth being beautiful and uniquely expresses his stance throughout his poetry. The time periods Komunyakaa and Keats live in directly affect the ideas they express in their poetry about truth and beauty and therefore make the two very different.<br>
+   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Komunyakaa uses “Poetics” to voice his opinion that truth is not always beautiful, and Keats’ illustrates the beauty of truth in “Ode to a Grecian Urn.” Both perspectives are worth consideration as both could prove to be true. The definition
+of beauty is an age-old question that will continue to baffle and create debate as it always has. In thought, it seems there will never be a standard of beauty; the definition remains in the eyes of the beholder.</p>
+<p class="fullindent">&nbsp;</p>
+<p class="fullindent">&nbsp;</p>
+
+<center><h3> Works Cited</h3></center>
+<p class="hangingindent">Keats, John. “Ode on a Grecian Urn.” <em>The Poetry Foundation</em>. Web. 28 Sept. 2013.</p><br>
+<p class="hangingindent">Komunyakaa, Yusef. “Poetics.” <em>The Poetry Foundation</em>. Web. 28 Sept. 2013.</p><br>
+<p class="hangingindent">“Romanticism.” <em>Merriam Webster’s Encyclopedia of Literature</em>. Springfield, MA: Merriam-Webster, 1995.</p><br>
+<p class="hangingindent">“Yusef Komunyakaa Essay.” <em>ENotes.com</em>. ENotes, Web. 28 Sept. 2013.</p><br>
+   
+   
+  </td>
+
+<td valign="top"> <img src="verticalline.png" align="left" width="10" height="250" alt="line" /></td><td valign="top">
+<a href="zemurrayshandbook.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('kramer','','kramerline.png',1)"><img src="kramer.png" alt="Trista Kramer" width="165" height="30" id="kramer" /></a><br><p class="font1">Spring 2014 Winner</p><br>
+  <a href="eyesofthebeholder.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('burkart','','burkartline.png',1)"><img src="burkart.png" alt="Sarah Burkart" width="165" height="30" id="burkart" /></a><br><p class="font1">Fall 2013 Winner</p><br>
+  <a href="anythingbutnormal.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('tran','','tranline.png',1)"><img src="tran.png" alt="Vy Tran" width="165" height="30" id="tran" /></a><br><p class="font1">Featured Memoir</p></td></tr></table>
+<br>
+<br><br><br>
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<p><center><img src="horizontaline.png" width="920" height="12"/></center></p>
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

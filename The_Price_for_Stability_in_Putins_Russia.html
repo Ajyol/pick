@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 40px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>The Price for Stability in Putin&rsquo;s Russia</strong></h2>
+</center>
+<br>
+<p><strong>Nicholas Brilleaux</strong></p>
+<br>
+<p><strong>Course:</strong> English 102<br></p>
+<p><strong>Instructor:</strong> Ms. Annabel Servat<br></p>
+<p><strong>Assignment:</strong> Research Paper<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vladimir Putin, former President and current Prime Minister of Russia, has overseen a change in the balance of power, which has weakened the foundations of democracy in a similar fashion to the Nazis in 1930s Germany. Russia has shown aggression to its neighboring countries, and its young people have been taught to embrace Russia’s nationalism through state- sponsored youth organizations that are eerily reminiscent of the Hitler Youth. Those who are brave enough to stand up against Putin are jailed or murdered. Still, Putin has pulled Russia out of an economic crisis, and the majority of Russians support their leader and his beliefs. In Putin’s view, stability and security can only exist with limited freedoms.</p>
+<br>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putin’s administration of Russia began at the end of 1999, with the resignation of Boris Yeltsin (Ignatius 4). Russia, at this time, was in shambles. Crime was high, people were poor, and financial markets had collapsed. Russians were not very familiar with their new leader at the beginning of the new millennium. Putin, who had previously led a quiet political career, had only just been appointed Prime Minister by the corrupt Yeltsin four months earlier, and he was Yeltsin’s fifth Prime Minister in just over a year (Jack 42). Yeltsin chose Putin for his serious, straightforward approach and for his experience as director of the Federal’naya Sluzhba Bezopasnosti (FSB), Russia’s security service. The FSB was the successor to the Soviet Union’s KGB, in which Putin served as a spy during the 1980s (Ignatius 3).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The beginning of Putin’s term as president was accompanied by a war against Chechnya, which would mark the beginning of a decline in democracy in Russia. In 1991, Richard Lourie, author of <u>Predictin g R ussi a’s  Futur e </u> , envisioned terrorist attacks directed against the central government by states wishing to secede, ultimately leading to the suppression of human rights. Lourie predicted right, and in 1999, the terrorist bombings of a Moscow apartment complex by Chechen rebels helped fuel a war, despite little evidence that the Chechens were behind the attack. Alex Goldfarb, a Russian activist, is one of many who believe the bombings were staged by the Russian secret police in an effort to strengthen the power of Putin (Blincoe). Although most agree that this is unlikely, it remains a valid argument. This situation is not unlike the 1933 burning of the Reichstag, Germany’s parliament building, in Berlin (Wall 67). Communists were blamed and charged for the fire even though there is enough evidence that one could argue the Nazis were behind the burning. Nevertheless, Hitler used the burning to his advantage, saying the fire was proof of an attempted communist coup. He suspended the civil liberties of all citizens through the Presidential Law for the Protection of State and People, which he promised would be temporary. The decree was never revoked (Wall 67). Goldfarb believes Putin and his allies had done the same (Blincoe). After all, the persuasion of followers with scapegoats and myths in an attempt to do violence, is a common characteristic of fascism (Lourie 81).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Goldfarb is more than just a Russian activist. He works for Russian billionaire Boris Berezovsky, a dissident against Putin, who now lives in the United Kingdom under political asylum (Blincoe). One of Berezovsky’s former employees, Alexander Litvinenko, was famously murdered after receiving a fatal dose of polonium-210 in London in 2006. Both Goldfarb and Berezovsky argue that Putin personally ordered the murder, and the poison that killed Litvinenko could only have come from a state-owned nuclear plant (Blincoe).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Litvinenko had been a lieutenant-colonel in a corruption-busting department of the Putin- directed FSB. He often discovered that the source of corruption came from his own office, and the reports of his findings were ignored by Putin. Finally, after refusing an order to assassinate Berezovsky, Litvinenko was fired (Bennett). He fled the country and moved to the United Kingdom where he later wrote <u>The FSB Blows Up Russia</u>. The book was banned in Russia in what was called an effort to protect state secrets, and Litvinenko became frustrated with the U.K.’s lack of interest in his case. Before his death, Litvinenko had admitted that he feared for his life while in London (Bennett).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While the theories that Putin was behind the terrorist bombings in 1999 are rejected by many, there is an overwhelming amount of evidence that he was behind Litvinenko’s murder. Many people seem to have trouble admitting that Putin, who appears as a quiet, civilized man, would sanction such brutal schemes. However, there is something more unbelievable a connection between Putin, which lies within the Nashi (Lucas).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Nashi, meaning “ours,” is a state-sponsored youth organization with over 120,000 members. This is the largest of many organizations that embrace the Kremlin’s fascist ideals (Lucas). The Nashi, which supports the rise of the motherland, is very similar to the Hitler Youth, which in the 1930s promoted the growth of the fatherland. The Hitler Youth used
+ideological education, physical training, and demonstrations to prepare its members for service to Germany. Membership was not made mandatory until 1939, but like the Nashi, membership had its perks (Wall 104). Nashi youth may get free admission to top universities and thus have the advantage of getting a job in politics or business (Lucas).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While many of these Russian teenagers take the opportunity to succeed through school, some of them use violence against the Kremlin’s democratic opposition. In April of 2007, Nashi members vandalized the exterior of Estonia’s Moscow embassy and attacked a foreign ambassador’s car after Estonia moved a Soviet-era war memorial. Sinisterly, the Moscow police, did not intervene. In the same month, Putin banned foreigners from trading in Russia’s retail markets. This was accompanied by the harassment of gays and foreigners on the streets of Moscow by Nashi members (Lucas). There is little difference between the Nashi and the Hitler Youth.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While boys in the Hitler Youth received their physical training as preparation for deployment to the Wehrmacht (defense force) or the SS, German girls in the Hitler Youth were taught to prepare for motherhood (Wall 105). Russian girls in the Nashi are not only taught to prepare for motherhood but are encouraged to have children as soon as possible. Every year, the Nashi hosts a two week-long camp that involves lectures and physical fitness. More importantly, though, the youth are encouraged to have sex, but condoms are neither sold nor distributed. The camp also features “mass marriages.” These marriages are legal and attempt to show the participants’ devotion to the motherland. While sex is encouraged, drugs and alcohol are not allowed, and members wear electronic bracelets that monitor their every move (Lucas).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While Russian youth organizations like the Nashi attempt to raise the national birthrate and assist the state’s increasingly-popular fascist convictions, the Kremlin is working on rewriting the Russian history books. Putin has endorsed a new lesson plan for school teachers
+that describes Stalin as “the most successful leader of the USSR” but never mentions the millions of people who died under his rule. In fact, a 2007 poll showed that Russian teenagers believe Stalin was a great leader who did more good than bad (Lucas). While Stalin’s reputation is restored, Boris Yeltsin is denounced for his unpopular pro-western policies. The fact that Yeltsin was Russia’s first democratically-elected president is being ignored (Lucas).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While schools teach a distorted version of history, television stations and newspapers have been shut down or taken over (Ignatius 3). This is another practice used in Germany under Hitler. The Nazi Party hijacked any newspaper that did not follow strict regulations, and all newspapers were heavily censored (Wall 97). Anyone in Russia whose influence challenged the Kremlin has been silenced and this goes for opposing political parties as well. Politicians have been arrested for confronting Putin’s rule. Russian nationalists have always been paranoid about seeking enemies of the motherland (Lourie 80). The majority of Russians do not mind this unfair practice. Stalin once said, “The Russians like to have one man standing at the head of state” (Lourie 1). Stalin was right; Putin averages a popularity rating of seventy percent (Ignatius 3). Russians, who had previously left their country for places like the United States, Great Britain, and Israel, are now returning to their homeland for better salaries (Jack xv). Freedom has been the price for security, and the people of Russia do not seem to mind.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is important to note that while his policies and practices may be unlawful or immoral, Putin is no Stalin. Putin is no Hitler. Both Stalin and Hilter backed purges and mass-murder. He has limited some privileges of homosexuals and foreigners, but he has not indicated any intention of killing any of these people. Adi Ignatius of <u>Time Magazine</u> has compared Putin’s system to the mafia. It is all about power and money, and if someone gets in the way then disposing of that person is simply business. Putin is a firm believer that nations should not interfere with another state’s policies. This has made him an opponent of the United States’ war in Iraq, and he believes the Americans are attempting to disrupt Russia’s affairs (Ignatius 4). Putin simply wants to rule Russia without opposition (Ignatius 6).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Earlier this year, Putin stepped down as president and appointed his former chief of staff, Dmitri Medvedev to take his place. However, Putin continues to be the supreme commander of Russia as prime minister. Although Putin curtailed democracy, during his term as President, he helped Russia pay off a foreign debt of $200 billion. Also, he doubled workers’ salaries in the last five years (Ignatius 2). Putin has been successful, too, as sources inside his office have claimed that Putin had accumulated more than $40 billion during his eight years in office through his hidden ownership in oil companies. Many claim that this money is hidden in banks in Switzerland and Liechtenstein (Harding).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is hard to predict what Russia’s next move will be, but it is almost certain that democracy will be limited even more. The sad truth is that the majority of Russians simply do not care about their freedom as much as their stability. Although the situation is not perfect, a Russia without Putin could have been a disaster. While he often criticizes the United States and Great Britain, Putin remains open to a strong relationship with these nations (Ignatius 1). We should engage more on the issue of Russia’s foreign policy, but perhaps as long as the majority of Russians support their government, Western powers have no business criticizing Russia’s domestic affairs.
+</p>
+<br>
+<center><h3>&nbsp;</h3>
+  <h3>Works Cited</h3>
+</center>
+
+<p class="hangingindent">Bennett, Vanora. “From Russia with secrets.”  <u>The Times</u>  13 May 2005. <u>Times Online</u>. 2 Oct. 2008. <http://www.timesonline.co.uk/tol/comment/article522050.ece >.</p>
+<br>
+<p class="hangingindent">Blincoe, Nicholas. “All roads lead back to Berezovsky.”  <u>The Daily Telegraph</u>  14 June 2007. Telegraph.co.uk. 2 Oct. 2008. <http://www.telegraph.co.uk/arts/main.jhtml?xml=/arts/2007/06/14/bogol1109.xml >.</p>
+<br>
+<p class="hangingindent">Harding, Luke. “Putin, the Kremlin power struggle and the $40bn fortune.”  <u>The Guardian</u> 21 Dec. 2007. <u>Guardian.co.uk.</u> 2 Oct. 2008. <http://www.guardian.co.uk/world/2007/dec/21 russia.topstories3>.</p>
+ <br>
+<p class="hangingindent">Ignatius, Adi. “A Tsar Is Born.”  <u>Time</u> 2007. 13 Oct. 2008 <http://www.time.com/time/specials/2007/personoftheyear/article/0,28804,1690753_1690757_1690766,00.html>. </p>
+<br>
+<p class="hangingindent">Jack, Andrew. <u>Inside Putin’s Russia</u>. New York: Oxford UP, 2006.</p>
+<br>
+<p class="hangingindent">Lourie, Richard. <u>Predicting Russia’s Future</u>. Whittle Direct Books, 1991.</p>
+<br>
+<p class="hangingindent">Lucas, Edward. “Sex for the motherland: Russian youths encouraged to procreate at camp.” <u>Daily Mail</u> 29 July 2007. <u>Mail Online</u>. 2 Oct. 2008. <http://www.dailymail.co.uk/news/ article-471324/Sex-motherland-Russian-youths-encouraged-procreate-camp.html>.</p>
+<br>
+<p class="hangingindent">Wall, Donald D. <u>Nazi Germany and World War II</u>. Belmont: Wadsworth/Thomson Learning,2003.
+</p>
+<br>
+<p><strong>Ms. Servat’s Comments:</strong> <em>Mr. Brilleaux has given a very clear critique for a complex issue. His examination of Putin’s importance and nature is well researched, and developed with a fair evaluation. Besides, Mr. Brilleaux is an excellent writer, so his work is always interesting reading.</em></p>
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+<center><img src="horizontaline.png" width="920" height="15"/></center>
+<br>
+
+<center> <a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="40" height="50" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="65" height="50" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="213" height="50" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="38" height="50" id="facebook" alt="Facebook" /></a><br><br>
+©2014
+<br></center>
+<!-- end .container --></div>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

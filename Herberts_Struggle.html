@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>Herbert's Struggle</strong></h2>
+</center>
+<br>
+<p><strong>Clara Mae Wells</strong></p>
+<br>
+<p><strong>Course:</strong> English 231<br></p>
+<p><strong>Instructor:</strong> Dr. Natasha Whitton<br></p>
+<p><strong>Assignment:</strong> Argument<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;George Herbert’s legacy rests on his writings concerning all things divine; the fact that not one of his secular English poems exists anymore may have something to do with the almost automatic association of Herbert with God or Christianity, but it is more than that. Herbert’s works have an air of fervor about them. It is not just religion for him—it is a relationship. This relationship is not a perfect one, however. Though the bond is not exactly customary because it is between God and a man, it is genuine because of real misunderstandings and ups and downs. And that is what makes it so great. It is not the love and joy in his relationship with God but the intense struggle woven throughout that makes Herbert’s works come alive, draws readers in, and affects them long after they have read the last line.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Herbert himself describes his collected works as "a picture of the many spiritual conflicts that have passed between God and my soul" (qtd. in "George Herbert" 659). And there are many probable reasons—besides the saddening state of the world—for Herbert’s struggles. Herbert’s father died when he was a toddler, leaving his mother to care for ten children. She did an excellent job and had such a profound effect on Herbert that he sent her his first two sonnets; those sonnets proclaim how precious the love of God is ("George Herbert" 659). Later on, in the same year that Herbert made a selfless, life-altering sacrifice, his mother died. He was Reader in Rhetoric at Cambridge, then appointed public orator; this position gave Herbert the opportunity to get acquainted with powerful men, and he could have become like them ("George Herbert" 659). Instead, Herbert became a deacon and left his job as public orator. That, in and of itself, had to be tough. It is likely that he felt very confused, and possibly even betrayed, when the death of his mother occurred around the same time he made such a monumental decision (Jokinen). Still, Herbert became the pastor in Bemerton, a parish in Wiltshire. Barot describes the place as a "small, poor and rural village . . . known for its chalky geology . . .  Wiltshire in March [has] some days of still-heavy snow [and] a good number of days of heavy rains. There is little sun, though spring is starting to peek out in parts of the landscape, only to be beaten back by the weather’s temper" (428). Such locations are commonly associated with SAD, or seasonal affective disorder, which is a type of depression brought on by surroundings where it is dreary and rains a lot, like in Alaska or Seattle. So not only did he give up the life that he could have had, but the path he chose did not exactly leave him delighted all the time. In actual fact, Herbert’s decision to pastor in Bemerton was so odd that many assumed the position was just some sort of "layover" on his journey to the top (Barot 433).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The truths of Herbert’s relationship with God are that of struggle, and this struggle is at the center of many of his poems. <em>The Norton Anthology of English Literature</em> confirms: In poem after poem he has to come to terms with the fact that his relationship with Christ is always radically unequal, that Christ must both initiate it and enable his own response. Herbert struggles constantly with the paradox that, as the works of a Christian poet, his poems ought to give fit praise to God but cannot possibly do so—an issue explored in "The Altar." ("George Herbert" 660)</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So even though "The Altar" may be perceived as a poem of great praise, it too involves inner conflict. The struggles of Christianity are understandable, for ultimately Christians have nothing to do with their own salvation. In Ephesians, Paul points out to Christians in Ephesus,
+"Once  you were dead because of your disobedience and your many sins,"  and he continues a little further down in the chapter, "But God is so rich in mercy, and he loved us so much, that even though we were dead because of our sins, he gave us life when he raised Christ from the dead (It is only by God’s grace that you have been saved!)" (<em>New Living Translation</em>, Eph. 2.1; Eph. 2.4-5). Later in the chapter, Paul informs those who may have any doubt, "God saved you by his grace when you believed. And you can’t take credit for this; it is a gift from God. Salvation is not a reward for the good things we have done, so none of us can boast about it" (<em>New Living Translation</em>, Eph. 2.8-9). This can be difficult for a lot of people to accept. Some like to earn what they receive; that can help them appreciate it more and really hold it as dear. Or perhaps they just want to feel that they deserve what has been given to them. Others like to brag about what they have. There is little reason to boast, though, when people themselves are not the cause of the good things that they have. God must have understood that this would be difficult to accept.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Herbert is not alone in wanting to work for grace. In Galatians, Paul admonishes Christians in Galatia, "How foolish can you be? After starting your Christian lives in the Spirit, why are you now trying to become perfect by your own human effort? Have you experienced so much for nothing? Surely it was not in vain, was it" (<em>New Living Translation</em>, Gal. 3.3-4)? In Colossians, Paul encourages Christians in Colossae, "And now, just as you accepted Christ Jesus as your Lord, you must continue to follow him" but also cautions them, "these rules may seem wise because they require strong devotion, pious self-denial, and severe bodily discipline" (<em>New Living Translation</em>, Col. 2.6, 23). Many things appear to be right or wise, but they are not. Christians then will get nowhere by abusing their bodies or merely trying to adhere to a lot of regulations. As they begin in faith, that is how they must continue, for it is stressed in Hebrews that it is impossible to please God without faith, and according to Isaiah, the righteous deeds of humans are like filthy rags in the sight of God (<em>New Living Translation</em>, Heb. 11.6; Isa. 64.6). So, through their work Christians are often tempted and naturally gravitate toward earning favor from God; the Bible makes it clear that this alone is not enough.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Even "Love (III)"—one of Herbert’s poems in which readers will most expect to experience beautiful imagery, inspiring scripture—is drenched in struggle. The tug of war is amazing: God says ―yes," Herbert says ―no"…God replies ―but wait," Herbert counters ―but no"…The closer God moves in, the further Herbert moves back. God beckons, and Herbert withdraws. In the poem, Love represents God. One would expect that if God says that a person is welcome, then that person is welcome. It has been established that God’s words are powerful and lasting. God does not lie, and he does not change; he is the same yesterday, today, and forever. Yet when this all-powerful, unchanging God speaks with his authoritative words and says that Herbert is welcome, Herbert draws back. I am assuming that the speaker is Herbert or a side of Herbert since he said that his poems are about conflicts between God and himself. Herbert resists. He knows that he is sinful, and he has shame because of that. But he also accepts that all humans are sinful. Not only is God well-acquainted with the general sinful nature of humans, but he is not surprised by specific sins that humans commit. Herbert knows that God knows him better than he knows himself. Regardless, Herbert shies away when God welcomes him. God could have moved on after that. He does not have to continue to pursue Herbert, but he does. Still, Herbert cannot help but let God know that he is not worthy. This is evidence of how difficult it is for Herbert to take something that he feels he did not earn. Despite Herbert’s refusal to take what he is given, God does not get annoyed and cancel the invitation. Instead, God takes Herbert by the hand and reminds him of who paid the price. Jesus lived how Herbert should— but could not—live (perfectly), and he died to pay Herbert’s debt. Eventually, Herbert gives in. But the point is that this was not a "give in" situation. It is not as if Herbert was defeated by an enemy and had to surrender. His Creator wants to take him in. He gives nothing but love, but Herbert struggles against him.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some people may argue that Herbert’s poems are about God’s love and praise him for it. Though Herbert would love for his poems to do nothing but proclaim God’s goodness and worship for him, those are not the only – or main – themes of his work. The poems I have discussed are not only poems that focus on inner conflict as a major theme. In much of his work, Herbert may say how awesome God is, but he is sure to include his own unworthiness. And he does not always say it with humility; many times his words are filled with doubt. In the Norton Anthology of English Literature, it claims, "Unlike  Donne’s poems, Herbert’s poems do not voice anxious fears about his salvation or about his desperate sins and helplessness" ("George Herbert"  659). I disagree. Herbert may not directly say that he fears that he is not truly a Christian, but in "Love (III)," for example, when Herbert rejects God’s invitation, he does not say that he doubts that God is as good as he says he is. It seems as though Herbert just doubts himself. But if God says that Herbert is welcome and that Jesus’ sacrifice (which is what gets him in right standing with God) is for all sin, then Herbert has no need to doubt. He doubts because he resists the notion that only Jesus’ sacrifice—instead of the sacrifice and his works— saves him. He struggles with the fact that all sin—past, present, and future—is forgiven. He struggles with the fact that God sent Jesus while humans were sinning with no sign of turning away. And if when Herbert was an enemy of God, God did not withhold his Son, how much more is Herbert accepted now that he is in right standing with God because of Jesus! It is tough - and that toughness it at the center of Herbert’s poems.</p>
+ <br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not everyone feels able to identify with unconditional love—or love of any kind—but most know what it is like to experience struggles. Conflict does not discriminate. That is why in the Bible, it says when you face trials, not <em>if</em> you face them. After reading one of Herbert’s poems, no one is likely to think "Well,  good for Herbert, but this does not speak to me." Herbert’s work rings true because all mortals struggle. The Luminarium website, an online anthology of English Literature, observes, "Because  Herbert is as much an ecclesiastical as a religious poet, one would not expect him to make much appeal to an age as secular as our own; but it has not proved so. All sorts of readers have responded to his quiet intensity" (Jokinen). The struggle is the reason why this is so.</p>
+<br>
+<br>
+<br>
+<center>Works Cited</center>
+<br><br>
+<p class="hangingindent">Barot, Rick. "Devoted Forms: Reading George Herbert." <em>Southwest Review</em> 93.3 (2008): 428-33. Print. "George Herbert." <em>The Norton Anthology of English Literature</em>. Ed. Stephen Greenblatt. 8th ed. New York: W.W. Norton & Company, Inc., 2006. Print.</p>
+<br>
+<p class="hangingindent">Jokinen, Anniina, Ed. "The Life of George Herbert." <em>Luminarium: Anthology of English Literature</em>. N.p. 17 July 2007. Web. 15 Mar. 2009.</p>
+<br>
+<p class="hangingindent"><em><em>New Living Translation</em></em>. Ed. Mark R. Norton. Wheaton, Illinois: Tyndale House, 2004. Web. 15 Mar. 2009.</p>
+<br>
+<br>
+<br>
+<p><strong>Dr. Whitton’s Comments:</strong> Clara Mae was given the option of writing about any author in the pantheon of British Literature, and I was surprised when she chose to write about Herbert since material on the poet can be scant. When I read her paper, I was impressed by her attention to detail and the balance that she created between source material and her own voice which was distinct throughout the essay. Her careful and nuanced reading of Herbert’s work is exceptional and exceeded the minimum expectations for the assignment.</p>
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+ <div class="footer">      
+<center><img src="horizontaline.png" width="920" height="12"/></center>
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

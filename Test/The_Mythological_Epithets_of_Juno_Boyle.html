@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>The Mythological Epithets of Juno Boyle</strong></h2>
+</center>
+<br>
+<p><strong>Aaron Duplantier</strong></p>
+<br>
+<p><strong>Course:</strong> English 606<br></p>
+<p><strong>Instructor:</strong> Dr. Martin Kearney<br></p>
+<p><strong>Assignment:</strong> Research Paper<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The adherence to the many mythological epithets of the Roman goddess Juno by the character Juno in Sean O‘Casey‘s play <em>Juno and the Paycock</em> is explained through O‘Casey‘s own childhood experiences. His mother (Susan Casey), after the death of his father, tried desperately to keep her family alive and healthy despite the filth, ignorance, and despair of tenement life” (daRin 9). This sentiment reflects the Juno of O‘Casey‘s play; a series of emotional trials do not bend her will, nor do they ultimately distract her from her role as mother by the play‘s end. O‘Casey, suffering from a debilitating physical ailment concerning his eyesight, relied entirely on the heroic efforts” of his mother who took him to a clinic miles from their home for treatment” (daRin 9). This, again, reflects Juno Boyle as she unflinchingly deals with her daughter‘s unexpected pregnancy with rationality and intelligence. The Juno of Roman mythology mirrors both women as her trials come in the form of her husband‘s infidelities and spousal ineptitude. Her response, throughout mythological works, is unwavering determination in the face of her husband Jupiter‘s abrasive behavior. O‘Casey‘s familiarity with the Juno of Roman mythology is implicit amongst the various literary works of his childhood and adolescence. Before learning how to read at sixteen, O‘Casey relied on the oral storytelling popular in the home of his youth and deliberately kept alive by his mother, who encouraged learning despite their circumstances. Though most of his mother‘s literary tastes revolved around the Bible, O‘Casey and his brothers held playwrights like Shakespeare and Boucicault in high regard (Kearney 22). Plays like em>A Midsummer Night’s Dream</em>  and <em>The Tempest</em> both include references to the Roman Juno. Aesop‘s fables, typically transmitted through the oral traditional, include one piece entitled, coincidentally, The Peacock and Juno,” which directly references the Juno of myth. It is not unreasonable to infer that through O‘Casey‘s exposure to these works, he was more than casually familiar with the goddess Juno and her various epithets. Indeed, the
+many roles of Susan Casey, as provider, nurturer, and stoical widow, lay the foundation for Juno Boyle‘s proper recreation of the mythological character she is associated with. Also, by his own admission, O‘Casey acknowledges that Juno is based on events in my life” (Rollins 104). With this being known, the various mythological epithets of the Roman goddess directly correlate with the character Juno within the family dynamics of <em>Juno and the Paycock</em>.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under the epithet the "goddess of hearth,” the Juno of Roman mythology embodies the divine force ruling over the focal point of the family home–the kitchen (Bray 91). Though the set design of the tenement home in which <em>Juno and the Paycock</em> takes place makes no clear distinction between living room and kitchen, the center of the stage clearly showcases the area where food is served, reiterating the fireplace used for food preparation (essentially a hearth) as crucial to the story (O‘Casey 205). Juno Boyle as the goddess of hearth,” given the traditionally prominent role of kitchens within the context of the family home, equates to the central force of O‘Casey‘s fictional family. Her role as the fundamental moralizing figure displays to the other family members the transcendent behavior they should aspire to. Heinz Kosok interprets her as similarly central to the logistics of the play: As a character, Juno from the start demands more attention than the others” (165). Furthermore, James Scrimgeour says outright that the main plot centers around Juno” (73). The play also contains interactions between Juno and the Boyle men involving her role in the kitchen which, sheds light on her attitude toward the male members of the family. Johnny requests a glass of water and Juno‘s response is telling of her opinion in reference to her son. She says of his lackadaisical attitude, You‘d think he was bringin‘ twenty poun‘s a week into the house the way he‘s going on” (O‘Casey 206). Despite her serving him the glass of water anyway, it is apparent through this exchange that her serving him is her knowingly enabling his retrogressive behavior. Her argument with Mr. Boyle over the breakfast she has prepared for him displays a similar disdainful, yet committed, attitude. Even though he continues to spin yarns” and weasel out of work, she serves him sausage. His rejection of the food does not deter her; she continues pressing him until finally conceding to his eternal stubbornness and pride. The sausage incident” just furthers the notion of Juno representing the positive role model for the family. The men are resistant to her in the play, which ultimately leads to their downfall. The source of Juno‘s transcendence can be traced to another one of her mythological counterpart‘s epitaphs: the "genius of womanhood” (Bray 19).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Juno Boyle establishes herself as a relative "genius” early on in the play. In the first act, she confronts one of the primary intellectual disputes of the play with the unique insight attributed to her character. Both her children reference the importance of living by a set of "principles.” Juno‘s response to this kind of irrational idealism is, without a doubt, the result of a woman hardened and educated by tenement life. Her individual perspective of the world revolves around the value of life – a concept both Mary and Johnny are unappreciative of. She explains to Johnny after his proclamation of a principle‘s a principle” that he lost his best principle when he lost his arm (O‘Casey 221). Essentially, Johnny sacrificing his left arm for a principle” resulted in a very serious threat to his livelihood in Juno‘s eyes. While missing an arm, Johnny is less valued as a laborer than a man who still has both. Through her experiences as mother and provider, Juno is a survivalist. To her, sustaining life and keeping her family fed supersedes ideology. She adheres to a pragmatic rationalism that is attained through the genius of womanhood and is lacking in the other family members. The traditional concerned, watchful role women take up within the familial structure offers Juno a unique opportunity to ascertain truths from the pitfalls of her loved ones (her husband being an especially useful teaching mechanism). She is disconcerted by Johnny‘s replication of the same vainglory that plagues Capt. Jack. Doris daRin remarks, Johnny‘s involvement in the political scene was based more upon his youthful vanity than upon any strong commitment to the ideals and values of republicanism” (52). To Juno‘s dismay, she is far too late to rescue her son from his ignorance, but he is redeemed through her quick reaction to Mary‘s character damaging pregnancy and knowing dismissal of her husband. However, Juno‘s genius” is not infallible. Like the Roman goddess she is associated with, Juno is faulty, making mistakes of her own.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Virgil‘s Juno of The Aeneid is a vindictive, jealous goddess who proves to be the principal antagonistic force in Aeneas‘s journey. This Juno is certainly not the admirable goddess Roman women prayed to for aid. One of Juno Boyle‘s indiscretions within the context of the play occurs when the prospect of inheriting a substantial amount of money makes her ignore her genius. Caught up in the fervor of excitement surrounding their future wealth, Juno makes no attempt to halt the mounting debt her family and herself are rapidly incurring. Kosok cites her acceptance in the arduous task of lugging around the gramophone, an obvious indulgence, as an example of her failings in this respect. He says, The room filled with useless junk ‗of a vulgar nature‘ and the gramophone that she carries in, show that she has not succeeded in handling the borrowed money in a useful way” (171). Juno is human and flawed, but her idealized role in the play does not waver even with these imperfections. If anything, she is bolstered by her mistakes. She undergoes a substantial metamorphosis by the play‘s end through the lessons she learns from her missteps. Kosok affirms this notion and furthers it by describing her as the only [character] to undergo a development” (165). In a symbolic sense, the meaning of Juno‘s name follows a similar developmental path. Capt. Jack, in Act I, recalls that Juno‘s name originated, in a somewhat absurd fashion, in relation to the month of June. The downplaying of her name is reminiscent of her initial actions regarding her family. She chides her children and husband, bickers and barks but does nothing beyond distributing verbal chastisements. After awakening from her stupor of passive disapproval in Act III, she earns the stoicism and genius” typically associated with the mythological figure who shares her name. Her remorse over hastily criticizing Mrs. Tancred and the sobering realization of her son‘s death allows her to remember her genius and grants her the ability to free herself from the life that forced her into a state of complacency. Juno‘s relationship with Capt. Jack follows this same platform of metamorphosis.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The mythological namesake goddess of marriage” is fitting in the case of Juno Boyle (Bray 91). Her marriage to Capt. Jack not only highlights the significance of her role in the play, but also the juxtaposition between Capt. Jack and Juno‘s personalities, reinforcing the play‘s underlying gender commentary. James Scrimgeour writes of Juno, Her life is, as we can plainly see, a series of sacrifices for the other members of the family. Every action, whether a major one like holding a job to support the entire family or a minor one like getting the whining Johnny a glass of water, reveals this concern” (76). As a goddess, Juno Boyle embodies a beacon of light amidst the ignorant fog that hangs inside the Boyle household. This fog is portrayed through the mentality of the entire family, but Capt. Jack is by far the most pronounced. Scrimgeour comments on Juno‘s husband:</p>
+<br>
+<p class="fullindent">Captain Jack Boyle, in direct contrast to his wife, is characterized by selfishness. Every act, whether it is borrowing money from all his neighbors on the strength of a will he knows fully well will never come in or a minor act like covering Joxer‘s empty plate with gravy and calling it 'sausige,' shows him thinking only of
+himself. (76)</p>
+<br>
+<p>Juno being the "goddess of marriage” is a positive extreme in relation to Capt. Jack‘s negativity which coincides with their juxtaposition. This, in turn, fleshes O‘Casey‘s metaphor concerning the title of the play in referencing the myth of the Roman goddess.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Even when given the task of protecting her, the Roman Juno‘s peacocks (Capt. Jack equating to Juno Boyle‘s paycock”) are subservient or lesser than her. Though Juno considers her peacocks sacred, they still dwell beneath her as servants (Hamilton 27). Juno Boyle‘s love for her husband is implicit in her dedication. She puts up with his complaints about the pains in his legs and cooks breakfast for him despite his lying and disrespect (O‘Casey 211). But, the typical gender role of provider and head of the household” is reversed in <em>Juno and the Paycock</em>. The man, Capt. Jack, is not the dominant force and, like the mythological Juno‘s peacocks, dwells beneath Juno Boyle. O‘Casey‘s specific wordage reiterates the play‘s title acting as a literal reduction of Capt. Jack as a character and an archetypal masculine figure. Bernice Schrank writes, The play‘s title in juxtaposing ‗Paycock‘ and ‗Juno,‘ that is, godliness and animality, comments not only on its two main characters, but on human nature” (442). Juno does not necessarily serve, but merely acts on the love she feels for her flawed but sacred husband. David Krause remarks on this issue:</p>
+<br>
+<p class="fullindent">O‘Casey was aware of the fact that the classical Juno was always associated with peacocks, the patron birds who are often near her or draw her chariot, but he used this aspect of the legend in a completely ironic way by giving Juno a peacock of a husband who takes his name from the common association with strutting vanity. (75)</p>
+<br> 
+<p>Both the woman of myth and the woman of O‘Casey‘s play also parallel one another in their problematic relationships with their spouses.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While the Roman Juno has infidelities to deal with, Juno Boyle bears the weight of her family‘s survival in the midst of her husband‘s failings on her shoulders. Both women‘s spousal contentions define their personas within their individual stories. Rollins writes on the matter, Like her Roman counterpart, O‘Casey‘s admirable woman struggles to salvage her marriage and protect her pregnant daughter, Mary. Yet ‗Captain‘ Jack, the Irish ‗paycock,‘ refuses to attend–to protect–his Irish Juno, preferring to skip into Foley‘s pub in his faded plumage, soiled clothes, and faded seaman‘s cap” (106). There is most certainly a reliable unreliability of the husbands in both the myth and O‘Casey‘s play. Jupiter never ceases in his extramarital affairs. The mythology of Juno shows her chiefly engaged in punishing the many women Jupiter fell in love with” (Hamilton 27). Capt. Jack is equally ceaseless in his infantile and irresponsible behavior. In Act I, Juno responds to his leg pains in a completely unsurprised and relatively exhausted manner. She says, Oh it won‘t be very long now till it travels into your left wan. It‘s miraculous that whenever he scents a job in front of him, his legs begin to fail!” (O‘Casey 213). There is a hopeless dedication consistent in both women. Not until the play‘s end does Juno Boyle wake up from this hopelessness and metamorphose from dutiful goddess of marriage” to something truly divine. Juno‘s mythological epithet born of the "goddess of marriage” is the
+"goddess of childbirth” (Boyle 91).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mary‘s unexpected pregnancy proves to be the defining instance wherein Juno inhabits the role of goddess of childbirth.” Roman women prayed to the goddess seeking aid and reassurance in their pregnancies, which Juno Boyle provides for her hapless child. She calms Mary‘s fears pertaining to her poor little child” having no father: It‘ll have what‘s far betther "it‘ll have two mothers” (O‘Casey 253). The involvement of two women in the birthing process is similar to the mid-wife and pregnant woman relationship. Again, this is a reflection of the mythological Juno‘s place at the bedside of her followers. But, Juno Boyle receives none of the respect of her Roman equivalent. Her advice falls on deaf ears, and Mary succumbs to the vanity her naivety ripens. Mary‘s romantic ideas about love and intellectuality, fostered by her
+literature, leave her vulnerable to the erudite Mr. Bentham. O‘Casey describes Mary as being "influenced by literature” which supposedly is pushing her forward” (O‘Casey 205). She has expectations for her future, and her relationship with Mr. Bentham is the means by which she believes she can attain these expectations. But, as Michael Kaufman says of <em>Juno and the Paycock</em>, it is a play of betrayed expectations” (192). Mary‘s naivety is reinforced by this duplicated concept of the importance of principles. Juno does her best to warn Mary of her destructive ideology, but her desire for high-minded living results in a bastard pregnancy. Mary‘s punishment is less fatal than Johnny‘s but a punishment nonetheless. The emotional mechanism of Johnny‘s death serves as a catalyst for the godly powers lurking inside Juno, her quick, competent reaction to Mary‘s predicament occurring directly after Juno receives word of her son‘s death (O‘Casey 252). Juno‘s lamentation incites maturation and divinity reiterated through her own final pleas, fittingly enough, directed toward Mary Mother o‘ God.” She explicitly cries out, "Mother o‘ God, Mother o‘ God, have pity on us all!” (253).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notwithstanding, as far as Juno Boyle is concerned, is O‘Casey‘s general love of mothers. In a letter to Ronald Gene Rollins, O‘Casey writes, Juno is a true hero, though unhonored and unsung; like thousands more, and this heroism is everlasting, for it is from God‘s heart and is the central pulse of Nature. I have known many such courageous women, young and old. The greatest saints have never been canonized” (105). No doubt a result of O‘Casey‘s own intimate connection with his mother, the female characters throughout his work always remain close to the realities of life and when there is a call for responsible action they put aside self- gratification and act” (Krause 78). The treachery of tenement life combined with human weakness incites the stoicism and bravery inherent in Juno Boyle. Her heroism, the antithesis of Capt. Jack‘s anti-heroics, stands as a testament to the divine mythos of her name.
+
+</p>
+<br>
+<br>
+<center><strong>Works Cited</strong></center>
+
+<p class="hangingindent">Aesop. "The Peacock and Juno." <em>Aesop’s Fables</em>. 1867. <em>Project Gutenberg</em>. Trans. George Fyler Townsend. 8 July 2008 < http:// www.gutenberg.org/files/21/21-h/21-h.htm>.</p>
+<br>
+<p class="hangingindent">Bray, Frank Chapin. <em>The World of Myths: A Dictionary of Mythology</em>. New York: Thomas Y. Crowell, 1935.</p>
+<br>
+<p class="hangingindent">daRin, Doris. <em>Sean O’Casey</em>. New York: Frederick Ungar, 1976.</p>
+<br>
+<p class="hangingindent">Hamilton, Edith. <em>Mythology</em>. New York: Little, Brown and Company, 1969.</p>
+<br>
+<p class="hangingindent">Kaufman, Michael W. "O‘Casey‘s Structural Design in Juno and the Paycock." <em>Quarterly Journal of Speech</em> 58 (1972): 191–98.</p>
+<br>
+<p class="hangingindent">Kearney, Colbert. <em>The Glamour of Grammar: Orality and Politics and the Emergence of Sean O’Casey</em>. Westport: Greenwood Press, 2000.</p>
+<br>
+<p class="hangingindent">Kosok, Heinz. <em>Juno and the Paycock. Modern Critical Views: Sean O’Casey</em>. Ed. Harold Bloom. New York: Chelsea House, 1987. 155–174.</p>
+<br>
+<p class="hangingindent">Krause, David. <em>Sean O’Casey: The Man and his Work</em>. New York: Macmillan, 1960.</p>
+<br>
+<p class="hangingindent">O‘Casey, Sean. <em>Juno and the Paycock</em>. <em>Modern Irish Drama</em>. Ed. John P. Harrington. New York: Norton, 1991. 204–254.</p>
+ <br>
+<p class="hangingindent">Rollins, Ronald Gene. <em>Sean O’Casey’s Drama: Verisimilitude and Vision</em>. Tuscaloosa: University of Alabama Press, 1979.</p>
+<br>
+<p class="hangingindent">Schrank, Bernice. "Dialectical Configurations in <em>Juno and the Paycock." Twentieth Century Literature: A Scholarly and Critical Journal</em> 21.4 (1975): 438–56. Scrimgeour, James R. Sean O’Casey. Boston: Twayne, 1978.</p>
+<br>
+<p class="hangingindent">Shakespeare, William. <em>A Midsummer Night’s Dream. The Unabridged William Shakespeare</em>. Ed. William George Clark and William Aldis Wright. Philadelphia: Running Press, 1989. 196–219.</p>
+<br>
+<p class="hangingindent">Shakespeare, William. <em>The Tempest. The Unabridged William Shakespeare</em>. Ed. William George Clark and William Aldis Wright. Philadelphia: Running Press, 1989. 1–26.
+</p>
+<br><br>
+
+  <p><strong>Dr. Kearney’s Comments:</strong> <em>I highly recommend this essay on Juno and the Paycock. It presents an insightful analysis of O‘Casey‘s use of myth therein which readers will find interesting and enlightening.</em></p> 
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<center><img src="horizontaline.png" width="920" height="12"/></center>
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<center><h1 style="padding:0px 5px 0px 5px; font-family:garamond;">CMS (Chicago Manual of Style)</h1>
+
+	<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">Since 1906, The Chicago Manual of Style has been has been the preeminent guide to American English in the world of publishing. CMS outlines dual documentation processes:</p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-bibliography/notes</p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-author/date</p>
+	<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">In each case, the writer’s subject matter and source materials will ultimately determine which method of citation protocol is used, and each academic has their own preference. For example, liberal arts scholars generally adhere to the bibliography/notes method, while those studying the sciences tend utilize the author/date form of citation. The Chicago Manual of style offers detailed instructions and in-depth examples of each. It also lays out explanations for documenting sources in a variety of circumstances such as:</p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-multiple authors</p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-editor, translator, or compiler</p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-author and editor</p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-specific chapter </p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-edited volumes</p> 
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-preface, foreword, and introduction</p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-electronic books</p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-print journals</p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-online articles</p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-book reviews</p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-thesis and dissertation</p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-websites</p>
+<p style="padding:0px 5px 0px 5px;font-size:20px;font-family:garamond;">-blog entries</p></center>

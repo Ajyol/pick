@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;	
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 40px;
+}
+.fifthindent {
+	padding-left: 100px;
+	font-size: 16px;
+}
+.hangingindent {
+	text-indent: -15px;
+	padding-left: 40px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.font1 {
+	font-size: 12px;
+	padding-left: 20px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','kramerline.png','burkartline.png','tranline.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" /></a></div>
+ 
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+  <table> <tr><td width="650" valign="top">
+<center>
+  <h3>Anything But Normal</h3>
+<h4>by VY TRAN</h4>
+<h4>INSTRUCTOR: CHANCE HARVEY</h4></center>
+<br>
+ <p class="fullindent"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sweat trickling down my face, I could feel my heart beating in every single body part. I stood in front of my parents as they sat down in our living room. The looks they gave me increased my already accelerating heart rate. My father stared at me, wondering what it was that I was trying to tell him. The expression on his face made my legs quiver. My mother’s annoyed glares made my arms tremble, but I could no longer hide from them the truth about me. I felt the words that needed to be said stick in my throat, but I somehow managed to choke out, “I’m gay.”<br>
+ 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The atmosphere changed. I watched that short sentence visibly hit my parents like a car crashing into a wall. I stood there awkwardly, terrified of what would happen next. As they processed the words that came out of my mouth, my parents’
+worry shifted to confusion. I could tell that my confession had been a mistake. The looks they gave were not the loving and kind looks that I had grown up with and now desperately needed. They were the looks of disappointment, lack of understanding, and intolerance. Then, anger washed over my mother like a lightning strike. She quickly stood up and yelled, “No!” loudly enough for that word to forever ring in my ears.<br>
+ 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;She immediately rushed over to me and pinned me to the wall with such a strong grip that I was sure that her nails would break my skin. She gave me a hard, cold stare, so cold that I shivered, and said to me in a stern and angry voice, “Don’t you dare ever be anything but normal. If you try that, you are no longer my daughter.” Her words stabbed at me like knives. She continued to hold me there to let her words sink in. As her outraged eyes glared at me, my heart skip beats, and I was no longer sure if I was even breathing anymore. Terrified, I turned my head and looked at my father with pleading eyes, begging for help, but he just sat there quietly, doing nothing. The only noise that any one of us could hear was the clock ticking. Finally, after what felt like hours, my mother let go of me. My father then stood up, and they both left the room without another word.<br>
+   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once they were out of sight, I sunk down to the soft carpet and choked out the sobs that I had been holding in. The air was failing me, I felt as if I could no longer breathe. The house was quiet, but the echoes of my mother’s ultimatum haunted
+the walls. I could still hear the words she jabbed at me ringing in my ears. It made me become smaller and smaller, and I no longer wanted to be there. I reached my arm out and used the wall as support to push myself up off of the floor. I walked to my room, quietly, so quietly that it was as if I was not there.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As soon as I entered my room, I went straight to the mirror to look at my reflection. I stood and watched as I sulked and felt sorry for myself. The pain that I experienced was almost too unbearable. It was too much to live through. If my own
+parents could not accept me, then who would? I took a closer look at myself and saw my red-rimmed eyes that were swollen and puffy from crying. My cheeks were stained with tears. I looked down and discovered my hands were still trembling.<br>
+   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I realized that I had several options: I could do as my mother told me and be someone I wasn’t, I could just leave her and my father completely out of my business, or I could end the pain and hurt that we were suffering. As I sat there and
+thought of which option to take, I asked myself one simple question: Was my life in her hands or in mine?<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am not my mother, and she cannot make all the decisions in my life for me. After that day, I realized that my life is in my own hands, and I have the choice to live it however I want it. I will not be influenced by others or mold myself to
+the image someone else wants me to be. It took me two very long and very difficult years to understand that, but now I can stand up a little taller, have a genuine smile on my face, and continue on with my life with no regrets because no one is going to tell me who to be.</p>
+<p class="fullindent">&nbsp;</p>
+   
+   
+  </td>
+
+<td valign="top"> <img src="verticalline.png" align="left" width="10" height="250" alt="line" /></td><td valign="top">
+<a href="zemurrayshandbook.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('kramer','','kramerline.png',1)"><img src="kramer.png" alt="Trista Kramer" width="165" height="30" id="kramer" /></a><br><p class="font1">Spring 2014 Winner</p><br>
+  <a href="eyesofthebeholder.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('burkart','','burkartline.png',1)"><img src="burkart.png" alt="Sarah Burkart" width="165" height="30" id="burkart" /></a><br><p class="font1">Fall 2013 Winner</p><br>
+  <a href="anythingbutnormal.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('tran','','tranline.png',1)"><img src="tran.png" alt="Vy Tran" width="165" height="30" id="tran" /></a><br><p class="font1">Featured Memoir</p></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<p><center><img src="horizontaline.png" width="920" height="12"/></center></p>
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

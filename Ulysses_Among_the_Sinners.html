@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>Ulysses Among the Sinners</strong></h2>
+</center>
+<br>
+<p><strong>Brandi Hopkins</strong></p>
+<br>
+<p><strong>Course:</strong> English 351<br></p>
+<p><strong>Instructor:</strong> Dr. Jim Walter<br></p>
+<p><strong>Assignment:</strong> Critical Analysis<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In his work <em>Inferno</em>, Dante often illustrates sins by using well-known literary figures most readers would be familiar with. One such figure is Ulysses, who is cast among the fraudulent counselors alongside his friend Diomedes. Ulysses has been idolized for centuries as a Greek hero renowned for his trickery, often able to extricate himself from a bad situation with wit alone. For this, he was the pride of the Greek people and the Greek effigy of intellect. However, by Roman, and later Christian standards, his behavior becomes seen as fraught with immorality and irresponsibility. For this, Dante shows him suffering an eternity in the forked flames of the eighth pouch of the Malebolge, setting the stage for the final circle of Hell—the traitors. Ulysses betrayed his duties and obligations to humanity. He separated himself and broke from natural order, misused his gifts for personal gain, and set out to achieve the impossible without the aid of the divine. He operated without a purpose beyond his own sense of adventure and curiosity. Through this self-absorption, Ulysses brought about his own death as well as the death of his faithful, though misled, crew.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After ten long years at sea, Ulysses returns home to his beloved Ithaca. Rather than settling down in his old age and preparing for the end of his life, he determines to set out on a journey again in Dante’s revision of Homer’s story. He is aware that he has a duty to his people as King of Ithaca, as well as an obligation to his family which needs him:</p>
+<br>
+<p class="fullindent">Neither my fondness for my son nor pity <br>
+for my old father nor the love I owed<br>
+ Penelope, which would have gladdened her,<br>
+ was able to defeat in me the longing<br>
+I had to gain experience of the world<br>
+and of the vice and the worth of men. (Alighieri XXVI. 94-99)</p><br>
+
+<p>He still chooses to break away from his family, and “he begins his journey by placing himself outside the pattern of temporal generation” (Mazzotta 43). By doing this, he is breaking from the natural and linear order, which is typically promised by the divine. By “severing the natural ties that hold human society together,” he doomed himself to an ill-fated and unnatural start (Ryan 232). Ulysses placed himself into a circular fate “as he begins from Ithaca, returns to Ithaca and starts his journey all over again” (Mazzotta 43). Each time he reaches shores that are forbidden to him by the divine, he is pushed back by divine winds; however, he persists intent that his own volition will see him through.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The journey itself is a vicious cycle as they travel leftward—“the motion by which the universe returns to its point of origin” (Mazzotta 43). Ulysses is attempting to leave the linear and mortal life and enter into a personal cycle of regeneration. They “turned [their] stern toward morning” and followed the path of the sun which hid and revealed itself to them five times (Alighieri XXVI. 124). Ulysses is intent on finding a primitive world with ultimate freedom of will where he believes he will find his salvation. Ironically, he does not seem to view his family as his continuation or salvation. He only sees his own imminent termination and so quests to “transcend human time and place himself on the sun’s cyclical course of eternal rebirth” despite his future truly being at Ithaca in the form of his abandoned son (Harrison 1047). Because of his unyielding self-reliance, he pushes away from the divine, relying on his own abilities— intelligence and oration—to find his own utopia.</p>
+<br> 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ulysses centers his life on the expansion of knowledge. He seeks to know what others do not and to discover the world before all others. In his monologue, he brags of visiting Gaeta before Aeneas named it after his nursemaid—the incarnation of domestication. Here Ulysses shows disdain for the domesticity of naming (Harrison 1048). He is proud to have seen a part of the world before it became domesticated; however, what is his purpose? There is not one beyond seeing for the sake of seeing and knowing for the sake of knowing. It is for this reason he seeks the unknown world beyond Hercules’s Pillars. He wishes to escape the linear, domesticated life leading towards a specified end or purpose.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to achieve his goals of exploration, Ulysses uses his great ability as an orator to seduce others into following him, and in order to achieve his ends, he makes “long promises [with] very brief fulfillments” (Alighieri XXVII. 110). Ulysses plays on his crew’s own Greek ideals of intellect and thirst for knowledge by asking them to “consider well the seed that gave you birth” and he reminds them that as humans they should be “followers of worth and knowledge” (Alighieri XXVI. 118-120). It is in this manner he urges them beyond Hercules’s Pillars—the limits set by god—and into forbidden seas much like the devil’s seduction of Adam and Eve.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The sin does not lay in Ulysses’s ability as an orator or in his quest for knowledge. It lies in his underlying purpose—self-gratification. Dante intentionally parallels Ulysses’s speech to his crew with the devil’s temptation of Adam and Eve. Ulysses promises his crew a higher state of being and knowledge “of the vices and the worth of men” (Alighieri XXVI. 99). In Genesis 3:15, the devil seduces Eve by promising her “your eyes will be opened and you will be like God, knowing good and evil.” In this manner, Ulysses has taken advantage of the Pentecostal gift of truthful speech (Harrison 1045). His gift is intended to be a cohesive tool, bringing together and civilizing humanity. Instead, he uses it for his own ends, which brings disaster for him and others.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ulysses’s greatest disaster comes in his denial of the divine. He is unable to humble himself before the directions of a greater being. It is for this reason he was ten years at sea before reaching Ithaca, and for his lack of humility, his voyage beyond the pillars is doomed to fail. According to the Christian teachings, “the faith he placed in himself was altogether misplaced” (Harrison 1056). His self-reliance is his sin as he insists on pushing beyond the limits of mortal men. As he finds himself at Purgatory, he is destroyed because without humility or help from the divine, he cannot ascend. Even Dante cannot ascend the mountain until he girds himself with humility (the reed) and accepts assistance from Virgil, who is instructed by the divine to guide him. By believing he can succeed alone, he is asserting that he is as great as a divine being. Just as poor faith caused the bag of winds to be opened at Ithaca, bad faith causes divine winds from the mountain to toss them into a watery death.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dante uses Ulysses to paint a lesson in humility. It is Ulysses’s great pride in himself which destroys both him and his crew. His insistence on individuality and setting himself apart from mankind creates a prophetic image of the modern man. Ulysses is intended to display the shipwreck of humanity if they do not lead towards the right and break from the pagan belief of a circular history (Mazzotta 43). Therefore, the family unit is important to cherish because only in a family is there a past, a present, and a future. Humans are intended to be a community project, and so breaking from a familial unit or community is a betrayal of humankind. The gift of oration is intended to help lead others and bring humans together in goodness. Knowledge is intended to be sought if it can improve the quality of a person’s life or bring a person closer to the divine. All of this, Dante teaches through a single episode in the eighth pouch of the Malebolge, which Ulysses misused and abused for his own gain causing great strife among his fellow humans.
+</p>
+
+<br>
+<center><h3>&nbsp;</h3>
+  <h3>Works Cited</h3>
+</center>
+
+<p class="hangingindent">Alighieri, Dante. <u>Inferno</u>. Trans. Allen Mandelbaum. New York: Bantam, 1980.</p>
+<br>
+<p class="hangingindent">Harrison, Robert Pogue. “Comedy and Modernity: Dante’s Hell.” <em>MLN</em> 102.5 (1987): 1061-1061. <u>JSTOR</u>. Sims Memorial Lib., Southeastern Louisiana U, Hammond, LA. 3 May 2007 <http://www.jstor.org>.</p>
+<br>
+<p class="hangingindent">Mazzotta, Guiseppe. “Poetics of History: Inferno XXVI.” <em>Diacritics </em>5.2 (1975): 37-44. <u>JSTOR</u>. Sims Memorial Lib., Southeastern Louisiana U, Hammond, LA. 2 May 2007 <http://www.jstor.org>.</p>
+<br>
+<p class="hangingindent">Ryan, Lawrence V. “Ulysses, Guido, and the Betrayal of Community.”  <u>Italica</u> 54.2 (1977): 227-249. <u>JSTOR</u>. Southeastern Louisiana U, Sims Memorial Lib. 2 May 2007 <http://www.jstor.org>.
+</p>
+<br>
+<p><strong>Dr. Walter's Comments:</strong> <em>With her deep insight into Dante’s poetic method and skillful marshalling of support from secondary sources, Brandi succeeds remarkably in clarifying the flaw Dante discerned in Ulysses. The Greek hero, motivated by an abstract ideal of excellence, failed to respect the temporal, nature and familial conditions in which human beings must realize their proper goodness.
+</em></p>
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+<center><img src="horizontaline.png" width="920" height="15"/></center>
+<br>
+
+<center> <a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="40" height="50" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="65" height="50" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="213" height="50" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="38" height="50" id="facebook" alt="Facebook" /></a><br><br>
+©2014
+<br></center>
+<!-- end .container --></div>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

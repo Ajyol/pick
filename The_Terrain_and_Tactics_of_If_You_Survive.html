@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 40px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center><h2>The Terrain and Tactics of <em>If You Survive</em></h2></center>
+<br>
+<p><strong>Mechelle Rouchon</strong></p>
+<br>
+<p><strong>Course:</strong> History 498<br></p>
+<p><strong>Instructor:</strong> Dr. Harry Laver<br></p>
+<p><strong>Assignment:</strong> Analysis<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Lieutenant George Wilson served in the U.S. Army during the last, but one of the most difficult, drives in the European Theater of Operations during World War II. Beginning his service in Europe shortly before D-day on April 20, 1944, Wilson would prove to be a strong officer and battalion leader in the battles to come.1 He wrote of his experiences in the book, If You Survive, in which he vividly describes his struggles and resourcefulness on the battlefield. Wilson survived the war and had success on the battlefield because he analyzed the terrain and skillfully employed tactics utilizing his analysis.</p>
+<br>
+<center>Tactics Used by Wilson</center>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wilson was instructed on “weapons, tactics, map reading, close order drill, field maneuvers, and basic infantry training” at Officer Candidate School (OCS) at Fort Benning before entering the war.2 The tactics that Wilson utilized are outlined in the article “Terrain and Tactics” by Patrick O’Sullivan. According to O’Sullivan, “When synthesizing information from personal observation, maps, photos and descriptions, the soldier is advised to look for points of observation, fields of fire, cover and concealment, obstacles, key terrain, and avenues of approach.”3 It is clear that Wilson was taught similar tactics at OCS. Points of observation allow a soldier “to [see] your enemy before he sees you,” while pinpointing fields of fire reveals “a killing ground where the enemy can be shot with little chance to reply.”4 Cover and concealment was essential because it “can cancel the effectiveness of particular weapons.”5 Obstacles were hazards, although they could be used to a regiment’s advantage if it could be overcome.6 As an officer, Wilson’s main concern was possession of key terrain for his forces; it gave them the greatest advantage and all other tactical advantages often depended on it. Possessing key terrain gave Wilson the best avenues of approach, or “one’s own best line of defense.”7 Accurately determining which route to take for the attack and which route the enemy may take was crucial to defense. Wilson’s use of these tactics developed as he gained experience on the battlefield.</p>
+<br>
+<center>The Bocage at St. Lô</center>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wilson’s first assignment with the Fourth Infantry Division was the breakout in the area around the French town of St. Lô. The hedgerows found in this area were the “crucial problem,” for they separated fields and were earthen walls “over two feet thick and three feet high.” 8
+While these high hedges served as cover for both forces, this served as key terrain for the German defense. The square pattern of the fields allowed them to “put machine guns near the corners of each field, giving them a crossfire that made a frontal attack by infantry nearly suicidal.” 9 This positioning gave the Germans the ability to defend more than one field; therefore, they had literal and perfectly planted fields of fire. While the hedgerows served the Germans well defensively, they were obstacles for Wilson’s platoon. Specialized tactics that “called for the tanks to break out into a field and spray the next hedgerow with their machine guns while the infantry walked or ran behind the tanks, using them as shields” were the only way the platoon was able to gain ground.10 Wilson and other officers used aerial reconnaissance photographs to plan their avenues of approach to try to pinpoint German defenses. Wilson’s battalion also attempted to use the terrain and “placed [the] TDs and tanks and other vehicles under the trees to hide them from aerial view.”11</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Germans exploited the defensive advantages at Villebaudon. They used “a high ridge several miles long running parallel to the Villebaudon—Tessy sur Vire road” as a point of observation from which to see Allied forces approach.12 Their view of the approaching companies allowed them to fire upon the companies at exactly the moment in which “[t]he exposed infantry instantly hit the ground and dove for any cover available.”13 The Germans’ position allowed them to have the element of surprise at the most opportune moment.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After  Wilson  waited  until  the  artillery  barrage  was  over,  he  gathered  his  men  and resumed their mission of taking the ridge from the Germans.14 Because the Germans could see Wilson and his men from their high position, Wilson was forced to utilize the hedgerows as cover and pinpoint avenues of approaching the enemy during their ascent up the ridge that also provided cover, for “they hit us hard whenever we crossed an open space.”15 The company was attacked fiercely by the Germans and was relieved of their mission because of losses, but Wilson’s realization of vulnerable positions kept him and his men alive until reinforcements could arrive. Wilson would soon face and attempt to survive a far more deadly breakthrough.</p>
+<br>
+<center>The Dense Hürtgen Forest</center>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Hürtgen forest, located on the German-Belgian border, was a heavily-wooded forest in which Wilson’s Fourth Division was ordered to break through to the Cologne plains. Wilson describes the terrain as “a hundred-square-mile forest of extremely steep hills, rough ridges, and deep ravines.”16 Because of the low visibility in the forest and German familiarity with the area, Wilson says “the country was obstacle enough itself.”17 Attempting to overcome the Hürtgen would be one of Wilson’s greatest challenges as he found himself often the only officer left in his company during battle. His previous experience informed his instincts regarding the need for cover and concealment. This is evident when Wilson was ordered to “dig in” at a gully; however, he suggested to his commanding officer that “he have us move further up the hill because gullies were natural targets for German artillery.”18 The area was shelled soon after; Wilson’s identification of the area as poorly protected was unfortunately correct. His tactical skills coupled with his experience proved repeatedly to save himself and his men. Wilson considered the dense forest terrain as his battalion attacked in the forest near Grosshau. He suggested to Colonel Kenan, his commanding officer, that attacking in a column of platoons would be advantageous: “Hit hard and quickly and punch a hold through fast. That way we can have our men closer together, we can control them, and we can defend better if we get hit from a flank.”19 Here, Wilson determined the best avenue of approach for the terrain and reduced the vulnerability of his troops as they attacked.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like St. Lô, the Germans took advantage of high ground and “opened up viciously with rifles and machine guns as soon as [the company was] within range.”20 However, the Hürtgen provided no hedgerows to provide cover from the Germans’ point of observation. Wilson and his men were pinned down by the German fire and ability to see their every move. Wilson acted and ordered his men forward by “fire and movement,” or else facing certain death by the continuing German  artillery.21  The Germans pulled back  when American  artillery was  finally able to answer their own.22</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wilson ordered fields of fire to be created for the next attack. The terrain had to be modified to do so; the men had “to cut off tree limbs that might obscure or obstruct their view of the enemy to their front and flanks.”23 This field of fire allowed the company to be within the woods, but still able to fire out to the open area beyond. Wilson followed this defensive tactic perfectly as he opened an opportunity for his men to fire while also protecting their position from return fire.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wilson was ordered that his company take the small village of Grosshau. Grosshau had been identified as key terrain because it was “vital to tomorrow’s attack plans.”24 They were able to take the town easily because they chose an avenue of approach that was unprotected and surprised the Germans from behind.25 The town functioned as a command post for upcoming attacks.26 Wilson’s leadership and tactical skill were sharpened in the Hürtgen because of his previous experience with differing terrain conditions on the battlefield.</p><br>
+<center>Comparison and Analysis</center>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Fourth Division was at a disadvantage in both St. Lô and the Hürtgen. The closed terrain of the areas caused tactical difficulties and was the greatest obstacle to overcome. The Germans were more familiar with the terrain and were able to pull back and build up lines of defense. The key terrain was often initially in their favor. The Fourth Division struggled in both terrains because they had to learn how to fight on the particular terrain as they advanced. Fields of fire were not large open fields but rather small clearings and meadows in the bocage and forests. Avenues of approach had to be determined through air reconnaissance in the bocage, but in the Hürtgen, Wilson relied on scouts and radioing ahead to other regiments to understand enemy movements. The dense forest was constant concealment from viewing any lengthy distance. Through experience, Wilson gained an understanding of German tactics and tendencies, allowing him to make better-informed decisions about his own tactics as the war led on. The six tactics Wilson was trained on in OCS became internalized as he saw more conflict. Early on at St. Lô, he realized there were too many pointless casualties around him because other soldiers simply were not aware of their surroundings and enemy. Realizations like these by individual officers and soldiers are probably what were responsible for the Allies winning the war. Their initiative led to victory.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Because of Wilson’s experiences on the battlefield, other members of the military as well as civilians are able to learn from the successes and failures of the tactics he utilized. Wilson makes several mentions of what he wished he had known prior to battle, giving war analysts first-person resources for improving tactics for the next war. Wilson often credits his survival on the battlefield to “hunches” or innate compulsions that saved him from many narrow escapes. However, his knowledge of tactics and experience in the battlefield had honed his mind to be aware of his surroundings at all times. This more than anything else allowed him to survive.
+</p>
+<br>
+<br>
+<br>
+<center>Notes</center>
+<br>
+<p>1. Quoted in George Wilson, <em>If You Survive</em> (New York: Random House, 1987), 5</p>
+<br>
+<p>2. Ibid., 3</p>
+<br>
+<p>3. Patrick O’Sullivan, “Terrain and Tactics,” <em>Contributions in Military Studies</em> no. 115 (1991): 25-30.</p>
+<br>
+<p>4. Ibid., 28</p>
+<br>
+<p>5. Ibid., 29</p>
+<br>
+<p>6. Ib7. Ibid. 26</p>
+<br>
+<p>8. Wilson, <em>If You Survive</em>, 12.</p>
+<br>
+<p>9. Ibid., 13</p>
+<br>
+<p>10. Ibid., 13</p>
+<br>
+<p>11. Ibid., 51</p>
+<br>
+<p>12. Ibid., 43</p>
+<br>
+<p>13. Ibid., 44</p>
+<br>
+<p>14. Ibid., 46</p>
+<br>
+<p>15. Ibid., 48</p>
+<br>
+<p>16. Ibid., 132</p>
+<br>
+<p>17. Ibid., 132</p>
+<br>
+<p>18. Ibid., 139</p>
+<br>
+<p>19. Ibid., 141</p>
+<br>
+<p>20. Ibid., 144</p>
+<br>
+<p>21. Ibid., 144</p>
+<br>
+<p>22. Ibid., 146</p>
+<br>
+<p>23. Ibid., 149</p>
+<br>
+<p>24. Ibid., 158</p>
+<br>
+<p>25. Ibid., 163</p>
+<br>
+<p>26. Ibid., 160</p>
+<br>
+<br>
+<br>
+<p><em>Dr. Laver’s Comments:</em> Mechelle Rouchon’s essay on George Wilson’s experiences in World War II demonstrates the relationship between education and success, in this instance the instruction Wilson received in war fighting prior to facing combat and his success in applying those  lessons.  Wilson  effectively  led  his  men  through  two  major  campaigns  by  first implementing the tactics he had learned in Officer Candidate School, and second by adapting those  lessons  to  evolving battlefield  situations.  Rouchon’s analysis  of  Wilson’s  war record reveals the direct connection between education and achievement.</p>
+
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+<center><img src="horizontaline.png" width="920" height="12"/></center>
+<br>
+
+<center> <a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a><br><br>
+©2014
+<br></center>
+<!-- end .container --></div>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

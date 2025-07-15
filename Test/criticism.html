@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	margin: 0;
+	padding: 0;
+	color: #6B5959;
+	background-color: #FFFFFF;
+	background-attachment: fixed;
+	background-image: url(newbmo.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	font-family: Garamond;
+	font-size: 24px;
+	line-height: 1.4;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 850px; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-attachment: fixed;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+
+	padding: 10px 0;
+	margin-top: 90px;
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.header {
+	position:fixed;
+	top:0;
+	
+}
+-->
+</style>
+<link href="sidebar.css" rel="stylesheet" type="text/css" />
+<link href="sidebar2.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('about2.jpg','poetry3.jpg','prose2.jpg','blog2.jpg')">
+<div class="header"><a href="index.html"><img src="headerbmo3.jpg" width="1500" height="90" alt="Home" longdesc="file:///Macintosh HD/Users/sluuser/Desktop/student19/headerbmo2.jpg" /></a></div>
+
+<div id="sidebar">
+<a href="poetry.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('poetry','','poetry3.jpg',1)"><img src="poetry2.jpg" alt="Poetry" width="104" height="40" id="poetry" /></a>
+<a href="prose.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('prose','','prose2.jpg',1)"><img src="prose.jpg" alt="Prose" width="104" height="40" id="prose" /></a>
+<a href="criticism.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('blog','','blog2.jpg',1)"><img src="blog.jpg" alt="Blog" width="104" height="40" id="blog" /></a>
+<a href="about.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('about','','about2.jpg',1)"><img src="about.jpg" alt="About" width="104" height="40" id="about" /></a>
+
+</div>
+<div id="sidebar2"><br>
+
+</div>
+
+<div class="container">
+  <div class="content">
+  <center> <h1>Selected Articles on Osbey and More </h1></center><a name="1"></a>
+   <p>The following article discusses one of Brenda Marie Osbey's poems as it relates to the significance of memorialization on the national memorial practices. </p>
+   
+
+  
+  <div id="TabbedPanels1" class="TabbedPanels">
+    <ul class="TabbedPanelsTabGroup">
+      <li class="TabbedPanelsTab" tabindex="0">Excerpt</li>
+      <li class="TabbedPanelsTab" tabindex="0">Interview</li>
+    </ul>
+    <div class="TabbedPanelsContentGroup">
+      <div class="TabbedPanelsContent">
+        <center>
+          <h2>Excerpt of Reading History, Memory, and Forgetting</h2>
+        </center>
+        <p>by <strong>Menrose Gwen</strong></p>
+        <p align="justify">Cultural memory and mourning kept alive through writings
+          and stories are as much spatial as temporal; they exist in both the past
+          and the present, yet they move us toward a future that will inevitably
+          become the past. What kind of future will that be, and what kind of history
+          will it produce? As the “remembered history”2 of the American South
+          has become an integral part of global thinking about human-inflicted
+          carnage and trauma and questions of justice, responsibility, and ethical
+          intervention, many scholars in U.S. southern studies have followed the
+          lead of southern writers in approaching the past with a heightened sense
+          of urgency and an eye to a future in which regional and national affiliations
+          fade in the shadow of global concerns. Especially in the past decade,
+          Kelly Oliver’s belief that “we need to find the conditions of the possibility
+          for justice — for the impossible to become possible in the future — in
+          the past” may have come to seem especially compelling to contemporary
+          southern writers and scholars of southern literature who enter, remember,
+          and sometimes mourn the past. In a reversal of causality, Oliver argues
+          that “only by reading the conditions of the possibility of that future into
+          the past . . . can we open alternatives to the present” (47). In this sense of
+          rethinking history for the sense of possibility it contains, this SLJ special
+          issue on history, memory, and mourning in southern literature is as much about 
+          the future of southern studies as it is about the remembered past of 
+          a region whose borders are less situated than ever. </p>
+        <p align="justify">The cultural space of the U.S. South has long served as an American
+          repository of disapprobation and mourning, one that can be grounded
+          in removals and diasporas, forced unpaid labor, human interventions
+          in family structures, and violent deeds and institutions. This archive of
+          southern history has been summoned, manipulated, and disavowed for
+          nationalistic purposes, yet its traces linger. Well into the twenty-first century,
+          race violence and racial division still mark a postmodern South of
+          K-Marts and satellite dishes and shopping malls. Contemporary events
+          such as the infamous, familiar noose hanging from a tree claimed by
+          white students at a high school in Jena, Louisiana, reverberate back
+          through southern history, gathering a psychological momentum that carries
+          with it the imaginative reconstruction of other crimes long past and
+          an avalanche of disavowal and mourning. There is a coalescence of cultural
+          memory around such contemporary moments; it is impossible to
+          think of these violent encounters and the places where they occur as dissociated
+          from southern history or literature.</p>
+        <p align="justify">Although such events themselves may be situated in the southeastern
+          region of the United States, the cultural memories that are their living
+          traces lie at the heart of American consciousness and contemporary global
+          concerns, although, as Larry J. Griffin and Peggy G. Hargis’s research
+          shows, what is remembered depends on who’s doing the remembering.
+          In her introduction to Trauma: Explorations in Memory, Cathy Caruth
+          suggests that, in an age of catastrophe, trauma itself — and, one might
+          add, a history of trauma — may indeed provide a primary link between
+          cultures (11). One question this special issue raises is whether and/or how
+          these historically and imaginatively imbued cultural memories that are
+          unique to the U.S. South may shape a sense of relation and responsibility
+          to global issues, past and present, of massive human-inflected trauma.
+          Many of the essays in this volume address this question either implicitly
+          or explicitly. For example, in marking a linkage between the traumatic
+          history of the South and the U.S. involvement in the Vietnam War, Lisa
+          Hinrichsen’s study of Bobbie Ann Mason’s In Country illustrates how
+          the novel “interrogates the role memorialization plays in repressing the
+          truth of the past and powerfully raises questions of both southern and
+          national memorial practices.” These practices, as stripped bare in Mason’s
+          novel, form “complex systems of historical remembrance, consumption,
+          and erasure.”</p>
+        <p align="justify">Diana Taylor has noted that cultural memory “is, among other things,
+          a practice, an act of imagination and interconnection” which is mapped
+          by social groupings that share historical commonalities and embodied
+          experience (82). Most of the writings in this special issue not only emphasize
+          the practice of memory within the aesthetic realm but also suggest
+          that how these social groupings are constituted in the first place may well
+          involve imagination and aesthetics, as well as history and lived experience.
+          Many of these essays foreground the aesthetic challenges and ethical
+          complexities of fiction, poetry, memoir, drama, and film in the context
+          of the American South’s vexed and vexing history. Those that don’t
+          focus on southern history per se engage ideas about cultural memory
+          and history and (in Jonathan Imber Shaw’s study of Cormac McCarthy’s
+          Blood Meridian for example) consider how texts may carry the burdens of
+          more than one history, each commenting on and complicating the other.
+          Simply put, these essays, despite their obvious differences in discipline,
+          subject, and form, examine stories about the past, cultural conduits of
+          memory or “acts of transfer”3 that mold, pass along, and sometimes enact
+          cultural memory. In their very southern emphasis on localization and
+          specificity, the pieces in this issue inevitably reshape much-debated and
+          often circumlocutory questions around human-inflicted trauma, cultural
+          mourning and memorialization, and aesthetic production.</p>
+        <p align="justify">While many of the scholars represented in this issue call upon memory
+          studies in developing their ideas, it also may be argued that southern
+          studies, in its concerns not only with a traumatic past but specific locations
+          and sites of that past, offers memory studies, which tends toward
+          the general, and trauma studies, which has solidified into contentious
+          oppositions around questions of trauma’s contagion and proliferation, a
+          sense of place and a grounding in the specific. Aesthetic production — and
+          its ebullient though vexed affiliation with memory, history, and mourning
+          — seems very much at the ethical hinge of these issues. As Michael
+          Rossington notes, the artificial distinction between public history and
+          private memory has been reconceived “through the explicit invocation of
+          a textual practice in which the reader is asked to participate”; thus collective
+          memory is being seen by certain contemporary memory scholars
+          as “at root, a dimension of literary, or literary-cultural studies” (137).4 A
+          number of the writers in this issue ask, explicitly or implicitly, whether or
+          to what degree mourning and testimony require the embodiment found
+          in aesthetic forms — how such imaginary embodiment may lead readers
+          toward larger ongoing questions of justice through the re-membering ofa regional and national history of racial trauma and cultural mourning,
+          which has been and still is assaulted as fiction itself. As Jennifer D. Williams
+          points out in her compelling study of the erotics of mourning in
+          Jean Toomer’s Cane, “[t]he written narrative of racial history is always
+          already embodied. . . . Reclaiming the past involves remembering the
+          body as a historical text . . . ”</p>
+        <p align="justify">Much work on these larger questions of human-inflicted trauma,
+          cultural mourning, and aesthetic production already has been done in
+          trauma studies and memory studies. Yet, despite the persistence of scholarly
+          attentiveness to southern writing about the past, there remains a need
+          for specific frames of reference or, as Iwona Irwin-Zarecka has put it, for
+          “frames of remembrance” which set analytical parameters around questions
+          of collective memory, especially of racial trauma experienced by
+          southern African Americans (9). Such parameters are especially important
+          in U.S. southern studies, because, as Griffin and Hargis’s research so
+          clearly shows, the border between what is remembered and what is forgotten
+          in the U.S. has been vehemently, if not indelibly, drawn along race
+          lines, not regional distinction.</p>
+        <p align="justify">Just as the scope of U.S. southern literary studies, especially in the
+          areas this issue addresses, has become more interdisciplinary and multidisciplinary,
+          so too has the field become increasingly transnational.
+          Pearl McHaney’s tracings of the intersections between Eudora Welty’s
+          Losing
+          Battles and Sindiwe Magona’s Mother to Mother, Shaw’s connections
+          between “Evil Empires” in his study of Cormac McCarthy’s Blood
+          Meridian,
+          as well as Ruth Salvaggio’s reading of the haunting historical
+          layers of a Creole slave song in the context of loss and mourning in post-
+          Katrina New Orleans, weave rich, intertextual histories through complex
+          analyses of specific texts. In general, the scholars represented in this volume
+          work in an interdisciplinary frame, drawing insights from the contemporary
+          fields of memory studies and trauma studies. From a historical/
+          sociological perspective, Griffin and Hargis’s “Surveying Memory: The
+          Past in Black and White” offers literary scholars valuable insight into
+          the yawning racial divide in cultural memory, as well as the voluminous
+          amount of scholarship in the burgeoning field of memory studies.
+          As Griffin and Hargis point out, the South’s always visible “sorrowful
+          past” — a past, one might add, that is decidedly transnational — has made
+          it an important focus of memory research, which is by its very nature
+          interdisciplinary and transnational. Drawing on the large body of work
+          in memory studies are also Sari Edelstein’s discussion of the phenomenon
+          of “postmemory” in Katherine Anne Porter’s Old Mortality and Daniel
+          Turner’s work on “metanostalgia” and “critical memory” in the work of
+          three contemporary male poets.</p>
+        <p align="justify">Because of the breadth of approaches to the topics of history, memory,
+          and mourning in southern literature, this double issue of SLJ (with
+          the quantity and quality of submissions, it easily could have been a triple
+          or even a quadruple issue) has a number of special features from a variety
+          of areas and in diverse forms. Brenda Marie Osbey’s haunting poems
+          set the tone for this volume with their litany of loss, mourning song, and</p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;remembrance of<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;slave ships in the distance—<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centuries longer<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nearer<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;than we care ever to have it said.<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(“Requiem for a Tall Man”)<br />
+  <br />
+        </p>
+        <p align="justify">Osbey’s personal reflections on place, history, and writing in her essay
+          “Writing Home” are grounded in her familial and community influences
+          in her native New Orleans and reveal New Orleans’ uniqueness as
+          an intellectual, cultural, and emotional haven for African American writers,
+          artists, and musicians. As a work of scholarship outside the field of
+          literary studies but of special consequence to scholars of southern literature,
+          Griffin and Hargis’s historical/sociological study in this issue initiates
+          a practice the coeditors of SLJ intend to continue by inviting essays
+          on occasion from established scholars in other disciplines. Robert Jackson’s
+          discussion of the history of lynching films falls outside the traditional
+          disciplinary emphasis on literary studies this journal has observed
+          in the past, but reconnects to literature in its emphasis on Intruder in
+          the Dust; and Rebecca Mark’s “Mourning Emmett,” originally a performance
+          piece, enacts the passion of mourning and inscribes, rather than<a name="2" id="2"></a> describes, the necessity of art in the process of articulating the South’s
+          history of racial trauma.</p>
+      </div>
+      <div class="TabbedPanelsContent">
+        <center>
+          <h2>An Interview With Brenda Marie Osbey</h2>
+        </center>
+        <p>by John Lowe</p>
+        <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>JL:</strong> New Orleans and her cultures have been the most important influences on your work. Would you speak about writers who. have been particularly useful to you, especially in the long narrative poems you've written in the last few years? <br />
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> Most of them haven't been southern, although some have been. I suppose the poets I feel have had the strongest influence on my work are those who write long narrative poems--Robert Hayden, Jay Wright, early Gwen Brooks, Gayl Jones, Sherley Anne Williams. More recently, Melvin B. Tolson's Harlem Gallery. <br />
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> Why has Tolson been so ignored? <br />
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> I think Tolson's one end of the whole scholar-poet spectrum, and I guess Hayden, who's far more accessible, is the other end, someone who has what I call a &quot;problem with history,&quot; who sees his poems as a kind of correction of history, an addendum to history. Tolson, on the other hand, initially comes off as someone who's fascinated with his own intellect. When I first read him in school, I thought, this guy is crazy, he's just showing off his vocabulary; but in fact what he has done is to try to reveal a very complex set of myths. He was looking at relationships among different levels of black society, and he had a very keen vision, and a very keen ear for the language of black folk at different social and economic, cultural and intellectual levels. He was trying to create a literal gallery of black life. To read Melvin B. Tolson, you have to have a very clear understanding of African-American history; you have to have a very clear understanding of world history in the period between the two wars; you have to know black culture; it also helps if you know something about the visual arts, and it helps if you speak or read languages other than English. Melvin B. Tolson also has a very weird sense of humor--but you have to get all the other stuff before you can get the joke! <br />
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> Do you see your work as being most productively read by people who share its idiom? <br />
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> I think my ideal listening or reading audience is probably black, New Orleans, and working-class. Many of the characters I write about are working-class black people who lived, say, before 1950. To those people I don't have to explain that language. Those are my most critical readers.
+          On the other hand, it doesn't really matter how much you know about New Orleans; you need to know that it's different, that it's its own little country. The specifics aren't that important because the stories themselves, the stories I try to tell in these poems, are not that important. They don't have importance in and of themselves. They're important because they're told by certain characters, or they're important because of the way they're told. But you almost never get an accurate accounting of any series of events in an orderly fashion, beginning, middle, and end. What you get is a way of speaking, a way of thinking; all the things that go into making the story are really what count. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> Los Angeles, where you lived for a while, wasn't your favorite place. Why is that? <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> There're all sorts of places that I've liked. Los Angeles I didn't like because it really isn't a place. There is no longer a city of Los Angeles. There's Los Angeles County and all its attachments, and there are freeways and mails, and there are filling stations, and there's the University and there's Hollywood and Bel-Air, and whatever else there is. I read somewhere a long time ago that L.A. was the city of the future, and ever since living there I pray that's not truel There's no center to. L.A., there's no real downtown anymore; there doesn't seem to be that much of a cultural life. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> What about Atlanta? I know you've been there, and there's a wonderful, vibrant black community there, and yet Atlanta seems, more than any city in the South, intent on tearing down anything more than ten years old. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> That's one of the things about Atlanta that I both like and dislike. Atlantans think &quot;old&quot; is ten years old--but it is a burgeoning black metropolis--it's always growing, it's prosperous, it's upbeat, it's the southern city of the young black professionals. It's nice to get away from New Orleans and go to Atlanta, but I always want to come back. Atlanta is part of the fabric of the South. When you look at the South what you get is a kind of patchwork quilt; there are certain commonalities that all southerners have, and yet each place you go is very different. I went to school in Kentucky and I lived in Virginia for some time; Kentucky and Virginia are neighbors, and yet they're completely different, even the landscape. The land is very, very different. In Mississippi they have rolling hills, and down here we have flat land; it snows right next door to us, but it doesn't snow here. In a wide variety of landscapes, people look and talk and think and feel and eat and worship and do everything differently, and yet there are commonalities that keep cropping up over and over again. There is an insistence on tradition and on the making of traditions. There is a kind of religiosity about the South. People grow up in very religious families, and then move away from religion. But there's something that's always there, whether you're talking about people who are Baptists or a state like Louisiana, much of which is Catholic. There's an aura of religiosity. There is a concern, perhaps an obsession, with death and with loss. There is an intense love for the land; one of the things southerners, especially southern men, do that marks them as southerners is to identify themselves personally with a piece of ground. When people talk about their childhoods, when they talk about their pasts, when they talk about what's good in their lives, that is more often than not associated with a place and with a piece of ground. Whenever my grandmother talked about her mother, she always talked about her mother's land. She talked about how her mother forbade all her daughters to live anyplace where they couldn't have a garden. My grandmother always had a rose garden; she had fruit trees growing in the backyard. She felt that she was not a woman if she wasn't growing something. If we couldn't make something grow, if we couldn't tend a piece of ground, then there was something spiritually wrong with us somehow; and so we always had something growing. Men define themselves that way too; I think the South is the only place I know of where most of the men know most growing things. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> What about the influence of religion in New Orleans? <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> I was raised Lutheran, which is weird (well, it isn't all that weird, actually--there's a sizable black Lutheran community), but my mother's father was Catholic and converted, and so everybody after him was raised Lutheran. In fact, our family belonged to one of the oldest black Lutheran churches, St. Paul's. But in New Orleans Catholicism is pervasive. And what everyone else calls voodoo and what we call hoodoo is even more pervasive than Catholicism. And then there's a kind of Protestantism that is peculiar to New Orleans as well; we have the early Spiritual Sanctified Churches here, which Spiritual and Sanctified people will tell you did not grow out of hoodoo, but all of the evidence is that they did. But the nature of religion in New Orleans is really very bizarre. One of the things Catholicism does to New Orleans is it allows for the coexistence of all kinds of seeming opposites. On the one hand we have churches on every corner, of every possible description, and we have bars in the middle of the block. Or we have bars on the corner and churches in the middle of the block! So that we have the seeming corruption of Bourbon Street near St. Louis Cathedral. Right down the street we have a bar that lets out in the back of one of the oldest churches in the city, but they have a very good relationship; when mass starts, they turn off the music, they unplug the jukebox. They don't all go pouring into the church, but they unplug the jukebox. There's a kind o[ peaceful coexistence among institutions and among people, and among ideas and among cultures. New Orleans absorbs just about anything and everything and makes it its own. I have friends who are Italian-American, and in New York, they're very Italian, or in the Los Angeles of the '50s, when they grew up, they were very Italian. They come to New Orleans and they say, &quot;Well, these Italians are Italian, but they're not really Italian!&quot; and it's because they're New Orleans Italians, and everything gets colored by that kind of creolism. Italians eat as Italians, but it's creolized Italian food. And the same goes for just about everything else. And I think that that's because this place is African. It's predominantly African in spirit. Anything and everything that comes through New Orleans is black in spirit. Traditional African religions colored Catholicism so that you have a variety of cults of individual saints, so that you have all kinds of seemingly bizarre practices going on in Catholic churches. I think all that points to the strength o our basic Africaneity. The spirituality here is uniquely African in nature. When we look at voodoo, what we're looking at is a series of principles that have primarily to do with balance, that have to do with how the world is structured, and how you keep, or create, or search out, a balance in your personal life and affairs, and how you equate that to the balance that exists in nature. So the two greatest sins I can think of are forgetting and self-denial. If you do those things you live and die in constant turmoil or confusion. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> Is this not forgetting something that makes the South in general unique? The whole idea of remembering what happened, to be aware, to be faithful? <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> Yes. Remembrance is the South. It really is. And people here remember everything. People even remember things that didn't happen! Remember everything, just in case! You don't want to get caught. And I think that's one of the things that definitely connects New Orleans to the South. A lot of other things remove New Orleans from the South and connect it to the Caribbean, or Latin America, or Africa, or any number of other places. But remembrance ties New Orleans to the South. There's that relationship with the land, there's family, there is ancestry. People focus a great deal on ancestry in the South. One of the questions southerners always ask is who &quot;your people&quot; are. They want to know who you belong to so they'll have some idea of where to place you in their memories. The notion of the family and of family obligation, and our obligations to the dead, and our obligations to the past, and codes of behavior--it sounds silly to say that, I suppose, but there are still codes of behavior. Which is not to say we don't ever break them--we're always breaking them. But we know they're codes, and we know we're breaking them!0 <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> In &quot;Characteristics of Negro Expression,&quot; Zora Neale Hurston speaks about the relentless need to adorn. For her, this is a key component of African cultures, and of course in a spiritual world like Africa everything in life becomes a reflection of spirituality. Nature, your dress, the vernacular architecture--it's all of a piece. New Orleans is a world of adornment, and it is African. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> Yes. Everything is itself and yet stands for something else, perhaps something very different. This house, for instance, was a chicken restaurant at one time; it was a grocery store at one time. It was built in the 1780s by Claude Treme, who owned this entire tract; he never lived here, of course. He had it built and he sold it to two free black women, Marie Willamine and Nannette Enoul. I think there is something in an area this old--many of the buildings are older than the buildings in the French Quarter-something of the spirit of the people who lived here continues; there's always a connection to the past. The past is always with us, even when we don't recognize it. Our culture, or our cultures, are identifiable, even when we don't know what the signs and the symbols are. They're here. It's on us to decode them, if you're interested, as I am, in decoding, and in understanding how things work together or against one another. Sometimes, after leaving New Orleans and coming back, I see things that seem to be at war visually. Houses with Italianate architecture laden with heavy cornices--everything seems jumbled together. But when you've been here a while you begin to see the unity of things. When you grow up with them you tend not to pay any attention--until they're gone. In a neighborhood like this, where throughout the twentieth century successive blocks and tracts of land have been destroyed, we begin to notice what we're losing. When someone comes along with a bulldozer and knocks something down--just razes an entire area--you notice. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> In your most recent published work, Desperate Circumstance, Dangerous Woman, there's a wonderful scene when one of your heroines is bathing her mother. It reminds me of those Degas pastels of poor women washing in a tin tub; those pictures, despite their realistic detail, have a spirituality, not only because of the way he draws them, but because we understand the world that surrounds these women, a French world so specific to its place and locale. Is your poem trying to express something like this? <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> You mean in the scene where Marie bathes her mother before her death. I don't think of Marie as a poor woman. When her mother dies she owns the house. But yes, they're definitely caught in a time frame; they're capsuled. It's the kind of thing that I suppose is the most natural thing in the world. Your mother is old, she's infirm, so you bathe her. That's a very loving thing to do, to bathe someone, to care for someone in that way. And then Marie's mother dies within moments of her bath, and confers a kind of blessing on her daughter, and that's the end of it. Marie spends the entire poem struggling with memories of her mother, while her lover, Percy, spends most of the poem struggling with his memories of Marie. They're lovers, they're living in the same house, he's left his wife and children, and yet his primary concern seems to be that she's put a fix on him, that she's hoodooed him. We don't have any evidence that this is true, except of course that she spends an awful lot of time at the hoodoo woman's house. And again, nothing is ever what it seems. She's going to the hoodoo woman because the hoodoo woman was her mother's best friend many years ago. And so she goes to talk, and she almost never talks about Percy, even when she knows Percy has been to see the hoodoo woman about her. So you have two people struggling with their memories and with their fears of what those memories mean. And you have a man obsessed with a woman who is obsessed with her dead mother. His argument with her--his fight with her--is that he's still alive, that he's there, that he loves her, yet he cannot be a lover to her. And that's not something he should try to do, that's not something he should have to do. But all of that goes in one ear for Marie and out the other, because she is mourning, and she doesn't seem to be able to come out of that mourning until very near the end of the poem. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> Why did you name this character Percy? You've mentioned him as someone who's wounded, someone who's in search of healing and is wandering. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> I had some cousins named Elmo, Cuccia, and Percy. They were grown men, and Percy was my favorite; I had a crush on him. He let me believe I was his girlfriend. I was just in elementary school, so I guess I was his &quot;pet.&quot; I just saw it as one of the nice Negro-gentlemen-of-another-era names. But his character and his relation to mourning are very different. And that's something I think is very southern and very New Orleans. This fascination with death. Death is never just death for us; it symbolizes something. It says something about us; it marks us in some way. In New Orleans we have this tendency not just to remember death, but to revel in death, to celebrate death. I think we are afraid of solitude--or rather, I should say, we're afraid of being left alone, we're afraid of being without family, without friends. That's one of the reasons for the commandment against forgetting. Even when people are dead, we maintain relations with them. We don't want anything to end, and so the dead are always there for us. People we would never love in life suddenly become these godlike figures--&quot;Now that you're dead I could love you,&quot; &quot;All these years I've been waiting for you to die so I can love you the way I should!&quot; Because you're my mother, because you're my father, because you're so-and-so. There is this reveling in death and in the trappings of death; we have jazz funerals and a city that is constantly surrounded by death: the cemeteries aboveground, decaying buildings; everything is a little bit worn in New Orleans, and somewhat irreplaceable. And that's how people in our lives function--irreplaceable. We cannot release them to the grave; we maintain that connection beyond the grave. If anything, we intensify those connections beyond the grave. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> Are there New Orleans writers you've read, black or white, male or female, whose work you admire and who have maybe tangentially influenced your work? <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> I can't think of anyone, really. The only thing I can think of is that Tennessee Williams's plays seem to me some of the best representations of New Orleans as a culture. It's very rare, actually, that I see something about New Orleans that seems like New Orleans to me. But I can't think of any New Orleans writers--both my mother and her father, my grandfather, were writers in their youth. My grandmother, of course, was the family storyteller. I never met Marcus Christian, although I did talk with him on the phone. He was a friend of my grandparents, my mother's parents. His brother, Ned Fermimore Christian, was one of my grandfather's very best friends. When I was a high school student, writing poetry and developing an interest in literature, I wrote a letter to him saying that I wanted to meet with him sometime, reminding him about my grandparents and their friendship with his brother. He wrote me a lovely letter, but I never did meet him; he died not long after. In the years since then I've read some of his work. Marcus Christian did a massive amount of work in a number of different areas, and I don't think it's doing any of us any good to have his life's work just sitting over there in boxes at the University of New Orleans. He also wrote a history of black New Orleans, but it was never published. He self-published some things.
+          There are those neglected French-language writers from the nineteenth century, the Les Cenelles writers, Victor Sejour and that whole group, Armand Lanusse, Charles Rousseve. There's also the folk historian, John Rousseau, who was still living' the last I heard. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> There are historical situations where white plantation owners would have black wives--in one case, four in succession! The men would marry them, leave property to them; there are all these extensive stories and narratives that have never been used, never been revealed. Why is that? <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> I think it's really material that has to be treated by black writers. Whenever it's been treated by white writers, it's always come off as offensive, as racist. You always see these tragic mulattoes as the end result--once more that &quot;ounce of black blood.&quot; <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> You mean Fanny Hurst's Imitation of Life, the movie Pinkie, works like that. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> Yes--and even when black writers have tried to treat this in the past, their models were white writers, and they were writing for a white audience. I think that's part of the problem, that black writers haven't expressed too much interest in that material. But also, black writers aren't being especially encouraged to produce; I don't think anyone is fostering a new generation of southern black writers. That's really a shame. And it's really a long, tiring process to convince young black people to write. That's a part of it. The other thing is a sense of shame attached to anything that has to do with the subject of slavery on the part of black people, and that's bizarre to me. I always thought that if anyone should be ashamed about slavery it should be whites. And the other thing is that there's a sense of shame about race-mixing. Black people have worked very hard for a unified identity, and focusing on difference very often gets black people in trouble. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> Could you talk about the ways your books developed, and what led to the changes in the issues you address? <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> The first book, Ceremony for Minneconjoux, was written while I was a graduate student at the University of Kentucky. I went there to study with Charles Rowell, and he proved to be a very good reader and listener for me. I wrote all those poems during that period, and then I came home to New Orleans and took a teaching job at Dillard, and then did some other things. I sent Charles some poems chosen from a manuscript of maybe forty or fifty. From among those James Borders helped me choose twenty or twenty-five that might be a workable manuscript. I sent these on to Charles, and he then winnowed down to fourteen poems. He pulled together those poems that had certain common themes, and the things that he saw were most significant were the poems that focused on New Orleans as a character and those poems that focused primarily on women--on black women in New Orleans. I was at first disappointed when I saw how few poems there were, and then I was happy when I saw how well they worked together. So the first selection of poems was not really mine, it was Charles's. He was telling me what other professors had told me when I was an undergraduate, that my best topics seemed to be families, women, and New Orleans. So that's how the first book came into being. The first book in many ways is still a favorite for me because I had the most to do with it, other than the selection of the poems. I chose the paper, I chose the typefaces, I chose the cover art--an etching by a black woman artist, Colette Delacroix. Once Ceremony came out, I began to look at those aspects of my work that Charles and other people had pointed out to me. I kept journals and so forth. Then I began planning the next book. I planned In These Houses as a kind of companion volume to Ceremony for Minneconjoux, and many of the poems in In These Houses are poems that Charles rejected for Ceremony. And I see a third book in this series called Sleeping the Mama Sleep, and that would complete the Ceremony cycle. Some of the characters in In These Houses are mentioned in Ceremony. I think Desperate Circumstance, Dangerous Woman is a different volume entirely, and I did not plan it to be a single book-length poem; I thought I was writing a poem that might be twenty pages in typescript. I kept working on it, and I realized that it was probably going to be a book-length poem. Thirteen chapters with a glossary. I started Desperate Circumstance, Dangerous Woman in New Orleans, or at least the idea of it came while I was in New Orleans. I left New Orleans; I stayed with Charles Rowell in Virginia for a few weeks; then I went up to Ponghkeepsie and stayed with Moses Nkondo, and he read draft after draft after draft. He drove me up to Austerlitz, the Edna St. Vincent Millay colony, and I worked on it some more there. The first chapter was published in Switzerland in an annual called Two Plus Two. So I started working on it roughly in 1986, and I didn't finish until 1990. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> Is it unusual for you to take that long in reflection? <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> Well, there's one other poem that took that long; it's a companion poem to this poem, Desperate Circumstance, Dangerous Woman. It explains the ancestry of Marie Crying Eagle, so that we see who she is and how the narratives of her life develop. That poem is called &quot;Calcasieu,&quot; which means &quot;crying eagle.&quot; It's not a very long poem--about a dozen pages. I worked on that poem for seven-and-a-half years! I worked on this one for four-and-a-half years. But I was working on other projects as well, and teaching. And I was ill while I was in Los Angeles; I had surgery, sports accidents, all kinds of things holding me up. But I finished it while I was out there. I suppose In These Houses was my first planned volume. I had photographs taken, and I was actually pulling pages together. This one was planned as a single poem. I have a genealogy chart for the characters, a time-line that shows when so-and-so was born, and when they lived, what they did, and who they were, and I have a list of landmarks and areas and things that I need and want to work around; I had planned that this volume would also have a map that would show the relationship between the French Quarter and the Faubourg Treme, and between the Faubourg Treme and the Faubourg Marigny. I never got around to it. Maybe a future edition will have a map in it, I don't know. But that, technically, is how the poems developed. For a long time I had the idea of a poem that would be called Desperate Circumstance. It wasn't until later that it became Desperate Circumstance, Dangerous Woman. When it was in its working form, while I was at the Bunting Institute in Cambridge in '86, I read a part of it, the first chapter, where the mother dies and Percy and Marie have their first big talk. At that time it was called simply &quot;The Percy Poem.&quot; The focus was primarily on how Percy was going to get himself healed, and whether or not he was going to die. Moses Nkondo pointed out to me that none of my male characters ever spoke. I reminded him of one instance where one does, the little old man who tells the poem &quot;Elvena&quot; in In These Houses; I said, &quot;Well, here's a man, he's the central character, he gets to tell the story,&quot; and Moses said, &quot;Yeah, but he's old! The men in your poems never speak, and then when they do speak they diel&quot; But that was not intentional--so then I had to write poems where men got to live--and then I wrote a series of poems, some of them joke-poems, for Moses, which were later published. At the reading in Cambridge, I was reading a work-in-progress, and I asked the audience if I should kill Percy, and this little old lady sitting on the front row said, &quot;Oh, just maim him a little bit!&quot; And poor Percy hadn't said a thing; he was just suspicious and conservative. All Saints is a new and selected poems collection, mostly new, and it has seven chapters, seven sections. I wanted to do something that would touch on several aspects of black New Orleans life. I wanted to focus specifically on religion, especially on hoodoo and Catholicism combined; I wanted something that focused on women; I wanted something that focused on music; and I wanted something that focused on the slave heritage, something set in the 1600s, 1700s. And I think I got all those things in. I'm proud, I guess, of my Buddy Bolden poems, and of my Sarah Vaughan poem, called &quot;Sarah Vaughan is Alive and Well in New Orleans.&quot; I also have a poem for Ellis and Dolores Marsalis; those selections constitute the music poems. All Saints is so named not only because of the Feast of All Saints, but because of this tendency we have to deify--musicians become gods. We have this religiosity that I've already mentioned. But we have this focus on spirituality in the midst of what seems to be a great deal of corruption and turmoil, and I wanted to get as much of that in as I could.
+          There are many historic figures in the book. For example, Buddy Bolden. We know he's the father of jazz. Lots of people think that Louis Armstrong was the father of jazz. My poem tries to capture something about Bolden without bothering to tell a story. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> Earlier you talked about the problem of black writers writing for a white audience. Do you feel that compromises authenticity? <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> Definitely. I think it compromised writers as great as Zora Neale Hurston and Langston Hughes. The fact that they had this patron who gave them assignments and withheld payments and so forth--they were often compromised. It's very easy to become compromised. I do worry about authenticity. That's what bothers me about what I read about New Orleans. Sometimes it's as simple as a travel piece you read in a magazine, and you say &quot;where the hell did they go when they were in New Orleans that they could write such tripe?&quot; Or I'll look at something on TV that's supposed to be set in New Orleans and I don't recognize any of it--it doesn't say anything that I can recognize as New Orleans. So I'm always looking for the real--what is real about the place? What is real, what is true? How does New Orleans see itself, if there's any self, how does New Orleans present our selves? And of course, that's the other thing, that we're very good at masking. There's a whole Carnival culture--we're very good at presenting one face to outsiders and another face to those within. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> Which is another African and African-American tradition. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> I'm always trying to get beyond the surface of things. I want characters who sound real, who are recognizable. I'm happiest when black New Orleanians tell me that they see themselves, that they see a New Orleans they recognize, and that they understand the stories, that they get it. I worry about whether that little tiny group of New Orleans readers &quot;gets it.&quot; If they don't, then something's wrong. Then I know what I'm doing is not good enough, that I need to work on it. That's especially important with voice. My students have difficulty, for instance, reading things written in plantation dialect, but they have less difficulty reading poetry by Hughes, or some of the poems of Sterling Brown, which are much closer to authentic black folk speech. I don't write in dialect, and I don't know anyone who does. I am trying to catch a real voice, without funny spellings or any of that stuff. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> What do you think of younger southern writers? <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> I suppose we have a generation of young southern writers for whom the topic of the South is taboo. Of course, much of it has to do with slavery and racism. <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>JL:</strong> Your first collection was dedicated to the memory of relatives. Do you consider your work elegiac, and is this southern? <br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BMO:</strong> Yes--I have a concern with elegy and remembrance. That volume was dedicated to my grandmothers and one great-grandmother. I wrote elegies when the parents of Clyde Taylor and Moses Nkondo and Charles Rowell died. As I said earlier, there's a peculiar sense of death in New Orleans. We see life as a continuum; there's really no end. We don't like endings in New Orleans. We never stop eating, drinking, or listening to music--it's always &quot;one more, one more.&quot;</p>
+      </div>
+    </div>
+  </div>
+
+<!-- end .content --></div>
+<!-- end .container --></div>
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>WWII—Through Her Eyes</strong></h2>
+</center>
+<br>
+<p><strong>Jessica Varnado Puissegur</strong></p>
+<br>
+<p><strong>Course:</strong> EDUC 415<br></p>
+<p><strong>Instructor:</strong> Dr. Cheryl Edwards<br></p>
+<p><strong>Assignment:</strong> Oral History<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World War II is an historical event that will be remembered forever. Many family, friends, and neighbors were lost while serving our country. They were killed in glory, fighting for the freedoms embraced today. My grandmother, Norma Lee Mixon Varnado, now 87 years old, lived amid this World War as it began, was fought, and ended. This oral history is a memoir of her recollections of the challenging times she and her family faced as her future husband served for the great land we can proudly call the United States of America.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Norma Lee Mixon was born March 8, 1921, to proud parents Leslie and Lula Crawford Mixon. She is one of five siblings, all of whom have passed away. Norma grew to be a strong, independent, loving, and compassionate woman. Also known to her grandchildren as "Maw Maw Ni Ni," my grandmother had four children, two of whom were boys, my father, William "Bill" Robert Varnado and uncle, Mike Leslie Varnado. Norma‘s two girls are Mary Lou Varnado and Carol Ann Varnado Frey.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growing up, Norma did not have many of the things we take for granted. She worked hard and long at an early age. Her family sharecropped and moved from place to place as they needed work. She always had responsibilities, including helping on the family farm, which sometimes proved tedious. When the war began, she was a young woman living in the Bolivar community between Tangipahoa and Franklinton, where her "mama and daddy" were sharecroppers. She dropped out of school to help with the family and soon began work at a local bus station. Norma was 22 when the United States entered the war, and she recalled, "I had quit school and went to work at the bus station; boys were leaving for the war from there. That is when the 'Japs' bombed Pearl Harbor." The bus station where my grandmother worked was located in Kentwood, Louisiana. She worked there for the duration of the war selling bus tickets and also working in the café at the station. She saw nearly all the men from her town leave from the bus station to go off to war. To her dismay, however, she witnessed only some return home.
+One such young man, who would not return, was her sister Tinsy‘s husband who served in the United States during World War II driving supply trucks back and forth to different bases. Although to some this may seem insignificant, this man spent time away from his family and loved ones in order to serve a vital part of the war, and this is one of my grandmother‘s most memorable and heartbreaking recollections of the war. She recalled, "The only thing that was really powerful and sad, is when my oldest sister‘s husband was killed. He was killed in a supply truck accident while stationed in the States. I got a telegram and had to tell my sister." My grandmother also recalled the injuries her brother received in the war. As she stated, "We were concerned about the boys being gone. My brother stepped on a mine and burnt his foot. He was scarred by the mine, but he luckily didn‘t lose his foot."
+Although Norma experienced difficult times, as many families did as a result of the war, she was most proud to tell of her late husband, Robert L. "Tibby" Varnado, Jr. and the important part he played in World War II. My grandfather passed away due to heart complications when my father was a young boy; thus, I have never heard much of him. I believe speaking of him causes despairing thoughts. Even so, my grandmother told of his unsurpassing love and duty to this country with pride and vindication.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My grandfather was known as No. 234844, Staff Sergeant Robert L. Varnado Jr. of the 717th Airborne to those who served with him. He was born on March 7, 1911, ten years before my grandmother. In the Airborne, he proudly parachuted from planes into combat. While serving our country, to his remorse, his own father passed away. Norma told how Robert felt. In particular, she spoke of his anger towards the Red Cross for not allowing him to return home to his family when this sad event took place. She recalled, "His daddy died when he was in the service, and the Red Cross wouldn‘t let him come home, so he wanted nothing to do with them when he came back because they wouldn‘t let him come home." Nonetheless, he continued his service until honorably discharged at Camp Shelby, in Mississippi, on September 22, 1945.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On December 17, 1949, Robert and Norma were married. Norma was 28 and Robert 38. Norma and Robert resided in Kentwood, Louisiana where, to this day, my independent, 87–year–old "Maw Maw Ni Ni" still lives. All of Robert‘s war memorabilia and documentation is safely stored in their home and is rarely looked upon. However, my grandmother still, to this very day, uses the fork my grandfather retrieved from a dead German soldier‘s body, keeping part of his war memorabilia nestled cozily in her kitchen drawer. She spoke with laughter as she told me, "He got a big fork and spoon off of a dead German soldier. I used the spoon until it broke, and I still use the fork."</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Norma saw, firsthand, World War II‘s effect on this great land. She explained that they Got up and went from daylight to dark, hunny. We lived what was going on in the world during the war, times changed ya‘ see, like then, blacks stayed to themselves and whites by themselves. I worked at the bus station and Ray‘s Cleaners, sold soup to get my baby sister‘s graduation clothes, plowed cotton, picked cotton, and scraped cotton. Times were tough for Norma; although she dropped out of school to help her family, she went back later in life and obtained her GED. Norma said, "I wanted to go back to school, and when your Uncle Mike was old enough, I would go to Amite every day for class. I was trying to get my GED, and I was determined to get it. I took the test at the college (Southeastern Louisiana University), under Mrs. Helen Brumfield, and I earned it."</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My grandparents, Norma and Robert, were companions and comrades who were bound by love, ideas, and events that are a struggle to fathom during contemporary times. Although she said that not many people talked about the war back then as they do now, it is important to remember and keep the flame of my grandfather‘s memory burning as well as to value grandmother‘s recollections and memories of times during the war. Perhaps the most memorable quote my grandmother offered and, which I feel appropriately sums up her life during World War II is, "We were poor. If you had a boy in the family, he was drafted and that, my dear, was sacrifice." Sacrifices are made daily, some more extreme than others; those who served not only in this war, but others as well, often sacrifice the most—their lives. For this reason, it is important to give thanks and to speak of the memories of those, such as my grandfather, who served our country during wars, and always to keep close to heart historical events which have shaped who we are today.</p>
+
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+<center><img src="horizontaline.png" width="920" height="15"/></center>
+<br>
+
+<center> <a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="40" height="50" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="65" height="50" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="213" height="50" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="38" height="50" id="facebook" alt="Facebook" /></a><br><br>
+©2014
+<br></center>
+<!-- end .container --></div>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

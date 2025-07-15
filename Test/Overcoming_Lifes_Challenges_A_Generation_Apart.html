@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>Overcoming Life's Chanllenges-A Generation Apart</strong></h2>
+</center>
+<br>
+<p><strong>Elena R. Dieck</strong></p>
+<br>
+<p><strong>Course:</strong> Education 654<br></p>
+<p><strong>Instructor:</strong> Dr. Cynthia Elliot<br></p>
+<p><strong>Assignment:</strong> Narrative Essay<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;History tends to repeat itself. It is always good to remember the positive aspects of our lives, and put those memories that cause us grief on the back burner. This story reflects the challenges that my parents had to overcome and how my husband and I had to do almost the same forty years later.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marta Teresa Suarez, a college student at the University of Havana in Cuba, met Rodolfo Nicolas Romañach, who was finishing his last year of studies at the same university. They fell in love and were married on November 30, 1957. If this seems like the beginning of a fairy tale, it was. My mother was a beautiful, young teacher who married a well-educated accountant. They both came from wonderful families that were financially secure and well respected in their home town of Cardenas, which is located about two hours east of Havana. Almost two years after their wedding, their first child was born, Rodolfo Jesus. On April 15, 1961 my sister, Marta Rosa, was born. This was the same day as the famous Bay of Pigs Invasion.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At this time, things began to change quickly in Cuba as Fidel Castro began putting together his plans to take over the country. My father had attended the university with Mr. Castro, and he had been approached to join the revolution as part of the executive council. My father had no interest in being a part of the revolution, and he avoided Castro as much as possible because he knew that he would not take “no” for an answer.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On July 7, 1962, Elena Maria was born (that’s me). The situation was bad in Cuba by that time, and my parents were trying every way possible to leave the island. My passport picture was taken when I was three days old, but it would take almost four and a half years before we were allowed to leave Cuba.
+After avoiding Castro as long as he could, my father rejected his offer. Mr. Castro was not happy, to say the least. Each time that my parents tried to leave the country (this happened about five times) we would get all the way to the airport and then, because of some “mysterious red tape,” we would not be allowed to leave until the issue was resolved. Castro was determined to make our lives miserable since my dad had rejected being part of his executive council.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My parents did not give up. They continued fighting to leave Cuba and finally, on February 14, 1967, they were allowed to leave Cuba via Madrid, Spain. With our lifelong belongings packed in two suitcases, we left. We were not allowed to take any valuables with us, such as money, jewelry, or even important personal papers such as birth certificates and college degrees. The only paperwork we had was a passport.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When we arrived in Madrid, Spain, on a very cold winter day in February of 1967, we had absolutely nothing except those two suitcases. With no money, shelter, or even winter clothes (Cuba is a tropical island with no need for jackets), my parents sought help from agencies that assisted Cuban refugees. We first lived in a refugee center with other Cuban families who were in the same predicament. My father was very lucky that the company that employed him in Cuba, had headquarters in Madrid. They agreed to help him and gave him an advance so that we could rent a one room apartment which they called a “flat.” My father walked three miles each way to work every day because we had no transportation.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My brother and sister started attending a nearby school. My mother and I spent half the day walking my siblings back and forth to school. It is the Spanish custom that all businesses close down at lunchtime, so we would walk to school at noon to pick up my siblings and then bring them back. In the afternoon, we would journey to pick them back up.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Five months after arriving in Spain, we were able to enter U.S. territory, so we decided to go to Puerto Rico for two reasons. The first reason was that my father’s only brother had resided in Puerto Rico since the 1960s, when he had fled Cuba, and was now well established there. Through his connections, my father and mother would not have any problems getting a job and beginning their lives for a second time. The second reason was because the weather in Puerto Rico resembled the weather in Cuba. My brother had suffered from asthma, and the ocean air was beneficial for this condition. We lived with my uncle for a couple of weeks while my father looked for employment, and we raised enough money for rent. Our first apartment in San Juan was in a low income housing building (what we call “Projects” in the U.S.). It was a world away from what my parents had been accustomed to in their lives back in Cuba. There were no nannies, cleaning ladies or cooks like we had in Cuba, but my parents never complained (at least
+not in front of us). They were determined that there was no looking back, and they would make the best of their new circumstances.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I will always remember the way we acquired our first sofa because someone put it next to the dumpster in the apartment complex and my mom saw it. It was made of “fake leather,” and apparently someone had poked a hole on the top cushion. My mother brought the sofa to the house, taped the hole closed, purchased material, and made a throw cover for the sofa. Someone else’s trash had now become a sign of independence for us. We were starting to put our lives together and not depending on anyone to help us out with our basic needs.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In May of 1968, my father was offered the job of comtroller at a resort hotel on the eastern side of the island in a small town called Fajardo. The job had been advertised, but no one who was qualified wanted to move to this remote part of the island. In the end, the management team put together an incentive package that included a house with free rent for a year. My
+parents jumped at the offer and off we went to the eastern side of the island. Just imagine a town with one road, one red light, one school, and only a small grocery store. My uncle thought that we were making a mistake leaving San Juan, which had so much to offer. My parents, on the other hand, saw it as an opportunity to establish new roots in our adopted home.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The years in Fajardo were the happiest years of our lives. My mother and the children walked to school every day and Dad “hitched a ride” to the hotel. He was the only man in town who wore a business suit but didn’t own an automobile. By the time we left Puerto Rico, six years later, my parents had become homeowners and even owned two cars! In 1973, my parents decided that it was time to leave Puerto Rico and move to the United States, so we could learn English and one day attend an American college. Their dreams and hard work came true because all three of us are now all successful college graduates.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 1985, I married my college sweetheart. On July 26, 2005, we celebrated our 20th wedding anniversary. As we had an anniversary dinner, we looked back at how wonderful our marriage had been over the past years. We have three children, Ryan (17), Lauren (13), and Stephen (9). Except for a few times when the kids had gotten the flu or when Lauren had broken her leg, our life had been challenge free. Little did we know that in just over a month the biggest challenge of our lives would hit us hard.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The school year began like every year. Ryan was now a senior and a starter for the Slidell High football team. This was his year to “shine.” Early on Saturday, August 27th, the phone rang. It was my cousin, and she wanted to know what we were going to do about the storm. My reply was “What storm?” The night before we had been at Ryan’s football game, and we had not watched the ten o’clock news. The last time we had heard about a storm was on Thursday, and it was going to hit Florida, but now it was headed for Louisiana.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My husband is part of the management team of a major retail drug store, and on that particular Saturday he was at work. When I called him and told him about the storm, he said, “Don’t worry, it will turn.” The more I watched the news, the more I worried. We live directly on Lake Pontchartrain. Our subdivision faces the lake, and the storm surge was predicted to be about twenty feet. Although our house is built twelve feet above sea level, that meant we could have eight feet of water in our home.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;That night after watching the news, my husband said, “Start packing. This is the real thing.” In the twenty years that we had been married he had never said this, so I knew that this was the storm that everyone had always talked about and wished would never happen.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Early on Sunday morning, he headed to the store to follow emergency procedures to secure the store. I assigned each child a job as we all worked together to pack as much as possible. We had done this drill before many times, but this time was the “real thing.” Ryan and I got the boards ready to board up the windows. They were pre-cut and labeled for each individual window. Lauren was in charge of watching the latest TV updates while she packed clothing for everyone. Stephen helped by picking up all the lawn furniture and anything that could fly like a missile when the wind picked up. Finally, by 4:30 p.m. on Sunday, we left our home and took our house plans as suggested by our neighbor. He said, “You’ll need them if the house isn’t here when you return.” It did not even cross our minds that many of our neighbors would face that predicament in less than twenty-four hours.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We returned to Slidell on Sunday, almost a week after the storm, after taking shelter in Hattiesburg, and then in Shreveport where my cousins live. Thanks to modern technology, we already knew a little of what to expect. We had used aerial views that were posted on www.NOLA.com to see that our home had been hit by a small tornado and the entire roof on the right hand side had been ripped off. Despite the advance warning that was provided by modern technology, we did not believe it until we saw it.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The National Guard was blocking both entrances to the area. We had to show identification to be allowed to enter our neighborhood. I will never forget what we saw as long as I live. It is a moment that is imprinted in my mind. It was total destruction. Camps had been washed by the surge from one side of the road to the other. Million dollar boats were stuck between houses as if someone had parked them there on purpose. After arriving at our home, we just stood there and all we could say was, “Oh, my God! Where do we start?”</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The months that followed were unbelievable. How can history be repeating itself? We literally had a few suitcases of belongings, three children, and were homeless, just like my parents had been when they left Cuba. I began thinking about the obstacles they had faced and how they had never complained. How did they do it? Many days I just wanted to cry myself to sleep and give up, but it was now my turn to do the same for my children as my parents had done for us. Months followed with endless problems, including fighting insurance companies and trying to keep our family together. Ryan was depressed because his senior year had been “ruined” by the storm. In early October, Slidell High reopened, and Ryan returned to Slidell to live with another family and complete his senior year. Every Friday afternoon during football season, we drove five hours to see him play. If my husband had to work on Saturday, we drove all night to get back to Shreveport. Just like my father had worked in Spain with the same company that he was employed with in Cuba, my husband had been able to temporarily transfer to another store with the same company in Shreveport. We had decided to live in Shreveport while the structural rebuilding of the house was taking place and also so our two younger children could experience a more “normal” school year than Ryan was experiencing in Slidell.
+Ten months after the storm, we were able to move back into the upstairs section of the house. My husband transferred back to his store which had now re-opened. The right side of the roof had been rebuilt thanks to an excellent group of Brazilians who worked feverishly to rebuild our home. The downstairs had three feet of flood water damage from the storm surge in addition to the rainwater from the storm that came in through the parts of the roof that had been ripped off by the wind.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once we moved back in upstairs, I became a contractor. I did not want this profession, but I had no choice! I had to learn! I started calling the parents of students that I had taught who were involved in different aspects of construction and asked for help. The air-conditioning work was completed by the company owned by the parents of one of my previous 3rd grade students. The tile floor was done by a friend who I played Bunco with, and the woodwork was done by her next door neighbor, who is a carpenter. We painted doors, walls, and trim work from sun up to sunset. The rest of the house was completed little by little with help from every acquaintance that we had.
+While the five of us lived in two rooms upstairs and shared one bathroom, we learned not to complain because for the first time in ten months, we were all together under the same roof. That was what counted the most. Gradually, the rebuilding continued. Just as the sofa that my mother refurbished out of the dumpster provided hope, when my husband and I slept in our own bed for the first time in August 2006, one year after the storm, we knew things were getting back to normal. This was a major accomplishment after sleeping on the floor for months. Who would have told us on the night of our 20th anniversary that life would throw us a curve ball as an anniversary gift? It took almost two years for the house to be totally rebuilt. Everyone in this house is now an expert in rebuilding thanks to Hurricane Katrina!</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I hope my children will never have to face the challenges that my parents and my husband and I have had to face, on their own. Nevertheless, with faith and a strong will, you can overcome any challenge that life throws at you. Hopefully, our example has taught our children that they should never give up no matter what!
+</p>
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<center><img src="horizontaline.png" width="920" height="12"/></center>
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

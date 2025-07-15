@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>Creation for Evaluation</strong></h2>
+</center>
+<br>
+<p><strong>Katelyn Kelley</strong></p>
+<br>
+<p><strong>Course:</strong> English 102<br></p>
+<p><strong>Instructor:</strong> Mr. Paul Crawford<br></p>
+<p><strong>Assignment:</strong> Evaluation<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Short stories can be seen as unique pieces of literature. These diverse narratives can carry the imagination of readers into unknown territory. Certain professionals believe, “The stories of novelists and short-story writers, however, are admittedly untrue; they are ‘fiction,’ things made up, imagined, manufactured” (Wiemelt, Slawson, and Whitton 459). The creation of a story takes time and effort to produce; therefore, stories can be broken into different elements which the author can elaborate on differently from one to the next. Many of the elements can inevitably determine the appeal to a particular reader. Some experts explain, “Its framework is the six basic elements of fiction found in both the novel and the short story, namely: plot, theme, style, character, setting, and point of view. These are the ‘reader hooks’ of any piece of fiction” (Hooper 6). Every reader has a preference for these elements, so the choice for each element depends on the opinion of the author and the readers they wish to attract. By analyzing short stories,  we  can  determine  the  differences  and  how  writers  shape  their  written  work  for  a particular reader. I chose Anton Chekhov’s “Misery” and Kurt Vonnegut’s “Harrison Bergeron” for my evaluation. Using the criteria of setting, point of view, characterization, and final resolution, I will be able to evaluate these two short stories validly and confidently.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of the main elements provided in short stories can be discovered by simply glancing at the first paragraph; this is considered the location holding the story in place, otherwise known as the setting. Brad Hooper considers, “Setting, it must be said, may well be the most important factor in connecting a reader to a short story” (19). A short story can either contain an abstract setting, leaving room for the imagination, or a concrete setting, where the author gives a specific time and place to contribute to the account. Specialists want us to understand, “The setting or environment is not mere geography, not mere locale: It provides an atmosphere, an air that the characters breathe, a world in which they move” (Wiemelt, Slawson, and Whitton 465). This can be clearly understood while examining the following short stories.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The setting for Chekhov’s “Misery” is described in this short excerpt: “Big flakes of wet snow are whirling lazily about the street lamps, which have just been lighted, and lying in a thin soft layer on roofs, horses’, backs, shoulders, caps” (474). Given such vague description, readers are left to imagine their own setting. The description of this setting appears extensive yet uninformative; therefore, we define it as abstract with a rating, on a ten point scale, of four. The creation of an excellent, concrete setting requires imagination from the author to present the reader with specific location and time. For example, Kurt Vonnegut begins describing his setting, “The year was 2081, and everybody was equal” (757). Within the first paragraph, we recognize the concrete setting; Vonnegut provides the exact place, the United States, and the year in the future, 2081. The story’s features of straightforwardness and simplicity give the reader a better understanding behind the reasoning of the story’s events more than the example in “Misery.” On a ten point scale, this short story deserves a nine for its thorough depiction.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another criterion determining a story’s success is the point of view the author applies to his narrator. Jill Lepore proclaims, “Readers can be nearly paralyzed by compelling stories confidently told. In the hands of a good narrator, readers can be lulled into alternating states of wonder and agreement” (53). There are many different opinions on what exactly creates a good narrator; however, we do know there are several different types of narrators, broadly identified as first or third person.  In “Misery” and “Harrison  Bergeron,” we discover two third person narratives; however, there are differences. <em>Roots to Branches</em> explains, “If the point of view is omniscient, the narrator relates what he or she wants to relate about the thoughts as well as the deeds of all the characters” (Wiemelt, Slawson, and Whitton 468). This is where our stories differ.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In “Misery,” we discover a third person narrative, and selective omniscient; therefore, we can only see into the mind of our main character, Iona, as he deals with his anguish after the death of his son. The narrator declares, “With a look of anxiety and suffering Iona’s eyes stray restlessly among the crowds moving to and fro on both sides of the street: can he not find among those thousands someone who will listen to him?” (Chekhov 476). Since there is no ability to know the thoughts of the other thousands of people, we wonder what others in the story are thinking. The ability to know everything a character is thinking is the ideal point of view which leaves this story with a six out of ten. “Harrison Bergeron” contains a third person point of view as well; nevertheless, it can be defined as omniscient. For example, “It was tragic, all right, but George and Hazel couldn’t think about it very hard” (Vonnegut 757). The descriptions of the different thoughts of the characters are then explained to us. With full omniscient narrators, readers can know everything going on externally, as well as internally, through all the characters. This element appears to be successful in this short story earning it an eight on a ten point scale.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The author normally introduces another criterion in the beginning of a short story along with the setting. A story would be nothing without its characters and their vast differences. Characters in fiction writing can be described as flat, round, static, or dynamic. By examining the trait, or traits, of the main characters, we can determine their personalities and begin to understand their reasoning behind different thoughts and actions. We can recognize:</p>
+<br> 
+<p class="fullindent">A flat character is relatively simple and usually has only one trait. A round character, on the other hand, embodies several or even many traits that cohere to form a complex personality. Whereas a flat character is usually static (at the end of the story the character is pretty much what he or she was at the start), a round character is likely to be dynamic, changing considerably as the story progresses. (Wiemelt, Slawson, and Whitton 463)</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These four traits, flat, round, static, and dynamic, depict the different main characters in Anton Chekhov’s “Misery” and Kurt Vonnegut’s “Harrison Bergeron.”</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anton Chekhov’s main character illustrates a flat and static character; we notice only one significant trait, loneliness, throughout the entire story without change.  For example, “The misery which has been for a brief space eased comes back again and tears his heart more cruelly than ever” (476). This character trait is wonderfully developed and described through the story, but does not help to create a relation with the main character or establish a personality for him. The characterization in the short story is incredibly dull with no change or interest to appeal to the reader. For these reasons, this story will receive a five on a ten point scale.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On the other hand, one of Kurt Vonnegut’s main characters, George Bergeron, can be viewed as round and somewhat dynamic; also, George and Hazel, his wife, serve as foiling characters. A foil character can be defined as, “A character who serves as a contrast to another character” (Wiemelt, Slawson, and Whitton 463). Hazel shows the readers how society is evolving negatively; nevertheless, George, her husband, provides hope for a return to normalcy. Therefore, we form a bond with these significant characters, and our characterization of “Harrison Bergeron” deserves an eight out of ten for its well-developed traits.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, we can evaluate the element which concludes each short story. <em>Roots to Branches</em> pronounces, "To write about fiction you would think about these elements of fiction, asking yourself questions about each, both separately and how they work together” (Wiemelt, Slawson, and Whitton 462). Each of our previous criteria builds the final thoughts in the short story. The criteria are unique from every short story; therefore, our author’s final thoughts vary through certain accounts. This last element can be defined as final resolution. Certain stories can either contain an open or closed ended final resolution. Open endings are exactly what they appear to be; the author leaves questions unanswered and allows readers to create their own endings. In closed endings, an author ties up any unanswered questions and leaves nothing, or little, to the reader for creation.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In “Misery,” we are left with an open ending; therefore, readers must create their own explanations for what occurred. Anton Chekhov writes, “The little mare munches, listens, and breathes on her master’s hands. Iona is carried away and tells her all about it” (477). These final sentences leave many questions but few concerns for our character, Iona. Our character is never entirely portrayed, so the concern does not upset the reader for too long. This final resolution deserves a five of ten simply because of the few concerns we actually feel.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On the other hand, “Harrison Bergeron” displays a closed ending, a sense of closure and finality. Vonnegut illustrates, “’That’s my girl,’ said George. He winced. There was the sound of a riveting gun in his head” (761). The story provides the final words, and we are left with our full story receiving a nine out of ten for the final resolution. We may not care for the ending whether it is somber or cheerful; regardless, we know what happens and our minds can now be placed at ease.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Harrison Bergeron" Leaves me with a feeling of reading superior literature. The elements are excellent, and they create an ideal story. All short stories must contain particular well-constructed criteria for a reader to gain some sort of interest. Certain experts proclaim, “It is certainly easy to show many instances of both conscious and unconscious knowledge of the requirements to be met by a properly structured story” (Rayfield 1085). However, most authors consciously create these short stories and depict each element the way they wish. These stories are an author’s creation, and we are simply given the opportunity to participate.</p>
+<br>
+<br>
+<br>
+<center>Works Cited</center>
+<br>
+<br>
+<p class="hangingindent">Chekhov, Anton. “Misery.” <em>Roots to Branches</em>. Wiemelt, Slawson, and Whitton eds. New York: Pearson, 2007. 473-77. Print.</p>
+<br>
+<p class="hangingindent">Hooper, Brad. <em>The Short Story Readers’ Advisory</em>. Chicago: American Library Association, 2000. Print.</p>
+<br>
+<p class="hangingindent">Lepore, Jill. “Historical Writing and the Revival of Narrative.” <em>Nieman Reports</em> 2002: 51-53. Print.</p> 
+<br>
+<p class="hangingindent">Rayfield, J.R. “What Is a Story?” <em>American Anthropologist</em> Oct. 1972: 1085-1106. Print.</p>
+<br> 
+<p class="hangingindent">Vonnegut, Kurt. “Harrison Bergeron.” <em>Roots to Branches</em>. Wiemelt, Slawson, and Whitton eds. New York: Pearson, 2007. 757-61. Print.</p>
+<br>
+<p class="hangingindent">Wiemelt, Jeff, Jayetta Slawson, and Natasha Whitton, eds. <em>Roots to Branches</em>. New York: Pearson, 2007. Print.</p>
+<br>
+<br>
+<br>
+<p><strong>Mr. Crawford’s Comments:</strong> <em>Ms. Kelley was required to write an evaluation of two short stories using at least three criteria. Our class discussed the various elements of short stories which could be used in any evaluation of a short story. She applied the criteria in using a point-by-point method. Her conclusions are well-supported with textual evidence from each of the stories. Although other readers may disagree with Ms. Kelley's conclusions, her reasons for reaching the conclusions she did are evident and her evidence is applied in a logical manner. </em></p>
+
+
+
+
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<center><img src="horizontaline.png" width="920" height="12"/></center> 
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

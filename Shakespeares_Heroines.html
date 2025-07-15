@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>Shakespeare's Heroines<br>
+Kate, Portia, and Beatrice  </strong></h2>
+</center>
+<br>
+<p><strong>Lorraine Maynard</strong></p>
+<br>
+<p><strong>Course:</strong> English 435<br></p>
+<p><strong>Instructor:</strong> Dr. Joan Faust<br></p>
+<p><strong>Assignment:</strong> Research Paper<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centuries have passed since Shakespeare’s “tamed” shrew made her debut in Elizabethan society; still, critical analysis of the work remains divided, varying from those who charge her creator to be misogynistic, and others who claim his attitude innovative. Conflict surrounding the interpretation of key female characters purports to many Shakespearean plays, and it is hardly surprising, considering the content of works such as The <em>Taming of the Shrew</em> relies heavily on the recognizable and universal theme of the battle of the sexes. Shakespeare is not timid in seeming, at least, to support chauvinistic ideals of women as inconsequential and irrational. However, closer analysis of three key female characters, the harridan Kate of The <em>Taming of the Shrew</em>, Portia of <em>The Merchant of Venice</em>, and <em>Much Ado About Nothing’s</em> spirited Beatrice, reveals a subtle transition in which Shakespeare begins a tentative, but increasing, empowerment of women.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;William Shakespeare penned his plays during a complicated time in history. Sixteenth century England awarded little worth to its female members of society, but perversely, was ruled by a woman, and a formidable one at that. Queen Elizabeth I ascended an embattled throne, her country politically and religiously torn, but under her absolute rule England became increasingly powerful. However, despite Elizabeth’s savvy reign, the country remained staunchly patriarchal. Any rights afforded to women were at the discretion of the men who provided for them and were based on often conflicting religious beliefs, as Pinciss and Lockyer comment in their introduction to the excerpt from “On the State of Matrimony”: “In part, the Protestant movement seems to have encouraged contradictory impulses. On the one hand, it emphasized a woman’s submission and docility…” while on the other, “some Protestants stressed the individual’s spiritual independence and material rights” (41). This assertion is partly supported by the following excerpt from “The State of Matrimony:”</p>
+<br>
+<p class="fullindent">For the woman is a weak creature, not endued with like strength and constancy of mind; therefore they be the sooner disquieted and they be more prone to all weak affections and dispositions of mind than men be, and lighter they be and more vain in their phantasies and opinions. (“State” 42)</p>
+<br>
+<p>Although it is fair to assess that the intention of this work is to promote the fellowship of marriage, there is an acceptance of the male’s right to physical dominance, and the essay’s consensus is to “exhort the women that they would patiently bear the sharpness of their husbands” (“State” 42). Man, in abstaining from violence and implementing gentleness, reaps the benefit, for in return his spouse “shall be made the more obedient” (43).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shakespeare addresses these issues in the <em>Taming of the Shrew</em> as he introduces Katharina, Baptista’s mettlesome elder daughter. Aware of her father’s intent to arrange any marriage, Katharina repeatedly sabotages his attempts, warding off her suitors with her unfeminine and obnoxious disposition. Her behavior is not unprovoked; she suffers the humiliation of witnessing the detrimental banter between Hortensio, Bianca’s suitor, and the pantaloon Gremio, who declares, “She’s too rough for me” (I.i.55). She is acutely aware of Baptista’s anxiety to remove any obstruction to his favored daughter Bianca’s marital prospects. Thus, Katharina finds herself at the mercy of a father who, Coppélia Kahn claims in her analysis “Coming of Age: Marriage and Manhood,” will see her married “not for the sake of conforming to the hierarchy of age as his opening words imply, but out of a merchant’s desire to sell all the goods in his warehouse” (42). This understanding is a perfect fit with the concept of women as possessions and leads to the mention of Petruchio’s notorious comment that, regardless of Katharina’s shrewish reputation, he comes “to wive it wealthily in Padua” (I.ii.74). He reiterates his intention with this subsequent claim:</p>
+<p class="fullindent">Thou know‟st not gold’s effect.<br>
+Tell me her father’s name and „tis enough;<br>
+For I will board her, though she chide as loud<br>
+As thunder when the clouds in autumn crack. (I.ii.92-95)</p><br>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Petruchio’s declaration exemplifies that he does not find anything an obstacle in the acquisition of wealth. In addition, the aggressive sexual implication of the statement firmly reinforces societal acceptance of male dominance. He is resolute and Katharina is powerless; Petruchio, the stranger, decides her fate.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Much has been made of Petruchio’s taming of his shrew. Having informed Baptista, “I am rough, and woo not like a babe” (II.i.137), Petruchio embarks on a process of reverse psychology (in which he supposedly mirrors Katharina’s bad behavior) in the quest to quiet “his Kate.” Critics view this tactic from opposing camps. In her article, “Kate of Kate Hall,” Ruth Nevo concurs with Anne Barton, when she asserts that Petruchio comes across “far less as an aggressive male out to bully a refractory wife into total submission, than he does as a man who genuinely prizes Katherina, who, by exploiting an age old and basic antagonism between the sexes, maneuvers her into an understanding of his nature and also his own” (29). Kahn takes exception to this point of view to make the following observation:</p>
+<br>
+<p class="hangingindent">The overt force Petruchio wields over Kate by marrying her against her will in the first place and then by denying her every wish and comfort, by stamping,
+shouting, reducing her to exhaustion, etc., is but a farcical representation of the psychological realities of marriage in Elizabethan England, in which the husband’s will constantly, silently, and invisibly, through custom and conformity, suppressed the wife‟s. (45)</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ensuing battle of wills between Petruchio and his spouse is well-documented, but despite the stacked odds, and a husband who declares himself master over a woman who, he announces, has become “my goods, my chattels; … my house/ My household stuff, my field, my barn/ My horse, my ox, my ass, my anything” (III.ii.230-32), Katharina exhibits signs she remains her own woman. As Petruchio and his cohorts persist with Petruchio’s plan to bring Kate to submission, she continues to speak her mind, informing her husband:</p>
+<br>
+<p class="hangingindent">My tongue will tell the anger of my heart <br>
+Or else my heart, concealing it, will break <br>
+And rather than it shall, I will be free<br>
+Even to the uttermost, as I please, in words. (IV.iii.77-80)</p>
+<br>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Further, as Kate informs her husband, “What you will have it named, even that it is,” a satisfied Petruchio misses that she continues, “And so it shall be for Katharine” (IV.v.21-22). Though seemingly compliant, a defiant Katharina maintains her identity, and thus vocally challenges Petruchio’s naming of the shrew.</p><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In his introduction to The <em>Taming of the Shrew</em>, David Bevington suggests that the original definition of the word shrew originally signified “a wicked or malignant man” and only later came to represent a “scolding or turbulent wife” (109). Just as this word has had dual meaning, so there are generally two interpretations of the play. Probably the most accepted perception is that Katharina is indeed tamed by the play’s conclusion, and thus her final speech is read as an act of obedience and submission. However, Katharina’s clever command of language puts this theory in dispute, as, while Kate appears almost docile, ultimately, she holds the upper hand. Nevo claims, “Petruchio’s remedy is an appeal to Kate’s intelligence” (37), which may be justified, but there is every indication he under-estimates his wife. When Petruchio relies on Kate to settle his wager, he is at her mercy. Thus Katharina concludes the play shrewdly, for in truth, Kate could have said what she liked.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>The Merchant of Venice’s</em> heroine Portia also finds herself (in principle at least) subjected to male dominance, but here, the patriarchal influence appears somewhat sympathetic. While it cannot be refuted that Portia remains bound to comply with her deceased father’s instruction to provide a husband, the condition of the three scrolls exhibits foresight, even kindly parental concern, with regards to the intention of the prospective bridegroom. Still, Portia remains tied to societal convention that allows patriarchal control from the grave, and an eventual marriage is to be consequently arranged. Yet there is clear indication of a more empowered woman in <em>The Merchant of Venice</em>. Although Portia is clearly bound, initially, by societal expectations for female obedience, she commences the play as her own mistress, unlike Katharina, whose only source of power was her tongue. In comparison to would-be husband Bassanio, Portia has higher social status and is financially secure, yet she remains little more than the lottery’s first prize. However, in <em>The Merchant of Venice</em>, Shakespeare reveals an apparent predisposition towards the closer examination, and even acceptance, of female intelligence. For instance, depending on interpretation, there is an indication Portia steered Bassanio in his selection of the caskets. Leslie A. Fieldler claims in his article, “These Be the Christian Husbands,” that “Portia provides her lover with the clue he needs to find her and avoid unmanning. It is all there in the 'magic' she has sung to him” (75). He purports that Portia’s clues lie in the “associations with the unspoken words 'dead' and 'lead'” (75), which suggest to Bassanio on an unconscious level Portia is “locked i[n] a coffin, where she lies, as if wrapped in lead, until he revives her” (75). This assertion posits that Portia, rather than being a helpless victim of antiquated male dictates, actually seizes her opportunity to select Bassanio.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anthony J. Lewis suggests, “More often than not, it is the men who initiate the action in Shakespeare’s comedies, journeying, guessing riddles, but the women who take most of the risks” (37). Certainly this analysis could be ascribed to Portia for she grows in cunning as the play progresses, but it has to be said that although she exhibits a determination to take charge of situations, it is in the disguise of a man. Even so, Shakespeare grants Portia a freedom denied Katharina, as, for example, it is Portia who requests a marriage ceremony before Bassanio leaves to aid Antonio. Still, her liberty remains restricted, though Portia manages to maneuver, even manipulate, the men of Merchant within the boundaries. She has no qualms about her
+capabilities as she dons the doctor’s mantle to venture with Nerissa (also incognito) to Venice. Lewis continues, “Of all Shakespeare’s disguised women surely Portia comes the closest to representing a stereotype of masculine authority and bravado…” (147). Without question, Portia challenges the ideology of men as decision-makers and there is no argument Portia applies reason and intellect to save Antonio’s life at his trial. In so doing, she outwits every man present, both physically and verbally. Yet perhaps Portia carries this affinity with accepted male characteristics too far. As Jerome Christensen notes in his article, “The Mind at Ocean,” as Portia “saves” Antonio, so she effectively severs his connection to Bassanio. Christensen comments her every action executes “bloodless cuts that reduce Antonio as thoroughly as ever would have Shylock’s crude, murderous violence” (127). Indeed, Shylock fares no better. As the doctor passes sentence, a dispossessed Shylock responds: “You take my house when you do take the prop/ That doth sustain my house. You take my life/ when you do take the means whereby I live" (IV.i.373-75). Portia reveals that, in dispensing justice to Shylock, she can be ruthless. She has skillfully manipulated Shylock and used his own weapon, the law, against him to render both Antonio’s salvation and his own destruction. Finally, Portia uses Bassanio’s reluctant betrayal, his relinquishing of her ring, to make clear the conditions of their marriage. She tells her spouse: “By heaven, I will ne‟er come in your bed / Until I see the ring!” (V.i.191-92), and Lewis indicates “Portia’s use of the ring certainly shows Bassanio that as wife and woman she has the same sexual options he has;” further, his wife has a choice to remain chaste but is also “precisely the same woman who can choose to be disloyal” (151).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shakespeare presents his most liberated female protagonist in <em>Much Ado About Nothing</em>. Beatrice is refreshingly forward. She is articulate and opinionated like Kate, intelligent, like Portia, and as selective when it comes to men as her predecessors, but there is a freedom of spirit about Beatrice that Kate and Portia lack. Additionally, Beatrice is not restricted by patriarchal influence. Uncle Leonato exhorts little, if no, control over a niece who declares she will not take a husband until “God make men of some other metal than earth” (II.i.55-56), for she has no intention of making “an account of her life to a clod of wayward marl” (II.i.57-58). Indeed, Beatrice exhibits such an emphatic disregard for rigid social conventions that it would appear almost as if Shakespeare found himself reluctant to have his female protagonist fall prey to any form of male superiority.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout the play, Benedick is shown to be as vulnerable as Beatrice in matters of the heart. After his encounter with Beatrice at the masked ball Benedick laments, “But that my lady Beatrice should know me, and not know me!” (II.i.195-96). The same evening, as Don Pedro admonishes Beatrice, saying “…You have put him down, lady, you have put him down” (II.i.269-270), Beatrice confides that she did so “[s]o I would not he should do me, my lord, lest I should prove the mother of all fools” (II.i.271-72). In exposing the similarity of the emotions and the fears of the two would-be lovers, Shakespeare awards his leading lady an equality that is lacking in the previously discussed plays. Don Pedro supports this hypothesis with his analysis both of Benedick, who “is of noble strain, of approved valor and confirmed honesty” (II.i.360-
+361), and Beatrice, whom he finds “an excellent sweet lady, and, out of all suspicion, she is virtuous” (II.iii.162-63). Much of the play’s action results from the slandering of Hero’s virtuous reputation, and here Shakespeare’s men are painted in exceedingly poor light. Despite his declarations of love, the basis of Claudio’s adoration for Hero stems more, as Bevington asserts in his introduction of The <em>Taming of the Shrew</em>, for “her beauty, for her wealth and family connections, and above all for her modesty and her reputation for virginal purity” (221), than any emotional or intellectual connection. Both Claudio and Hero’s father Leonato fail the test of loyalty and are quick to accept the word of a disreputable male over that of Hero. Only Beatrice, Bevington states, “shows herself to be a person of unshakable faith in goodness” (221).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In comparison to Portia it could be said that Beatrice’s character seems somewhat insipid, for her exchanges, though witty, are more romantic than political, but Portia’s authority loses some of its value in the disguise. Beatrice represents an elevation of female status, as Shakespeare moves even further from the traditional limitations of societal norms to portray an authentically feminine Beatrice, not only as an equal, but as a controlling companion for Benedick. As the play moves toward conclusion and the couple protest their love, Benedick requests of Beatrice, “Come, bid me do anything for thee” (IV.i.287), which she does in no uncertain terms: “Kill Claudio” (IV.i.288), she demands. Robert Grams Hunter supports this stance in <em>Shakespeare and the Comedy of Forgiveness</em>, where he provides that while Claudio fails dismally to trust in the virtue of his intended, it stems from the fear of being duped. Hunter continues to point out that while other critics have noted "Claudio's outburst against Hero in the church scene represents nothing more than the emotion proper to a proper Elizabethan whose properties have been outraged” (100), by contrast, in agreeing to Beatrice’s terms, “Benedick is giving evidence of his willingness to follow the Emersonian injunction and to „give all to love,‟ trusting his instinctive, love-inspired belief in the decency of Beatrice” (97). Lewis’s interpretation of Benedick’s behavior is in agreement. He provides Benedick moves “not only from the world of male camaraderie to that of heterosexual love, but as one who can now trust a woman implicitly and agree to be faithful to her in deed as in language” (141), which he finds remarkable considering Benedick’s predisposition toward marriage and his innate fear of cuckoldry. As Benedick proves he trusts and values Beatrice’s opinion, as he submits to her will, he elevates her status, and when Beatrice wins her man, so she also commands his ultimate loyalty.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In conclusion, when considering these works it must be noted that while Shakespeare toys with the perception of women as the weaker sex, he also addresses the serious issue of the subjugation of women. Consequently, many of his male characters are represented in a quite derogatory manner. In addition, as the plays travel toward an increasingly diluted patriarchal control and Shakespeare juxtaposes typically with often ridiculous human behavior, he chances alienating his audience. Yet he persists with a sly, but intuitive, exposé on the fate of women of the times, and while any analysis of these particular plays should give careful consideration to the context in which the work was written, there remains a definite progression in the empowerment of the women within the texts.
+</p>
+
+<br>
+<center><h3>&nbsp;</h3>
+  <h3>Works Cited</h3>
+</center>
+
+<p class="hangingindent">Bevington, David. ed. The Complete Works of Shakespeare. 5th ed. New York: Pearson Longman, 2004.</p>
+<br>
+<p class="hangingindent">---.“Much Ado About Nothing: Introduction” The Complete Works of Shakespeare. New York: Pearson Longman, 2004. 219-222.</p>
+<br>
+<p class="hangingindent">---.“The Taming of the Shrew: Introduction.” Bevington. 108-110.</p>
+<br>
+<p class="hangingindent">Christensen, Jerome. “The Mind at Ocean.”  William  Shakespear e’s The Merchant  of  Venice. Ed.</p>
+<br>
+<p class="hangingindent">Harold Bloom. New York: Chelsea House Publishers, 1986. 121-128.</p>
+<br>
+<p class="hangingindent">Fielder, Leslie A. “These Be the Christian Husbands.”  William Shakespeare’s The Merchant of Venice. Ed. Harold Bloom. New York: Chelsea House Publishers, 1986. 63-90.</p>
+<br>
+<p class="hangingindent">Hunter, Robert Grams. Shakespeare and the Comedy of Forgiveness. New York: Columbia UP, 1965.</p>
+<br>
+<p class="hangingindent">Kahn, Coppélia. “Coming of Age: Marriage and Manhood in The Taming of the Shrew.” William Shakespeare’s The Taming of the Shrew. Ed. Harold Bloom. New York: Chelsea, 1988. 41-51.</p>
+<br>
+<p class="hangingindent">Lewis, Anthony J. The Love Story in Shakespearean Comedy. Lexington: Kentucky UP, 1992.</p>
+<br>
+<p class="hangingindent">Nevo, Ruth. “Kate of Kate Hall.”  William  Shakespeare‘s The Taming of the Shrew. Ed. Harold Bloom. New York: Chelsea, 1988. 29-39.</p>
+<br>
+<p class="hangingindent">Pinciss, Gerald M. and Roger Lockyer, eds.  Shakespeare‘s World. New York: Continuum, 1989. Shakespeare, William. Much Ado About Nothing. Bevington. 223-255.</p>
+<br>
+<p class="hangingindent">---. The Merchant of Venice. Bevington.185-218.</p>
+<br>
+<p class="hangingindent">---. The Taming of the Shrew. Bevington.111-147.</p>
+<br>
+<p class="hangingindent">“State of Matrimony.” Pinciss and Lockyer. 41-43.</p>
+
+<br>
+<p><strong>Dr. Faust's Comments:</strong> <em>Ms. Maynard clearly demonstrates the increasing depth and empowerment of these three women characters against a well-defined historical context of the role of women in marriage in 16th century Britain and Europe. Ms. Maynard smoothly, convincingly, and correctly incorporates specific evidence from all three plays to support her argument.
+</em></p>
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<center><img src="horizontaline.png" width="920" height="12"/></center>
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 40px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center><h2>Yourspace or Mine?</h2></center>
+<br>
+<p><strong>Bailey McAlister</strong></p>
+<br>
+<p><strong>Course:</strong> English 102<br></p>
+<p><strong>Instructor:</strong> Ms. Heather O‘Connell<br></p>
+<p><strong>Assignment:</strong> Argumentative<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As the age of technology grows, our world becomes a little smaller. It is not out of the ordinary for teenagers to be linked to peers from across the country as well as around the globe. Social networking sites such as MySpace have become a cultural explosion through the ranks of today‘s teens. The secret club houses of children during the 1980‘s have led to the chat rooms of this millennium. Secret handshakes have been replaced by text messaging and Twittering (a diary like website for users to blog about their feelings). Those growing up in today‘s society are living in an on-demand generation. Brain power has been replaced by internet search engines and battery power. The idea of going to the library may become obsolete as information is now suddenly at our fingertips. Social networking sites may allow users to develop friendships and keep some alive, but whether the relationships that develop on these sites are true and gratifying remains to be seen.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The seeds for today‘s social networking sites emerged during the early days of the internet, and its roots can be traced to the bulletin board message boards of the 1980‘s. Social networking developed into such popular sites such as SixDegrees.com which began in 1997, Friendster.com which launched in 2002, and MySpace.com created in 2003, and now boasts over 100 million registered users (Boyd 214). Each site gives the users search engines to find people with like interests. Browsing through the lists of other users who enjoy the same bands or have an acquired taste for art takes only a few clicks, but this is where the red flag should be raised. It is not uncommon for people to alter their interests to fit the cookie cutter world we live in.</p>
+ <br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rather than looking at others, people only have to view themselves to see the problems with the façade that we show the internet world. Users have an ideal view of themselves which they try to portray on the internet. Bad habits are replaced by golden virtues all in an attempt to make ourselves more appealing to others. Unflattering pictures are edited and Photoshopped so others will see us the way we wished that we actually looked. Some follow Sean Rapacki‘s thoughts in his article "Social Networking Sites: Why Teens Need Places Like MySpace" which states parenting literature and psychologists agree that people need a space to discover their identity (28). However, though some researchers believe MySpace gives kids the freedom to discover who they are, does it just give kids the freedom to create who they want the cyber world to think they are? It seems the old proverb: "<em>to thine own self be true</em>," has given way to a philosophy of "<em>to others show thy self better</em>.”</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The concept of "networking" has been used by sociologists for decades, but the idea has been re-birthed during this age of technology. Social networking sites help users to locate individuals with different ideas and cultivate certain ideas. "At MySpace, the term 'friend' goes beyond 'people I know in the world'," says Steven Levy in his article "How Many Friends Is Too Many?" It is ludicrous to believe that someone with thousands of "friends" on a site such as MySpace would view those people as they would actual personal acquaintances and friends. These social networking sites advance the weaker ties. They help turn the "rumor-mills," allow individuals to find people, and keep a tab on the constantly changing movements of pop culture.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Many believe that MySpace is for 16-year-olds with poor time management skills, but over half of all those using social networking sites are middle class, professional, college educated individuals living in North America. Maybe we should not be examining how closely we are connected, but instead what types of networks and friendships are we creating. I personally am not registered or affiliated with any of these major "friend" sites for my own reasons. In September of 2007, I was engaged for a total of four days, until I signed on MySpace to see that a bulletin had been posted by a girl in my "Top Friend" list. The bulletin was a random survey asking questions like "What did you eat for breakfast?" or "Have you ever slept with anyone‘s boyfriend in your top friend list?" One can only imagine the horror I felt when rumors I had heard previously were confirmed on the World Wide Web for anyone to read. With intimate details of people‘s lives being broadcast across the information super highway, it is no wonder why young girls like Megan Meier—the 13-year old who hung herself after being cyber bullied on MySpace—are taking their own lives. People take on a new persona when text messaging or chatting online; hiding behind a cell phone or a computer screen allows a new boldness to say or do things not normally done in person.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The use of the word "friendship" in the online world is taking on a completely uncommon definition. The <em>New American Webster Handy College Dictionary</em> defines friendship as the state of being friendly toward or intimate with another. Aristotle once wrote "Friendship can exist only when one spends a great deal of time with the other person, participating in joint activities and engaging in mutually beneficial behavior" (Kraut). Friendship used to be the building bridge to relationships with the opposite sex. The idea of calling people to ask for a date or meeting the old–fashioned way has been reduced to e-mailing, texting, or similar forms of communication not involving face-to-face contact. Girls no longer need a new haircut when they want to impress a guy. They simply update their "profile." Bringing a friend chicken noodle soup when they are sick is not a requirement, but people have become satisfied with a "get well soon" e-card! As teenagers increasingly compete to see how many "electronic" friends they can have, is it any wonder today‘s teens have a difficult time interacting in person? This lack of communication could be a result of the barriers that are being built more and more between parents and children; parents no longer know how to ―reach‖ their child or interact with them. Is teen society becoming so disconnected with reality that our parents must ―log-in‖ just to find out what is going on in our lives?</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No long–term research has been done to find out about the effects of the social networking sites. For instance, will we spin so deep into a cyber world of webcam chats, meaningless forwards and instant messaging that we lose all need for physical contact? Will it come to the point where a click of a mouse is a substitute for quality time spent with friends? We live in an addictive world, a place where we hold meetings for alcoholics. We make movies about shopaholics and are entertained by television shows that broadcast drug abusers and their rehab process. Society deems people with these types of addiction as being diseased, yet it is accepted in our culture to waste precious time checking status updates on their MySpace. So much time could be spent actually improving oneself, as opposed to improving one‘s online appearance, and though we can create usernames, fill out our profiles, post pictures and write blogs about our daily lives, we cannot commercialize true friendship.
+</p>
+
+
+
+<center><h3>&nbsp;</h3>
+  <h3>Works Cited</h3>
+</center>
+
+<p class="hangingindent">Boyd, Danah M. and Nicole B. Ellison. "Social Network Sites: Definition, History, and Scholarship." <em>Journal of Computer- Mediated Communication</em>. 13.1 (2007): 210-229. <em>EBSCO</em>. Sims Memorial Lib., Southeastern Louisiana U, Hammond, LA. 10 Feb. 2009. < http://web.ebscohost.com >.
+</p>
+<br>
+<p class="hangingindent">"Friendship." Def. <em>The New American Webster Handy College Dictionary</em>. 3rd ed. 1995.</p>
+<br>
+<p class="hangingindent">Kraut, Richard. "Aristotle‘s Ethics." <em>The Stanford Encyclopedia of Philosophy</em>. 2008. Stanford UP. 4 Feb. 2008. < http://plato. stanford.edu/archives/fall2008/entries/aristotle-ethics/ >.
+</p>
+<br>
+<p class="hangingindent">Levy, Steven. "How Many Friends is too Many?" <em>Newsweek</em>. 151.21 (2008). <em>EBSCO</em>. Sims Memorial Lib., Southeastern Louisiana U, Hammond, LA. 6 Feb. 2009. < http://web.ebscohost.com >.</p>
+<br>
+<p class="hangingindent">Rapacki, Sean. "Social Networking Sites: Why Teens Need Places Like Myspace." <em>Young Adult Library Services. EBSCO</em>. 5.2 (2007): 28– 30. Sims Memorial Lib., Southeastern Louisiana U, Hammond, LA. 4 Feb. 2009 < http://web.ebscohost.com >.</p>
+
+ <br>
+<p><strong>Ms. O’Connell’s Comments:</strong> <em>In “Yourspace or Mine?” Bailey McAllister asks some thought- provoking questions about the nature of friendship in the online environment. She combines her personal experience and research to expose some of the complications that result from social networking.</em></p>
+
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+<center><img src="horizontaline.png" width="920" height="15"/></center>
+<br>
+
+<center> <a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="40" height="50" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="65" height="50" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="213" height="50" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="38" height="50" id="facebook" alt="Facebook" /></a><br><br>
+©2014
+<br></center>
+<!-- end .container --></div>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

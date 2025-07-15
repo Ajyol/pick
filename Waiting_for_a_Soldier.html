@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>Waiting for a Soldier</strong></h2>
+</center>
+<br>
+<p><strong>Jessica Hudson</strong></p>
+<br>
+<p><strong>Course:</strong> EDUC 415<br></p>
+<p><strong>Instructor:</strong> Dr. Cheryl Edwards<br></p>
+<p><strong>Assignment:</strong> Oral History<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If the eyes are the window to the soul, then my grandmother had the curtains drawn. By just looking into this tiny woman’s eyes, I could never have guessed her to be the soldier she is. She did not enlist in any military branch or fight in an organized war, but my grandmother endured years of uncertainty with only her family and her faith to get her through. After countless holidays and conversations spent with my grandmother, I finally began to see her strength. It has taken twenty-two years to get to know her, and this is her story.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the pages of history are turned, August 28, 1922 is usually lost somewhere in the binding. On that day, in the rural town of Deville, Louisiana, Vera Rose Paul’s legacy began. To those who love her, this date will never be forgotten. Growing up, Vera was no stranger to hardship. Her family struggled financially; this was especially true with the special needs of her younger sister and the absence of a provider after the death of her father. Although many
+troubles plagued her family, faith was her refuge.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only a year before Vera’s birth, Adolf Hitler became the leader of the National Socialist Nazi Party. On September 1, 1939, shortly after Vera’s seventeenth birthday, the Nazis invaded Poland. Two days later, Britain, France, Australia, and New Zealand declared war on Germany. Although this was happening thousands of miles from the United States, the effects on Vera were soon revealed. At this time, Vera was dating Carlton Hudson who was five years older and attending college at Louisiana Tech. Soon, she too would leave Deville to further her education. In 1940, Vera began her studies to become a beautician in Alexandria, Louisiana. During this year, America was still at peace with the world, and on the fifth of November, Franklin D. Roosevelt was re-elected as President of the United States. Within a year, President Roosevelt would freeze Japanese assets, instate an oil embargo against the Axis Powers, and announce the Atlantic Charter. America seemed to be in control, but there would soon be a change in the lives of every American.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;December 7, 1941, is a date that can never be forgotten. That Sunday, Carlton Hudson was studying chemistry in his dorm room when the news was broadcast over the radio. Overcome with anger, Carlton stood up and threw his chemistry book across the room. Vera did not remember where she was or what she was doing when President Roosevelt announced that Pearl Harbor had been attacked by the Japanese, but she will never forget Monday, December 8, 1941. On that day, Carlton dropped out of college and enlisted in the United States Air Force. By the end of the week, he was gone. The United States and Britain declared war on Japan, and Germany declared war on the United States. The world was at war.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Life was continuing, as usual, for those left at home. Even as life went on, though the reality of leaving for battle was painful, the harsher reality for Vera was that Carlton was still gone. Vera completed beauty school and began working at the Alexandria Beauty Shop. She worked every day, from early in the morning until late at night. Although she thought about Carlton daily and wrote to him every week, she knew that she could not bring him home. She had to make a living and carry on with her life, so she lived out her daily routine. She stayed busy with work, church, and surrounding herself with friends and family, many of whom were also waiting for a soldier.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This was not a time of instant media and news releases, so news of progress was sparse. Vera did not want to crowd her mind with the details of war anyway. She knew there was nothing she could do, and even though she hated to see those leaving to fight, she was proud of them because it was what they had to do. As the soldiers fought on and above the battlegrounds overseas, Americans at home were fighting for normalcy and food. Shoes, sugar, gas, and even nylon hose were rationed. Women who could not get nylons painted their legs in an attempt to appear clothed. Vera was not extremely affected by these new rules, and it did not seem to matter much to her. She knew she would be okay. She felt safe where she was living, and she continuously prayed for Carlton to return home.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 1944, after years of writing to Carlton and waiting for his letters and his arrival home, Vera heard shocking news. Carlton’s family had just received a telegram stating his plane had been shot down over Germany, and she was given a bundle of her own unread letters to Carlton. She had to take each day at a time in order to get through this. She was uncertain if he had survived the crash. Even if he had, how could he survive contact with the ruthless Nazi soldiers? Her independence and strength grew since Carlton left for war, but now she became even stronger.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vice President Harry S. Truman became President on April 2, 1945, after President Roosevelt died from a cerebral hemorrhage. At this time, Vera still had no word of Carlton and began planning a future without him. Carlton, however, did survive the crash. His plane had been shot down over Germany, and he was shot during his descent from the plane, but somehow, he escaped to a cabbage field where he tried to tend to his wound. After stuffing his jacket with cabbage heads, he ran into a forest where he dug a shallow hole to lie in. He covered himself with leaves and sticks to hide from the German soldiers. He was unable to hide for long. The Germans found and imprisoned him in a camp. With men dying and suffering all around him, Carlton did not think he could survive the harsh conditions of the camp. He was alive, but who knew for how long?</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On June 5, 1945, Germany was overtaken and divided by the Allied Forces. The government had fallen, and by July, the United States, Britain, and France had moved their troops into Berlin. It was the beginning of the end when the United States dropped the second atomic bomb on Nagasaki on August 9, 1945. With the fall of the German forces, Carlton was finally released from prison camp. After nearly a year spent imprisoned, he began his long journey home. Carlton’s family and Vera were still unaware of his survival and continued to pray for him.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vera had been working at the beauty shop for almost four years, and every day seemed much like the one before. January of 1946 was nothing special to her as she cut and rolled the hair of the local women. When the door opened one afternoon, Vera looked up expecting to see another customer. Her heart felt like it had stopped when she saw a soldier with a cane standing in her shop. Carlton had returned! By August of that year, they were married.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is now 2008, and Carlton and Vera have been married 62 years. When I hug my grandfather, I never think that those arms were used to shoot guns or fly planes, and when I kiss my grandmother’s cheek, I do not think about the tears that have rolled down her face. These “soldiers” are my grandparents.
+
+</p>
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+<center><img src="horizontaline.png" width="920" height="15"/></center>
+<br>
+
+<center> <a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="40" height="50" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="65" height="50" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="213" height="50" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="38" height="50" id="facebook" alt="Facebook" /></a><br><br>
+©2014
+<br></center>
+<!-- end .container --></div>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

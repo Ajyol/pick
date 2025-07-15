@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 50px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>The Dive</strong></h2>
+</center>
+<br>
+<p><strong>Samuel Whittington</strong></p>
+<br>
+<p><strong>Course:</strong> English 101<br></p>
+<p><strong>Instructor:</strong> Mr. Paul Crawford<br></p>
+<p><strong>Assignment:</strong> Memoir<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Few places in the world possess the kind of awe-inspiring beauty witnessed forty feet below the sluggish waves located a mile off the western coast of Cozumel. Part of the Great Maya Barrier Reef, which stretches along the Yucatan Peninsula, Cozumel, second largest reef in the world, and is renowned within the diving community as a symbol of nature at its best. I was lucky enough to have my first experience with this majestic place when I was only thirteen.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then, in the following summer of 2003, my family and I returned for our second diving trip to Cozumel, along with a few extra diving accessories. However, rather than the new equipment, we left instead thankful for the countless hours which had been invested in my scuba training, which proved to be the difference between life and death.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From the late 1970s to mid-1980s my father spent time working on oil rigs in the Gulf of Mexico as a commercial diver. During this time, he witnessed firsthand the dangers associated with inexperienced and under prepared divers. Also, he and my mother had spent time doing recreational diving and both saw mishaps involving “divers” who, upon recently buying a full set of scuba gear, took a weekend crash course in order to obtain a license. Therefore, when my parents allowed me to pursue my own scuba certification, there was no question as to whether or not I would have proper lessons. We enrolled in a three week course at Harry’s Dive Shop located in Metairie, Louisiana. The lessons were extreme, to say the least, but well worth the time. Training was concluded in Ambergris Cay, Belize, where I completed my open water dives. Prior to other trips, we also chose to take refresher courses—courses set up for divers
+already certified who were only looking to cover material again after an extended time away from the water. As for me, I considered this a waste and felt my prior training and experience were enough for this trip.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our trip to Cozumel could have been a scene from a “Mexico” commercial with our lobster dinners, the sandy beaches, and a comforting Caribbean breeze. Our third day was off to an early start. Following breakfast, we returned to our room to grab our supplies and went down to the small scuba shop adjacent to our hotel. Aside from being expensive, scuba equipment is bulky, and it is difficult to pack a mask, snorkel, and fins for an international flight and, as usual, my dad opted to rent scuba equipment. Upon making a final inspection of our equipment, we headed to the dock.
+While waiting on the dock, I began thinking about the types of fish we might see and became excited when our boat, labeled in bright yellow paint, “Paradise Diver,” appeared in the distance. Immediately, as if by instinct, I began my inspection. It appeared to be about twenty- five to thirty feet long with a wide-curving hull. This was not exactly the vessel I had hoped for, but it could have been worse. Personally, I preferred the smaller, more agile boats which guarantee a fun ride. As the boat pulled alongside the dock, its engine choked up, sending black smoke and the acrid smell of gasoline into the air all around us. Coughing, I ironically wondered if this was a premonition of the day to come.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Making our way to the reef, we picked up several other divers of various ages. As usual, many of them had expensive and unnecessary dive equipment; I had grown accustomed to this scene. Unfortunately, excessive or better dive equipment does not necessarily make a better diver. It is common to see divers covered in a collage of equipment, become entangled in their own mess, which often results in damage to nearby coral as they attempt to free themselves.</p>
+<br> 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once the entire group was assembled, our divemaster was quick to introduce himself saying, “<em>Hola Americanos</em>! I’m Victor, and I will be your divemaster today until you meet Jaws!”</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After a few minutes my father leaned towards me, “Hey Sam, you know why that joke was funny? Because half the people on this boat look like fishing lures with all the extra crap they have on.” I was quick to respond, “Yeah, but I’ll bet if there is a shark he would go after the best source of food, so you better suck that belly in!” Our sarcastic conversation was cut short as our divemaster asked which location our group preferred to dive. Much to his disagreement, the majority of the group chose Palancar reef. Palancar, which begins in shallow water but stretches to the edge of a continental shelf, reaches its maximum around ninety-five feet and then has a
+1,000 foot drop-off. This area is notorious for an undercurrent responsible for dragging several divers down the shelf to their deaths.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Splashing into crystal clear water, I kept in mind the warning from Victor, just moments earlier, about dangerous currents. On the descent, I nearly choked when I saw what appeared to be two sea turtles making love. Once on the bottom, as expected, the current was strong and seemed to already be causing problems for some. Victor led us through a series of “swim- throughs,” similar to open-ended caves, and along a high wall of coral full of exotic fish. We continued over the white sandy bottom, stopping here and there to point out a lobster or some rare aquatic creature. Not long into the dive, I looked back to find most of our group was nowhere to be seen. I wandered off at a safe distance while Victor began searching. Soon, I was swimming alone along the edge of the shelf, looking up and taking in the absolute beauty and serenity of the reef.</p>
+ <br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the distance, Victor could be seen frantically gathering up our lost and disoriented divers. However, after seeing a shadow which closely resembled a shark, I thought it best to conclude my little escapade to the edge of the abyss and return to the group. My leisurely swim back was interrupted when I caught sight of Victor struggling to untangle his spare regulator while my father waited with a growing look of despair. I took in the scene and realized it could mean only one thing; my father had run out of air seventy feet below the water’s surface. Without hesitation, I swam with all my strength towards him and began sharing my regulator in a procedure called “buddy-breathing.” We started our ascent and made the necessary decompression stops at twenty and ten feet. My father had a serious expression of relief once we finally reached the surface. “I’m glad you were quick on that one. My air gauge must have stuck because it showed more than enough air left in my tank for the dive and next thing I know, I’m struggling to suck in anything from the regulator!” Although safely resolved, there was a moment of silence between us as we simultaneously realized how serious the consequences may have been.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In all seriousness, the outcome could have been horrible, resulting in a condition called decompression sickness, or better known as “The Bends.” Nitrogen, one of several gasses which make up the air we all breathe, stays compressed when released from a scuba tank at increased depths due to water pressure. Therefore, divers are required to make decompression stops depending on the duration of their dives in order to “off-gas” nitrogen. Without these stops, nitrogen bubbles expand and typically begin collecting in joints due to the constriction of blood vessels there, hence, “The Bends.” The medical consequences of bubbles forming within a person’s bloodstream are evident to even those who have no medical experience. Had neither I, nor the incompetent dive instructor been there, my father would have likely disregarded his decompression stops in an urgent attempt to reach the surface. Immediately, he would have experienced pain in his joints as the nitrogen bubbles began to expand and soon he would be in extreme pain, possibly leading to paralysis, even death.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not surprisingly, a similar event played out with my mother on the following dive we had that afternoon. However, rather than an equipment malfunction, she ran low on air after
+becoming transfixed with a small fish she was trying to photograph. Later that evening during dinner, my mother asked if I would like to be her “dive buddy” on the next dive. Following her question, my parents began arguing over who would have me as a partner when I suddenly broke up the argument by making them both laugh. I simply said, as any naïve fourteen-year-old might, “Come on! I don’t have enough air to save both of you!”
+ </p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Mr. Crawford’s comments:</strong> <em> Samuel Whittington’s essay was in response to an assignment requiring him write a memoir unique to his experience which others reading it could find interesting. “The Dive” meets the basic features of a memoir and also incorporates humor–but only after the potential for tragedy has been played out. This use of comic relief and his recognition of it will be helpful to him in his future English studies.</em>
+</p>
+
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<center><img src="horizontaline.png" width="920" height="12"/></center>
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

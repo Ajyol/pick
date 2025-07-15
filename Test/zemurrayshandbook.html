@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;	
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 40px;
+}
+.fifthindent {
+	padding-left: 100px;
+	font-size: 16px;
+}
+.hangingindent {
+	text-indent: -15px;
+	padding-left: 40px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.font1 {
+	font-size: 12px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 20px;
+}
+.footer {
+	font-family: Garamond;
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','kramerline.png','burkartline.png','tranline.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" /></a></div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+  <table> <tr><td width="650" valign="top">
+<center> <h2> Spring 2014 Common Read Essay Contest Winner</h2>
+<h3>Zemurray’s Handbook for Success: The American Dream from Green to Brown</h3>
+<h4>by TRISTA KRAMER</h4>
+<h4>INSTRUCTOR: LISA MOODY</h4></center>
+<br>
+ <p class="fullindent"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In <em> The Fish that Ate the Whale</em>, Rich Cohen tells the real life story of Samuel Zemurray otherwise known as Sam the Banana Man. Zemurray was a poor immi- grant from Russia who came to America looking for a way to strike it rich. Upon first sight of the banana, Zemurray jumps into action, getting his business started, and climbing the banana trade corporate ladder. However, Zemurray was different from the rest of the banana men in the trade. Cohen shows how Zemurray’s intel- ligence and perseverance contribute to him becoming a successful self-made busi- nessman living out the American Dream.  In order to understand fully the unique way in which Zemurray epitomizes the American dream, the meticulous and per- ceptive ways he does business, analyzing everything before making a decision, and his tenacity to overcome conflict, whether in the banana country, in the fields of the banana plantation, or the boardroom which makes his self-made business a success, merit a closer look.<br>
+ 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zemurray became a success in only a short amount of time, and the key reason for that was his intelligence, which comes to define his unique business decisions. Cohen recognizes that even though Zemurray was of a young age when he began, he was far more intuitive than some of the other people in the banana trade. Cohen provides examples of how Zemurray’s intelligence comes from the way he analyzed everything before he jumped into it like the way he analyzed the banana trade from a distance and discovered how to turn waste into profit. Cohen writes, “Sam grew fixated on ripes, recognizing a product where others had seen only trash. It was the worldview of the immigrants: understanding how so called garbage might be valued under a different name, seeing nutrition where others saw only waste” (19). Zemurray was smart enough to know that these ripes would be the key to starting his career; he could use the refuse no one else wanted to create capital. Early on, his perceptiveness in the trade gets him on his feet. Therefore, he continues using this trademark way of business.<br>
+ 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another key aspect to Zemurray’s intelligence emerges in how he not only assessed the market, but also how he studied his product. Cohen also reveals that
+Zemmuray’s vast knowledge of growing the bananas contributed to his success: “His years in the jungle gave him experience rare in the trade. Unlike most of his competitors, he understood every part of the business, from the executive suite where the stock was manipulated to the ripening room where the green fruit turned yellow” (Cohen 71). Zemurray made sure to understand every aspect of the business from the field to the boardroom; that way if a problem arose, he would know how to take care of it himself. His intelligence always allowed him to be one step ahead, and he knew that is what he needed to succeed. Many believe that knowledge is power because it opens doors, giving people every opportunity they need, especially the opportunity that most people are looking for that is, a way to make money. Cohen proves that Zemmuray’s knowledge gave him the power to become a successful self-made business man. However, knowledge was not the only thing that contributed to his success. <br>
+   
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cohen captures Zemurray’s perseverance and how it contributes to his success. Zemurray never let anything get in his way of succeeding. If there was a problem he worked hard to figure out how to fix it. Cohen proves that in the banana business,
+in order for Zemurray to succeed, he had to be willing to remove any obstacle even if that meant staging a coup or encroaching on his competitor’s land. Cohen sums up Zemuray’s drive and determination in the following passage:</p>
+
+   <p class="fifthindent">When the secretary of state teamed up with J.P. Morgan and the Honduran government in a way contrary to Zemurray’s interests he simply changed the Honduran government. When United Fruit drew a line at the Utila River and said. “You shall not cross,” he crossed anyway. When he was forbidden to build a bridge, he built a bridge but called it something else. For every move, there is a countermove. For every disaster, there is a recovery. (139)
+   </p>
+   
+<p class="fullindent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It seemed Zemmuray always had some challenge to overcome, and although some people would have just given up, Zemurray was different because he knew that defeat was never an option. He conquered his problems by keeping his focus on the future. According to Diana Ştiuliuc’s article on the American Dream, “Any dream of achievement requires action and the American dreamer has been unique, from the beginning, among other dreamers for he has often been a doer, by necessity, ambition or compulsion” (365). Whether it is in life or in the banana trade, anyone wishing to succeed needs to have perseverance because without it, the next person to come along may steal it all away without even thinking twice. Zemurray realized this early on, and even when he was shut out from the banana trade completely, he found a way back, letting nothing get in his way of achieving the American Dream and becoming successful.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cohen portrays that Zemurray was truly successful at living out the American Dream as so many people were trying to in the early twentieth century. Zemurray had everything: money, power, a business he built from the ground up, a family, and friends he could count on. But what makes Zemurray different? He started from nothing, and within a few years he had successfully made himself one of the “richest men in America” (Cohen 119). Russell Conwell explained in his landmark speech <em>Acres of Diamonds</em>, “Greatness consists not in holding some office; greatness
+really consists in doing some great deed with little means, in the accomplishment of vast purposes from the private ranks of life, that is true greatness” (75). Zemurray made his dreams a reality. Not only did he accomplish greatness because he simply made himself successful but he also made himself successful in two different countries: “Sam Zemurray has two legacies: as a leader in the business world of America, he was a stunning success, a pioneer, everything he considered himself; as a leader in Latin America, a man so powerful he became a political factor, his legacy is darker” (Cohen 220). What most dreamers had hoped to accomplish Zemurray accomplished twice, attaining various statuses. Cohen portrays Zemurray not only as the epitome of a successful self-made business man but an international self-made business man. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zemurray’s wisdom and drive allowed Cohen to offer him as a prime example of what it takes to become a self-made business man and live out the American Dream. Zemmuray let his work become his life making him more experienced in the trade and giving him the determination to succeed. Some may think that Zemurray was just another greedy businessman, but truly he was just a young man with hopes for a future like everyone else. At the age of twenty-one, he had one hundred thousand dollars. When he passed away at eighty-four, he was worth thirty million dollars. If he was greedy and simply in it for the money he could have quit at any time, but he wanted something far more noteworthy. He wanted success.
+Who does not wish for greatness and success in their life?</p>
+<p class="fullindent">&nbsp;</p>
+<p class="fullindent">&nbsp;</p>
+
+<center><h3> Works Cited</h3></center><br>
+<p class="hangingindent">Cohen, Rich. T<em>he Fish That Ate the Whale</em>. 2012. New York: Picador, 2014.</p><br>
+<p class="hangingindent">Conwell, Russell. <em>Acres of Diamonds</em>. 1890. Philadelphia: Temple University Press, 2002.</p><br>
+<p class="hangingindent">Ştiuliuc, Diana. “The American Dream As The Cultural Expression Of North American.Identity.” <em>Philologica Jassyensia</em> 7.2 (2011): 363-370. <em>Academic Search Complete</em>. Web.</p><br>
+   
+   
+  </td>
+
+<td valign="top"> <img src="verticalline.png" align="left" width="10" height="250" alt="line" /></td><td valign="top">
+<a href="zemurrayshandbook.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('kramer','','kramerline.png',1)"><img src="kramer.png" alt="Trista Kramer" width="165" height="30" id="kramer" /></a><br><p class="font1">Spring 2014 Winner</p><br>
+  <a href="eyesofthebeholder.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('burkart','','burkartline.png',1)"><img src="burkart.png" alt="Sarah Burkart" width="165" height="30" id="burkart" /></a><br><p class="font1">Fall 2013 Winner</p><br>
+  <a href="anythingbutnormal.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('tran','','tranline.png',1)"><img src="tran.png" alt="Vy Tran" width="165" height="30" id="tran" /></a><br><p class="font1">Featured Memoir</p><br></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+ <div class="footer">      
+<p><center><img src="horizontaline.png" width="920" height="12"/></center></p>
+<br>
+<center> 
+<a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="27" height="30" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/commonread/index.html" title="Common Read" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="39" height="30" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="128" height="30" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="21" height="30" id="facebook" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" ><img src="swritingcenter.png" width="143" height="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2014
+<br>
+</center>
+</div>
+<!-- end .container --></div>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

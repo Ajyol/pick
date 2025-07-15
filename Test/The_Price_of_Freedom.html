@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="http://english.selu.edu/coursework/student19/pickicon.jpg" type="image/vnd.microsoft.icon" />
+<title>The Pick</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(green-grunge-pattern.jpg);
+	background-attachment: fixed;
+	/* bk-img courtesy of www.psdgraphics.com */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-bottom:0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+.fifthindent {
+	padding-left: 60px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-image: url(parchment_paper_background_1800x1600.jpg);
+	background-attachment: fixed;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	width: 930px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-right: 40
+\;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.fullindent {
+	padding-left: 40px;
+}
+.container .header {
+	width: 960px;
+	position: fixed;
+	
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.hangingindent {
+	text-indent: -30px;
+	padding-left: 45px;
+}
+-->
+</style>
+<link href="picknavigation.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Navlinksshover2.png','featureshover.png','submissionshover.png','archiveshover.png','writinghover.png','volume36line.png','volume37line.png','volume38line.png','thestaffline.png','thewebteamline.png')">
+
+<div class="container">
+
+<div id="navigation">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','Navlinksshover2.png',1)"><img src="HOme.png" alt="Home" id="home" /></a> 
+
+<a href="features.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('features','','featureshover.png',1)"><img src="FEATURES.png" alt="Features" id="features" margin-left="0" /></a>
+
+<a href="archives.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('archives','','archiveshover.png',1)"><img src="archives.png" alt="Archives" id="archives" /></a>
+
+ <a href="submissions.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('submissions','','submissionshover.png',1)"><img src="submissions.png" alt="Submissions" id="submissions" /></a><a href="resources.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('resources','','writinghover.png',1)"><img src="WRITING.png" alt="Writing Resources" id="resources" />
+ </a>
+ </div>
+  <div class="content">
+   <p><br>
+     <br>
+     <br><br><br><br><br><br>
+     
+   </p>
+   <table> 
+   <tr>
+   <td width="650" valign="top">
+   
+<center>
+  <h2><strong>The Price of Freedom</strong></h2>
+</center>
+<br>
+<p><strong>Robert Williamson</strong></p>
+<br>
+<p><strong>Course:</strong> English 102<br></p>
+<p><strong>Instructor:</strong> Mr. Christopher Genre<br></p>
+<p><strong>Assignment:</strong> Proposing Solutions Essay<br></p>
+<br>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;America is on the verge of a domestic crisis brought about by seven years of conflict abroad. When combat veterans return home, many have a difficult time transitioning back to civilian life. This early difficulty assimilating, in many cases, leads to homelessness, unemployment, and substance abuse. With hundreds of thousands of combat veterans returning to the United States, these problems are rapidly becoming cause for a national concern.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Veterans returning from Iraq and Afghanistan are facing many of the issues faced by veterans of the Vietnam conflict. According to the Bureau of Labor Statistics, veterans have an unemployment rate of 10.4 percent, while the unemployment rate of the general population is approximately 4.6 percent (Zoroya 5A). Veterans are experiencing an unemployment rate more than double that of the general population, and it is believed this is the result of symptoms of Post Traumatic Stress Disorder (PTSD). The rate of homelessness among veterans is also more than twice that of the general population. According to The Alliance to End Homelessness, veterans account for 25 percent of the homeless population while accounting for only 11 percent of the general population (Key 11A). Another problem faced by veterans is substance abuse, which again reaches levels several times that of the general population. Substance abuse rates, reaching The American Psychiatric Association’s criteria for abuse of alcohol and drugs was observed to be 73.8 percent for alcohol and 11.3 percent for drug abuse among veterans suffering from PTSD compared to 26 percent and 3.4 percent for alcohol and drugs respectively (Shay 36). One study shows that once a veteran falls into the pattern of homelessness and substance abuse, as many as 41 percent of veterans become criminals (Benda, Rodell, and Rodell 332). These statistics prove beyond any reasonable doubt that homelessness, unemployment, and substance abuse are problems that veterans are facing at disproportionately high rates. Eventually, this will become everyone’s problem.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One solution to this problem, organized by the Veterans’ Administration (VA), is based heavily on group therapy and antidepressant medication. These drugs, which include Paxil and Zoloft, have been approved by the Food and Drug Administration for the treatment of PTSD (Vedantam 3A). The VA is also experimenting with a new method of treating the disorder, which shows promise. Known as exposure therapy, this treatment “asks patients to repeatedly reimagine traumatic events as a way to make the events lose their potency” (Vedantam 3A). Another aspect of the VA plan is to provide disability pay to those diagnosed with moderate to severe PTSD. Priest and Hull state, “between 1999 and 2004, VA disability pay for PTSD among Veterans jumped 150 percent, to $4.2 billion” ( 1A). Over 45,000 veterans of Afghanistan and Iraq have sought treatment through the VA, and the current backlog of claims submitted to the VA is estimated to be 400,000 (Priest and Hull 1A).</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I believe a better solution to this problem would be a multi-faceted program, which begins during a soldier’s basic training and continues on through the soldier’s transition into civilian life. As part of this plan, units would be formed and stay together for three years through training and deployment. The Army team evaluated this type of unit in the 1980s and determined it was three times more skilled and effective than traditional units (Shay 216). In addition to technical and tactical training, soldiers should be trained in what to expect from their bodies and minds in high stress and combat situations, which would prepare them for any physical reactions to combat stress such as tunnel vision and hyper-sensitive hearing. According to Lt Col. Dave Grossman, soldiers can be trained to overcome physical responses to combat if they are prepared (69). Once the deployments were completed, these soldiers would return to the U.S. by ship, giving them the needed time to decompress and learn to deal with one another in a safe environment. This makes homecoming far less stressful for a soldier than the current system, which takes them from combat to family in a few days. Once back in the U.S., these units would stay together, and group counseling would be incorporated into recovery and training. After a period of six months, members of the unit would be allowed to leave for other duty stations or civilian life. After the stabilization, veterans could then return to civilian life and transition to the care of the Veterans’ Administration far more smoothly.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another possible solution to the problem of veteran unemployment and homelessness would be to return to a World War II style GI bill with the addition of required counseling to collect the benefits. This program would provide for five years of full tuition, housing, and a living stipend. It would require veterans to attend universities or technical colleges and to receive counseling through the VA. This plan would be expensive; Senator James Webb, who proposes a similar bill, estimates the plan would cost an additional $2 billion a year (Khardaroo USA2). Under this plan, veterans would be taken out of competition for civilian jobs if a period of recession occurs. Veterans would also be off of the street and in therapy, thus reducing the chances of them falling into criminal activity. However, the most important difference is the probable increased tax revenue from the veterans with higher education, which would help repay part of the initial cost of the program. According to a 1988 report for Congress’s Joint Economic Committee, the return on investment for the original GI Bill “was $5 for every $1 spent,” and only 40 percent of veterans who would not have attended college otherwise were counted (Khardaroo USA2). The bill does the best job of attempting to reintegrate veterans into civilian life and thus preventing veterans from losing their way.</p>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;American Veterans are a special class of citizens because they have voluntarily paid an enormous personal price to secure the American way of life; yet, too many continue to pay long after they have returned home. Future generations will question the way in which we treat these men and women who have sacrificed so much to keep America safe. The price would be negligable compared to what society could lose.
+
+</p>
+<br>
+<center><h3>&nbsp;</h3>
+  <h3>Works Cited</h3>
+</center>
+
+<p class="hangingindent">Benda, Brent B., Daniel E. Rodell and Luci Rodell. “Crime Among Homeless Military Veterans Who Abuse Substances.”  <u>Psychiatric Rehabilitation Journal</u>  Spring 2003: 332-345.</p>
+<br>
+<p class="hangingindent">Grossman, Dave. <u>On Combat: The Psychology and Physiology of Deadly Conflict in War and in Peace</u>. PPCT, 2004.</p>
+<br>
+<p class="hangingindent">Kharadoo, Stacy Teicher. “GI Bill May Be Updated to Help Veterans Meet Rising College Costs.” <u>Christian Science Monitor</u>  14 Feb. 2008: USA2. <u>Lexis-Nexis Academic.</u> Lexis- Nexis. Sims Memorial Lib., Southeastern Louisiana U, Hammond, LA. 11 Mar. 2008 < http://lexisnexis.com>.</p>
+<br>
+<p class="hangingindent">Key, James. “Homeless Vets Reveal a Hidden Cost of War.” <u>USA Today</u> 18 Jan. 2008: 11A. <u>Academic Search Complete</u>. EBSCOhost. Sims Memorial Lib., Southeastern Louisiana U, Hammond, La. 5 Feb. 2008 < http://web.ebscohost.com>.</p>
+<br>
+<p class="hangingindent">Priest, Dana and Anne Hull. “The War Inside: Troops Are Returning From the Battlefield With Psychological Wounds, But the Mental-Health System That Serves Them Makes Healing Difficult.” <u>The Washington Post</u>  17 June 2007, met 2 ed.: 1A. <u>Lexis-Nexis Academic</u>. Lexis-Nexis. Sims Memorial Lib., Southeastern Louisiana U. 11 Mar. 2008 < http://lexisnexis.com>.</p>
+<br>
+<p class="hangingindent">Shay, Jonathan. <u>Odysseus in America: Combat Trauma and the Trials of Homecoming</u>. New York: Scribner, 2002.</p>
+<br>
+<p class="hangingindent">Vedantam, Shankar.” Most PTSD Treatments Not Proven Effective; Scientists Find That One Therapy Is Shown to Help Disorder; Evidence of Drugs’ Benefits Inconclusive.” <u>The Washington Post</u>  19 Oct. 2007, suburban ed.: A3 <u>Lexis-Nexis Academic</u>. Lexis-Nexis. Sims Memorial Lib., Southeastern Louisiana U, Hammond, LA. 11 Mar. 2008
+< http://lexisnexis.com>.</p>
+<br>
+<p class="hangingindent">Zoroya, Gregg. “Young Vets’ Jobless Rate Falls Sharply.”  <u>USA Today</u> 12 Jan. 2008: 5A. <u>Academic Search Complete</u>. EBSCOhost. Sims Memorial Lib., Southeastern Louisiana U. Hammond, LA. 5 Feb. 2008 < http://web.ebscohost.com>.
+
+</p>
+<br>
+<p><strong>Mr. Genre's Comments:</strong> <em>Robert Williamson’s submission is a prime example of a Proposing Solutions Essay. The assignment was to suggest a problem, present three solutions, and then argue one solution is better than the others. Robert’s paper exemplifies these directions. He outlines in precise detail exactly what the problem is and why it is a notable problem. His solutions are extensively and thoroughly researched. And, probably most impressive, is he does not merely rehash solutions which have been proposed before, but rather he examines what plans are already in place and then suggests new/alternative plans or explains ways to expand and/or improve these plans--an excellent essay.</em></p>
+   
+   </td>
+
+<td valign="top"> 
+<img src="verticalline.png" align="left" width="10" height="400" alt="line" />
+</td>
+<td valign="top">
+<a href="volume36.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume36','','volume36line.png',1)"><img src="volume36.png" alt="Volume 36" width="165" height="30" id="volume36" /></a><br><br>
+<a href="volume37.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume37','','volume37line.png',1)"><img src="volume37.png" alt="Volume 37" width="165" height="30" id="volume37" /></a><br><br>
+<a href="volume38.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('volume38','','volume38line.png',1)"><img src="volume38.png" alt="Volume 38" width="165" height="30" id="volume38" /></a></td></tr></table>
+<br>
+<br><br><br>
+
+
+<!-- end .content --></div>
+       
+       
+<center><img src="horizontaline.png" width="920" height="15"/></center>
+<br>
+
+<center> <a href="http://www.southeastern.edu/" title="Southeastern's Home" target="_blank" style="text-decoration: none"><img src="slogo2.png" width="40" height="50" alt="Southeastern" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.southeastern.edu/acad_research/programs/writing_center/index.html" title="The Writing Center" target="_blank" style="text-decoration: none"><img src="reading lives.png" width="65" height="50" alt="Writing Center" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://english.selu.edu/manchacreview/" title="The Manchac Review" target="_blank" style="text-decoration: none"><img src="logo copy copy.png" width="213" height="50" alt="Manchac Review" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=" https://www.facebook.com/ThePickSLU?ref=profile" title="Facebook" target="_blank"><img src="pickFACEBOOKLINK.png" width="38" height="50" id="facebook" alt="Facebook" /></a><br><br>
+©2014
+<br></center>
+<!-- end .container --></div>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18452199-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
